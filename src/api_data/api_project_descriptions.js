@@ -1,4 +1,14 @@
 export const descriptions = {
+  huntingBuddy: [
+    'A full-stack job tracking application built with React, Vite, Node.js, Express, and MongoDB.',
+    'User Authentication: Secure registration and login with hashed passwords, input validation, and session handling.',
+    'Role-Based Access Control: Distinct admin and user roles with protected routes and access permissions.',
+    'Interactive Dashboard: Manage job applications with functionality to add, edit, delete, and view jobs. Includes filtering, sorting, and data visualisation using Recharts.',
+    'Modern UI/UX: Responsive, modular design implemented with Styled-Components, featuring a light/dark theme toggle.',
+    'Robust API: RESTful backend with full CRUD operations, built using Express and Mongoose for seamless MongoDB integration.',
+    'Validation & Error Handling: Utilises Express-Validator for form validation and custom middleware for structured error responses.',
+    'Performance Optimisation: Incorporates React Query for data fetching and caching, alongside lazy loading and optimised routing for improved UX.',
+  ],
   jobBoard: [
     'A fully responsive full-stack job board application developed in 10 days, utilizing a Rails API for the backend and a React-based frontend.',
     'Designed for freelance pet services, the platform allows users to create accounts and post job listings for dog walkers or pet sitters.',
@@ -31,6 +41,7 @@ export const descriptions = {
 };
 
 export const overviews = {
+  huntingBuddy: ['Full-stack Job Application Tracker', '[MERN-stack]'],
   jobBoard: ['Full-stack job board', '[Rails/React]'],
   flicks4brains: ['Film & TV watchlist SPA', '[React/Firestore/Firebase]'],
   guestbook: ['Full-stack Guestbook app', '[MERN-stack]'],
