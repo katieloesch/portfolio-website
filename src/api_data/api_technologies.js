@@ -151,31 +151,30 @@ const technologies = {
     id: 'vite-icon',
     alt: 'vite icon',
   },
-
-  // python: {
-  //   name: 'Python',
-  //   icon: '',
-  //   id: 'python-icon',
-  //   alt: 'python icon',
-  // },
-  // typescript: {
-  //   name: 'TypeScript',
-  //   icon: '',
-  //   id: 'typescript-icon',
-  //   alt: 'typescript icon',
-  // },
-  // go: {
-  //   name: 'Go',
-  //   icon: '',
-  //   id: 'go-icon',
-  //   alt: 'go icon',
-  // },
-  // linux: {
-  //   name: 'Linux',
-  //   icon: '',
-  //   id: 'linux-icon',
-  //   alt: 'linux icon',
-  // },
+  python: {
+    name: 'Python',
+    icon: skillIcons.python_primary,
+    id: 'python-icon',
+    alt: 'python icon',
+  },
+  typescript: {
+    name: 'TypeScript',
+    icon: skillIcons.typescript_primary,
+    id: 'typescript-icon',
+    alt: 'typescript icon',
+  },
+  go: {
+    name: 'Go',
+    icon: skillIcons.go_primary,
+    id: 'go-icon',
+    alt: 'go icon',
+  },
+  linux: {
+    name: 'Linux',
+    icon: skillIcons.linux_primary,
+    id: 'linux-icon',
+    alt: 'linux icon',
+  },
 };
 
 export default technologies;

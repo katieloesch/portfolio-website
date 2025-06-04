@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { AppContainer, MotionContainer } from '../../containers';
-import { BtnFill, Card, SectionHeading } from '../Shared';
-import { projects } from './../../api_data/api_projects';
+import { BtnFill, SectionHeading } from '../Shared';
+import { projects } from '../../api_data/api_projects';
 import { colors } from '../../assets/colors/colors';
-import './Work.scss';
+import ProjectCard from './ProjectCard/ProjectCard';
 import ProjectModal from './ProjectModal/ProjectModal';
+import './Projects.scss';
 
-const Work = () => {
+const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
   const [filterWork, setFilterWork] = useState(projects);
@@ -113,8 +114,7 @@ const Work = () => {
           className='work-portfolio'
         >
           {filterWork.map((project, index) => (
-            <Card
-              type='project'
+            <ProjectCard
               key={`project-card-${index}`}
               img={project.imgArr[0].src}
               alt={project.imgArr[0].title}
@@ -138,4 +138,4 @@ const Work = () => {
   );
 };
 
-export default AppContainer(MotionContainer(Work, 'work'), 'work', 'bg-2');
+export default AppContainer(MotionContainer(Projects, 'work'), 'work', 'bg-2');

@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import { HiX } from 'react-icons/hi';
 
-import { Backdrop, Carousel } from '../../../components/Shared';
+import { Backdrop, Carousel } from '../../Shared';
 import { workIcons } from '../../../assets/icons/icons_work';
 import { colors } from '../../../assets/colors/colors';
 

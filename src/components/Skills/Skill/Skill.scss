@@ -66,9 +66,20 @@
     scale: 1.15;
   }
 }
+#go-icon {
+  img {
+    scale: 1.2;
+  }
+}
 #heroku-icon {
   img {
     scale: 0.9;
+  }
+}
+#linux-icon {
+  img {
+    scale: 1.2;
+    margin-right: 5px;
   }
 }
 #mongoose-icon {
@@ -96,6 +107,11 @@
     scale: 1.06;
   }
 }
+#python-icon {
+  img {
+    scale: 1.05;
+  }
+}
 #react-icon {
   img {
     scale: 1.1;
@@ -115,6 +131,11 @@
 #tailwind-icon {
   img {
     scale: 1.15;
+  }
+}
+#typescript-icon {
+  img {
+    scale: 0.9;
   }
 }
 #vite-icon {
@@ -197,6 +218,15 @@
   }
 }
 
+#go-icon:hover {
+  p {
+    color: #01add8;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/go_color.svg');
+  }
+}
+
 #heroku-icon:hover {
   p {
     color: #8d58e2;
@@ -230,6 +260,15 @@
   }
   img {
     content: url('./../../../assets/icons/icons_skills/jwt_color.svg');
+  }
+}
+
+#linux-icon:hover {
+  p {
+    color: #249eff;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/linux_color.svg');
   }
 }
 
@@ -314,6 +353,15 @@
   }
 }
 
+#python-icon:hover {
+  p {
+    color: #ffcf46;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/python_color.svg');
+  }
+}
+
 #rails-icon:hover {
   p {
     color: #cd0000;
@@ -356,6 +404,15 @@
   }
   img {
     content: url('./../../../assets/icons/icons_skills/sass_color.svg');
+  }
+}
+
+#typescript-icon:hover {
+  p {
+    color: #3178c6;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/typescript_color.svg');
   }
 }
 

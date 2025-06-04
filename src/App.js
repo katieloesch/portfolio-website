@@ -1,22 +1,29 @@
-import React, { useRef } from "react";
-import { Header, Skills, Work, Experience, About, Footer } from "./components";
-import { NavBar, NavDots, NavMobile } from "./components/Shared";
-import { CurrentContext } from "./contexts/CurrentContext";
+import React, { useRef } from 'react';
+import {
+  Header,
+  Skills,
+  Projects,
+  Experience,
+  About,
+  Footer,
+} from './components';
+import { NavBar, NavDots, NavMobile } from './components/Shared';
+import { CurrentContext } from './contexts/CurrentContext';
 
-import "./App.scss";
+import './App.scss';
 
 const App = () => {
-  const active = useRef("home");
+  const active = useRef('home');
 
   return (
-    <div className="app">
+    <div className='app'>
       <CurrentContext.Provider value={{ active }}>
         <NavBar />
         <NavMobile />
 
         <Header />
         <Skills />
-        <Work />
+        <Projects />
 
         <Experience />
         <About />

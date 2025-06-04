@@ -24,7 +24,7 @@ const abouts = [
   {
     title: 'interests.',
     description:
-      "I'm fascinated by sci-fi books, movies, and TV shows—especially Star Trek and Black Mirror—for their uncanny ability to predict technological advancements long before they become mainstream. Innovations like video calls, mobile phones, wireless headphones, credit cards, solar power, and AI were all imagined in these stories long before they became everyday realities.",
+      "I'm fascinated by sci-fi books, movies, and TV shows like Black Mirror and Star Trek for their ability to envision technologies, such as video calls, credit cards, solar power, mobile phones, and AI long before they became mainstream.",
     icon: icons.interests.svg,
     mobileIcon: icons.interests.mobileSvg,
   },
