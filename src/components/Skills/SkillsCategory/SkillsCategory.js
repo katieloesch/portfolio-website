@@ -1,5 +1,5 @@
 import React from 'react';
-import Skill from '../Skill/Skill';
+import SkillsItem from '../SkillsItem/SkillsItem';
 import './SkillsCategory.scss';
 
 const SkillsCategory = ({ category }) => {
@@ -8,7 +8,7 @@ const SkillsCategory = ({ category }) => {
       <h2>{category.title}</h2>
       <div className='skills-list'>
         {category.list.map((skill) => (
-          <Skill
+          <SkillsItem
             name={skill.name}
             icon={skill.icon}
             id={skill.id}

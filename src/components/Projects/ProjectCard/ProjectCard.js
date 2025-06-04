@@ -6,11 +6,11 @@ import './ProjectCard.scss';
 const ProjectCard = ({
   img,
   alt,
-  txt,
+  projectTitle,
   onClick,
   imgEffects,
   overlayEffects,
-  overview,
+  projectOverview,
 }) => {
   return (
     <div className={`card project-card`}>
@@ -22,9 +22,12 @@ const ProjectCard = ({
         />
         <div className={`project-card__img-overlay ${overlayEffects}`}>
           <div className={`project-card__img-overlay__overview`}>
-            {overview.map((txt) => (
-              <p key={`${txt}-overview`}>{txt}</p>
-            ))}
+            <p key={`${projectTitle}-overview__title`}>
+              {projectOverview.heading}
+            </p>
+            <p key={`${projectTitle}-overview__stack`}>
+              {projectOverview.stack}
+            </p>
           </div>
 
           <button className='project-card__img-overlay__btn' onClick={onClick}>
@@ -35,13 +38,22 @@ const ProjectCard = ({
         </div>
       </div>
       <div className={`project-card__txt-container`}>
-        <h4>{txt}</h4>
+        <h4>{projectTitle}</h4>
 
         <div className={`project-card__img-overlay-mobile ${overlayEffects}`}>
           <div className={`project-card__img-overlay__overview`}>
-            {overview.map((txt) => (
-              <p key={`${txt}-overview`}>{txt}</p>
-            ))}
+            <p
+              key={`${projectTitle}-overview__title`}
+              className={`project-card__img-overlay__overview-heading`}
+            >
+              {projectOverview.heading}
+            </p>
+            <p
+              key={`${projectTitle}-overview__stack`}
+              className={`project-card__img-overlay__overview-stack`}
+            >
+              {projectOverview.stack}
+            </p>
           </div>
 
           <button className='project-card__img-overlay__btn' onClick={onClick}>

@@ -3,28 +3,28 @@ import projectImages from '../assets/images/project_images/project_images';
 import tech from './api_technologies';
 
 const projects = [
-  // {
-  //   id: 0,
-  //   title: 'Hunting Buddy',
-  //   className: 'hunting-buddy',
-  //   description: descriptions.huntingBuddy,
-  //   overview: overviews.huntingBuddy,
-  //   projectLink: 'http://hunting-buddy.onrender.com',
-  //   codeLink: 'https://github.com/katieloesch/hunting-buddy',
-  //   imgArr: projectImages.huntingBuddy,
-  //   tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
-  //   skills: [
-  //     tech.react,
-  //     tech.javascript,
-  //     tech.nodejs,
-  //     tech.express,
-  //     tech.mongodb,
-  //     tech.mongoose,
-  //     tech.vite,
-  //     tech.postman,
-  //     // tech.styledcomponents
-  //   ],
-  // },
+  {
+    id: 0,
+    title: 'Hunting Buddy',
+    className: 'hunting-buddy',
+    description: descriptions.huntingBuddy,
+    overview: overviews.huntingBuddy,
+    projectLink: 'http://hunting-buddy.onrender.com',
+    codeLink: 'https://github.com/katieloesch/hunting-buddy',
+    imgArr: projectImages.huntingBuddy,
+    tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+    skills: [
+      tech.react,
+      tech.javascript,
+      tech.nodejs,
+      tech.express,
+      tech.mongodb,
+      tech.mongoose,
+      tech.vite,
+      tech.postman,
+      // tech.styledcomponents
+    ],
+  },
   {
     id: 1,
     title: 'PlaceBook',

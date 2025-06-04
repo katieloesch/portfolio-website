@@ -118,8 +118,8 @@ const Projects = () => {
               key={`project-card-${index}`}
               img={project.imgArr[0].src}
               alt={project.imgArr[0].title}
-              txt={project.title}
-              overview={project.overview}
+              projectTitle={project.title}
+              projectOverview={project.overview}
               imgEffects=''
               overlayEffects='blur slide-up'
               onClick={() => openProjectModal(project)}

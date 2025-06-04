@@ -1,4 +1,5 @@
 /* font imports (.woff files in ./assets/fonts ) */
+
 /* --font-main */
 @font-face {
   /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
@@ -63,6 +64,7 @@
   /* --secondary: #ff5fec; */
 
   --secondary: rgb(250, 95, 198);
+  --secondary-light: rgb(252, 118, 207);
   --secondary-dark: rgb(224, 7, 163);
 
   --bg1: rgb(16, 58, 85);

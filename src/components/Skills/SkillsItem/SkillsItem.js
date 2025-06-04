@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { colors } from '../../../assets/colors/colors';
-import './Skill.scss';
+import './SkillsItem.scss';
 
-const Skill = ({ name, icon, id }) => {
+const SkillsItem = ({ name, icon, id }) => {
   return (
     <motion.div
       whileInView={{ opacity: [0, 1] }}
@@ -20,4 +20,4 @@ const Skill = ({ name, icon, id }) => {
   );
 };
 
-export default Skill;
+export default SkillsItem;

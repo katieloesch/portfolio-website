@@ -40,11 +40,29 @@ export const descriptions = {
   ],
 };
 
+// export const overviews = {
+//   browserArcade: ['Classic Tic Tac Toe game', '[HTML/CSS/JS]'],
+//   flicks4brains: ['Film & TV watchlist SPA', '[React/Firestore/Firebase]'],
+//   guestbook: ['Virtual Guestbook', '[MERN-stack]'],
+//   huntingBuddy: ['Job Application Tracker', '[MERN-stack]'],
+//   pawneePets: ['Pet Care Job Board', '[Rails/React]'],
+//   placebook: ['Location-based Blogging Platform', '[MERN-stack]'],
+// };
+
 export const overviews = {
-  browserArcade: ['Classic Tic Tac Toe game', '[HTML/CSS/JS]'],
-  flicks4brains: ['Film & TV watchlist SPA', '[React/Firestore/Firebase]'],
-  guestbook: ['Virtual Guestbook', '[MERN-stack]'],
-  huntingBuddy: ['Job Application Tracker', '[MERN-stack]'],
-  pawneePets: ['Pet Care Job Board', '[Rails/React]'],
-  placebook: ['Location-based Blogging Platform', '[MERN-stack]'],
+  browserArcade: {
+    heading: 'Classic Tic Tac Toe Game',
+    stack: '[HTML/CSS/JS]',
+  },
+  flicks4brains: {
+    heading: 'Film & TV watchlist SPA',
+    stack: '[React/Firestore/Firebase]',
+  },
+  guestbook: { heading: 'Virtual Guestbook', stack: '[MERN-stack]' },
+  huntingBuddy: { heading: 'Job Application Tracker', stack: '[MERN-stack]' },
+  pawneePets: { heading: 'Pet Care Job Board', stack: '[Rails/React]' },
+  placebook: {
+    heading: 'Location-based Blogging Platform',
+    stack: '[MERN-stack]',
+  },
 };
