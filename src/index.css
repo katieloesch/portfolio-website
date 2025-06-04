@@ -109,10 +109,17 @@
   --bubble-projects-filter-before: 20px;
   --bubble-projects-filter-after: 190px;
   --bubble-projects-filter-transition: 0.5s;
+
+  /* modal */
+  --modal-header-min-height: 80px;
 }
 
 body {
   background-color: var(--black);
+}
+
+body #modal-hook {
+  border: 2px solid orange;
 }
 
 /* section backgrounds */

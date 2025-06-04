@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import { HiX } from 'react-icons/hi';
 
-import { Backdrop, Carousel } from '../../Shared';
+import { Backdrop } from '../../Shared';
+import ProjectImgCarousel from './ProjectImgCarousel/ProjectImgCarousel';
 import { workIcons } from '../../../assets/icons/icons_work';
 import { colors } from '../../../assets/colors/colors';
-
-import './ProjectModal.scss';
 import ProjectSkill from './ProjectSkill/ProjectSkill';
+import './ProjectModal.scss';
 
 const Overlay = ({ show, type, data, closeModal }) => {
   useEffect(() => {
@@ -23,35 +23,40 @@ const Overlay = ({ show, type, data, closeModal }) => {
   }, [show]);
 
   const content = (
-    <div className={`modal ${type} ${data.className}-modal`}>
-      <div className='btn-close-modal'>
+    <div className={`project-modal ${data.className}-modal`}>
+      <div className='project-modal__links-container'>
+        <div className='project-modal__links'>
+          <a href={data.codeLink} target='_blank' rel='noreferrer'>
+            <div className='project-modal__link'>{workIcons.gitHub}</div>
+          </a>
+          <a href={data.projectLink} target='_blank' rel='noreferrer'>
+            <div className='project-modal__link'>{workIcons.link}</div>
+          </a>
+        </div>
+        <div></div>
+      </div>
+
+      <div className='project-modal__btn-close-modal'>
         <button onClick={closeModal}>
           <HiX />
         </button>
       </div>
 
-      <div className={`modal__main`}>
-        <div className='modal__main__img-container'>
-          <Carousel slides={data.imgArr} type='project' />
+      <div className='project-modal__header'>
+        <h2 className='project_modal__heading'>{data.title}</h2>
+      </div>
+
+      <div className={'project-modal__main'}>
+        <div className='project-modal__main__carousel-container'>
+          <ProjectImgCarousel slides={data.imgArr} type='project' />
         </div>
 
-        <div className='modal__main__text-container'>
-          <div className='heading-modal'>
-            <h2>{data.title}</h2>
-            <div className='modal-links'>
-              <a href={data.codeLink} target='_blank' rel='noreferrer'>
-                <div className='modal-link'>{workIcons.gitHub}</div>
-              </a>
-              <a href={data.projectLink} target='_blank' rel='noreferrer'>
-                <div className='modal-link'>{workIcons.link}</div>
-              </a>
-            </div>
-          </div>
-          <ul className='modal-description'>
+        <div className='project_modal__main__text-container'>
+          <ul className='project_modal__main__text-description'>
             {data.description.map((descriptionParagraph, index) => (
               <li
                 key={`modal-description-item-${index}`}
-                className='modal-description-item'
+                className='project_modal__main__text-description-item'
               >
                 {descriptionParagraph}
               </li>
@@ -60,8 +65,8 @@ const Overlay = ({ show, type, data, closeModal }) => {
         </div>
       </div>
 
-      <footer className={`modal__footer`}>
-        <div className='modal-skills-list flex'>
+      <footer className={'project-modal__footer'}>
+        <div className='project-modal__footer__skills'>
           {data.skills.map((skill) => (
             <ProjectSkill
               name={skill.name}

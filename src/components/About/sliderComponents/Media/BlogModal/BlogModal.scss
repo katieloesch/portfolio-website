@@ -1,4 +1,4 @@
-.modal {
+.blog-modal {
   z-index: 100;
   position: fixed;
   width: 80%;
@@ -67,7 +67,7 @@
     }
   }
 
-  .modal__main {
+  .blog-modal__main {
     display: flex;
     width: 100%;
     height: 100%;
@@ -78,7 +78,7 @@
     // background-color: darkolivegreen;
     align-items: flex-start;
 
-    .modal__main__img-container {
+    .blog-modal__main__img-container {
       width: 25%;
       justify-content: flex-start;
       // border: 2px solid red;
@@ -90,7 +90,7 @@
       }
     }
 
-    .modal__main__text-container {
+    .blog-modal__main__text-container {
       display: flex;
       width: 75%;
       flex-direction: column;
@@ -99,7 +99,7 @@
       padding-left: 20px;
       // border: 2px solid pink;
 
-      .heading-modal {
+      .blog-modal__heading {
         display: flex;
         width: 100%;
         flex-direction: row;
@@ -118,7 +118,7 @@
         }
       }
 
-      .modal-description {
+      .blog-modal-description {
         color: var(--grey-light);
         text-align: justify;
         line-height: 1.5;
@@ -130,7 +130,7 @@
     }
   }
 
-  .modal__footer {
+  .blog-modal__footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,14 +144,14 @@
     align-items: center;
     justify-content: center;
 
-    .modal-skills-list {
+    .blog-modal-skills-list {
       display: flex;
       flex: 1;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
 
-      .modal-skills-item {
+      .blog-modal-skills-item {
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -179,10 +179,10 @@
   }
 
   @media screen and (max-width: 1485px) {
-    .modal__main {
-      .modal__main__text-container {
-        .modal-description {
-          .modal-description-item {
+    .blog-modal__main {
+      .blog-modal__main__text-container {
+        .blog-modal-description {
+          .blog-modal-description-item {
             font-size: 0.95rem;
           }
         }
@@ -191,63 +191,63 @@
   }
 
   @media screen and (max-width: 1125px) {
-    .modal__main {
-      .modal__main__text-container {
-        .modal-description {
-          .modal-description-item {
+    .blog-modal__main {
+      .blog-modal__main__text-container {
+        .blog-modal-description {
+          .blog-modal-description-item {
             font-size: 0.95rem;
           }
         }
       }
-      .modal__main__img-container {
+      .blog-modal__main__img-container {
         display: none;
       }
-      .modal__main__text-container {
+      .blog-modal__main__text-container {
         display: flex;
         width: 100%;
 
-        .modal-description {
-          .modal-description-item {
+        .blog-modal-description {
+          .blog-modal-description-item {
             font-size: 1.05rem;
           }
         }
       }
     }
-    .modal__footer {
+    .blog-modal__footer {
       // margin-top: 1.75rem;
     }
   }
   @media screen and (max-width: 800px) {
-    .modal__main {
+    .blog-modal__main {
       // padding-top: 100px;
     }
   }
   @media screen and (max-width: 750px) {
-    .modal__main {
+    .blog-modal__main {
       // padding-top: 180px;
     }
   }
 
   @media screen and (max-width: 700px) {
-    .modal__main {
-      .modal__main__text-container {
-        .heading-modal {
+    .blog-modal__main {
+      .blog-modal__main__text-container {
+        .blog-modal__heading {
           margin-top: 5rem;
         }
-        .modal-description {
-          .modal-description-item {
+        .blog-modal-description {
+          .blog-modal-description-item {
             font-size: 0.9rem;
             line-height: 1.5;
           }
         }
       }
     }
-    .modal__footer {
+    .blog-modal__footer {
       margin-top: 0;
-      .modal-skills-list {
+      .blog-modal-skills-list {
         gap: 8px;
 
-        .modal-skills-item {
+        .blog-modal-skills-item {
           margin-right: 0;
           margin-bottom: 0;
           div {
@@ -274,12 +274,12 @@
 }
 
 @media screen and (max-width: 400px) {
-  .modal__main {
+  .blog-modal__main {
     margin-left: -20px;
-    .modal__main__text-container {
+    .blog-modal__main__text-container {
       // border: 2px solid pink;
       margin-left: 0;
-      .heading-modal {
+      .blog-heading-modal {
         margin-top: 8rem;
       }
     }

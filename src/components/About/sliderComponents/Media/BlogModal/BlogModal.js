@@ -22,27 +22,27 @@ const Overlay = ({ show, type, data, closeModal, links }) => {
   }, [show]);
 
   const content = (
-    <div className={`modal ${type} ${data.className}-modal`}>
+    <div className={`blog-modal ${data.className}-modal`}>
       <div className='btn-close-modal'>
         <button onClick={closeModal}>
           <HiX />
         </button>
       </div>
 
-      <div className={`modal__main`}>
-        <div className='modal__main__img-container'>
+      <div className={`blog-modal__main`}>
+        <div className='blog-modal__main__img-container'>
           <img src={data.img} alt={data.alt} />
         </div>
-        <div className='modal__main__text-container'>
-          <div className='heading-modal'>
+        <div className='blog-modal__main__text-container'>
+          <div className='blog-modal__heading'>
             <h2>{data.name}</h2>
             <ModalLinks data={data} icons={aboutIcons} list={links} />
           </div>
-          <ul className='modal-description'>
+          <ul className='blog-modal-description'>
             {data.description.map((descriptionParagraph, index) => (
               <li
-                key={`modal-description-item-${index}`}
-                className='modal-description-item'
+                key={`blog-modal-description-item-${index}`}
+                className='blog-modal-description-item'
               >
                 {descriptionParagraph}
               </li>
@@ -51,7 +51,7 @@ const Overlay = ({ show, type, data, closeModal, links }) => {
         </div>
       </div>
 
-      <footer className={`modal__footer`}></footer>
+      <footer className={`blog-modal__footer`}></footer>
     </div>
   );
   return ReactDOM.createPortal(content, document.getElementById('modal-hook'));
