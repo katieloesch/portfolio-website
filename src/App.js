@@ -5,7 +5,7 @@ import {
   Projects,
   Experience,
   About,
-  Footer,
+  Contact,
 } from './components';
 import { NavBar, NavDots, NavMobile } from './components/Shared';
 import { CurrentContext } from './contexts/CurrentContext';
@@ -24,11 +24,9 @@ const App = () => {
         <Header />
         <Skills />
         <Projects />
-
         <Experience />
         <About />
-
-        <Footer />
+        <Contact />
 
         <NavDots />
       </CurrentContext.Provider>

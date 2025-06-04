@@ -11,9 +11,9 @@ import { AppContainer, MotionContainer } from '../../containers';
 import { SectionHeading, BtnFill } from '../Shared';
 import { footerIcons } from '../../assets/icons/icons_footer';
 import { colors } from '../../assets/colors/colors';
-import './Footer.scss';
+import './Contact.scss';
 
-const Footer = () => {
+const Contact = () => {
   //Navigation
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
@@ -259,7 +259,7 @@ const Footer = () => {
 };
 
 export default AppContainer(
-  MotionContainer(Footer, 'footer'),
+  MotionContainer(Contact, 'footer'),
   'contact',
   'bg-1'
 );
