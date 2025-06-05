@@ -23,37 +23,45 @@ const ProjectImgCarousel = ({ slides, type }) => {
   };
 
   return (
-    <div className={`${type}-carousel`}>
-      <div className='carousel-container'>
+    <div className={'project-img-carousel__container'}>
+      <div className='project-img-carousel__btns'>
+        <button
+          onClick={prevSlide}
+          className='project-img-carousel__btn project-img-carousel__btn-prev'
+        >
+          {arrowIcons.arrowLeft}
+        </button>
+
+        <button
+          onClick={nextSlide}
+          className='project-img-carousel__btn project-img-carousel__btn-next'
+        >
+          {arrowIcons.arrowRight}
+        </button>
+      </div>
+
+      <div className='project-img-carousel__slides-container'>
         {slides.map((img, index) => (
           <div
-            className={`slide ${
+            className={`project-img-carousel__slide ${
               index === slideIndex ? 'slide-active' : 'slide-hidden'
             }`}
             key={`carousel-slide-${img.id}`}
           >
             <img
-              className={`${img.type} slide-img`}
+              className={`${img.type} project-img-carousel__slide-img`}
               src={img.src}
               alt={img.title}
             />
           </div>
         ))}
-        <div className='btns-carousel'>
-          <button onClick={prevSlide} className='btn-carousel-prev'>
-            {arrowIcons.arrowLeft}
-          </button>
-          <button onClick={nextSlide} className='btn-carousel-next'>
-            {arrowIcons.arrowRight}
-          </button>
-        </div>
       </div>
 
-      <div className='dots-carousel'>
+      <div className='project-img-carousel__dots'>
         {slides.map((img, index) => (
           <div
             key={`carousel-dot-${index}`}
-            className={`dot-carousel ${
+            className={`project-img-carousel__dot ${
               index === slideIndex ? 'active' : 'inactive'
             }`}
           ></div>

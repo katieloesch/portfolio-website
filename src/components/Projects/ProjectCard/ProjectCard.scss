@@ -39,7 +39,7 @@
     }
 
     .project-card__img-overlay {
-      background: rgba(67, 166, 227, 0.2);
+      background: rgba(67, 166, 227, 0.4);
       inset: 0;
       position: absolute;
       display: flex;
@@ -84,7 +84,7 @@
           align-items: center;
           justify-content: center;
           // background-color: rgba(0, 0, 0, 0.5);
-          background-color: var(--secondary);
+          background-color: var(--bg2);
           color: #fff;
           margin: 1rem;
           font-weight: 800;
@@ -102,7 +102,7 @@
 
           &:hover {
             svg {
-              color: var(--bg2);
+              color: var(--secondary-light);
             }
           }
         }

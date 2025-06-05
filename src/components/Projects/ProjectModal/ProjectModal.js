@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
-import { HiX } from 'react-icons/hi';
+// import { HiX } from 'react-icons/hi';
 
 import { Backdrop } from '../../Shared';
 import ProjectImgCarousel from './ProjectImgCarousel/ProjectImgCarousel';
@@ -26,11 +26,11 @@ const Overlay = ({ show, type, data, closeModal }) => {
     <div className={`project-modal ${data.className}-modal`}>
       <div className='project-modal__links-container'>
         <div className='project-modal__links'>
-          <a href={data.codeLink} target='_blank' rel='noreferrer'>
-            <div className='project-modal__link'>{workIcons.gitHub}</div>
-          </a>
           <a href={data.projectLink} target='_blank' rel='noreferrer'>
             <div className='project-modal__link'>{workIcons.link}</div>
+          </a>
+          <a href={data.codeLink} target='_blank' rel='noreferrer'>
+            <div className='project-modal__link'>{workIcons.gitHub}</div>
           </a>
         </div>
         <div></div>
@@ -38,7 +38,8 @@ const Overlay = ({ show, type, data, closeModal }) => {
 
       <div className='project-modal__btn-close-modal'>
         <button onClick={closeModal}>
-          <HiX />
+          {/* <HiX /> */}
+          {workIcons.close}
         </button>
       </div>
 

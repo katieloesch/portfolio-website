@@ -64,6 +64,7 @@
   /* --secondary: #ff5fec; */
 
   --secondary: rgb(250, 95, 198);
+  --secondary-a: rgba(255, 122, 211, 0.4);
   --secondary-light: rgb(252, 118, 207);
   --secondary-dark: rgb(224, 7, 163);
 
