@@ -8,13 +8,13 @@ const skills = [
     id: 0,
     className: 'frontend-skills',
     list: [
-      tech.javascript,
       tech.react,
+      tech.vite,
+      tech.javascript,
       tech.html,
       tech.css,
       tech.sass,
       tech.tailwind,
-      // tech.bootstrap,
     ],
   },
   {
@@ -36,18 +36,18 @@ const skills = [
       tech.firestore,
     ],
   },
-  {
-    title: 'Development Tools',
-    id: 3,
-    className: 'devtools-skills',
-    list: [tech.git, tech.github, tech.postman, tech.openai, tech.vite],
-  },
   // {
-  //   title: 'Currently Learning',
-  //   id: 4,
-  //   className: 'learning-skills',
-  //   list: [tech.python, tech.linux, tech.typescript, tech.go],
+  //   title: 'Development Tools',
+  //   id: 3,
+  //   className: 'devtools-skills',
+  //   list: [tech.git, tech.github, tech.postman, tech.vite],
   // },
+  {
+    title: 'Currently Learning',
+    id: 4,
+    className: 'learning-skills',
+    list: [tech.python, tech.linux, tech.typescript, tech.go],
+  },
 ];
 
 export { skills };

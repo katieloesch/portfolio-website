@@ -1,0 +1,29 @@
+.about-carousel__slide__content-blogs {
+  width: 85vw;
+  height: 100%;
+  color: var(--grey-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 3rem;
+
+  .about-carousel__slide__content-blogs__title {
+    text-align: center;
+    font-weight: 500;
+    color: var(--primary);
+  }
+
+  .about-carousel__slide__content-blogs__blogs-container {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

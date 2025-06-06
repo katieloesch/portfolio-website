@@ -10,22 +10,21 @@ const abouts = [
   {
     title: 'background.',
     description:
-      'As a biomedical science graduate, I gained hands-on experience working with genetic databases and algorithms designed for sequence comparison. This experience ignited my interest in using software and technology to drive innovation and advancements in healthcare and medical research.',
+      'As a biomedical science graduate, I gained practical experience with genetic databases and sequence comparison algorithms, sparking my interest in the software and technology driving innovation in healthcare and medical research.',
     icon: icons.background.svg,
     mobileIcon: icons.background.mobileSvg,
   },
   {
     title: 'coding journey.',
     description:
-      "My passion for coding led me to join General Assembly's software engineering immersive course, where I built a strong foundation in programming fundamentals. I'm now eager to further develop my skills, explore new programming languages and frameworks and contribute to meaningful, impactful projects.",
+      "My passion for coding led me to complete General Assembly's Software Engineering Immersive, gaining a strong foundation in programming. I'm now eager to grow my skills, explore new technologies, and contribute to impactful projects.",
     icon: icons.codingJourney.svg,
     mobileIcon: icons.codingJourney.mobileSvg,
   },
   {
     title: 'interests.',
     description:
-      "I'm captivated by sci-fi books, movies, and TV shows like Star Trek and Black Mirror, which have a remarkable track record of predicting technological advancements long before they became mainstream—such as video calls, mobile phones, wireless headphones, credit cards, solar power, and AI.",
-
+      "I'm fascinated by sci-fi books, movies, and TV shows like Black Mirror and Star Trek for their ability to envision technologies, such as video calls, credit cards, solar power, mobile phones, and AI long before they became mainstream.",
     icon: icons.interests.svg,
     mobileIcon: icons.interests.mobileSvg,
   },
@@ -37,9 +36,8 @@ const media = [
     className: 'techlore',
     id: 0,
     description: [
-      'Techlore is educating people about digital rights, privacy, security, digital control, and other important topics to push the world towards a safer internet. We envision a world where technology works for us, not against us—and we want to prove to people they can make a real impact for themselves and others.',
-      "We're a small team educating people about digital rights, privacy, security, digital control, and other important topics to push the world towards a safer internet. We envision a world where technology works for us, not against us—and we want to prove to people they can make a real impact for themselves and others.",
-      "Henry Fisher the owner of Techlore, marketing manager for Cake Wallet, & co-host of Surveillance Report. I've developed resources for nearly a decade, using my expertise to improve people's relationship with technology and digital safety.",
+      'Techlore is a small but dedicated team focused on educating the public about digital rights, privacy, security, digital autonomy, and related topics to help build a safer, more informed internet. They are deeply committed to digital rights education and privacy advocacy.',
+      "Henry Fisher, the founder of Techlore, also serves as the marketing manager for Cake Wallet and co-hosts the Surveillance Report. With nearly a decade of experience, he has developed a range of resources aimed at improving people's understanding of technology and enhancing their digital safety.",
     ],
     website: 'https://www.techlore.tech/',
     github: 'https://github.com/techlore',
@@ -58,11 +56,8 @@ const media = [
     className: 'new-oil',
     id: 1,
     description: [
-      'Nathan Bartram Founder/Editor',
-      'A project dedicated to teaching beginners and non-tech-savvy people about digital privacy and cybersecurity.',
-      'To educate readers on why privacy and security matter, and the various tools and techniques available to help them reclaim and protect their own privacy & security',
-      'To empower readers to believe that privacy and security are attainable for everyone and to do their best to reclaim & protect their own privacy and security as much as possible',
-      'To enhance the lives of readers with tools that will improve their privacy and security without negatively impacting their mental or emotional health or professional or social lives',
+      'Nathan Bartram is the founder and editor of a project dedicated to making digital privacy and cybersecurity accessible to beginners and non-tech-savvy individuals. His mission is to educate readers on the importance of privacy and security, introduce the tools and techniques available to protect them, and empower people to take control of their digital lives.',
+      "The project emphasizes that privacy and security are achievable goals for everyone. It aims to improve readers' digital well-being without compromising their mental health, emotional balance, or professional and social lives.",
     ],
     website: 'https://thenewoil.org/en/',
     youtube: 'https://www.youtube.com/thenewoil',
@@ -78,7 +73,8 @@ const media = [
     className: 'sr',
     id: 2,
     description: [
-      'Weekly security and privacy news - Presented by Techlore & The New Oil. The goal of Surveillance Report is keep the world updated on the latest privacy & security news to empower individuals to remain safe with the newest information. Join us for the ride!',
+      'Surveillance Report is a weekly news show presented by Techlore and The New Oil, delivering the latest updates on privacy and security.',
+      'Its mission is to keep the world informed about current events in the digital privacy landscape, empowering individuals to stay safe with the most up-to-date information.',
     ],
     podcast: 'https://open.spotify.com/show/5rxm041iDXxe0rINwO5G0c',
     website: 'https://surveillancereport.tech/',
@@ -95,9 +91,8 @@ const media = [
     className: 'nbtv',
     id: 3,
     description: [
-      'Naomi Brockwell is a tech journalist, and creator of "NBTV.media". NBTV teaches people how to reclaim control of their lives in the digital age. The channel gives people the tools they need to take back their data, money, and free online expression.',
-      'NBTV is a research and media institute that advances human freedom through technology. We produce educational content to teach people how to protect their fundamental rights in the digital age and harness empowering innovation to ensure that privacy, individual autonomy, and human dignity extend to the digital landscape.',
-      'NBTV is a non-profit',
+      'Naomi Brockwell is a tech journalist and the creator of NBTV.media, a platform dedicated to helping people reclaim control over their lives in the digital age. Through accessible and empowering content, NBTV equips individuals with the knowledge and tools to protect their data, manage their digital finances, and express themselves freely online.',
+      'NBTV is a non-profit research and media institute that promotes human freedom through technology. Its mission is to educate the public on safeguarding fundamental rights in the digital era and to champion innovations that uphold privacy, personal autonomy, and human dignity in the online world.',
     ],
     website: 'https://naomibrockwell.com/',
     youtube: 'https://youtube.com/naomibrockwelltv',
@@ -112,9 +107,9 @@ const media = [
     className: 'proton',
     id: 4,
     description: [
-      'Proton was born in Switzerland in 2014 when a team of scientists who met at CERN (the European Organization for Nuclear Research) decided to build a better internet where privacy is the default.',
-      'Proton was born out of a desire to build an internet that puts people before profits, create a world where everyone is in control of their digital lives, and make digital freedom a reality. In this new world, you can communicate with whomever you want, protect your data and identity, avoid having your data sold, and safeguard against cybercrime.',
-      "The Proton.me blog is the official blog of Proton, the company behind ProtonMail, ProtonVPN, and other privacy-focused services. The blog covers topics related to online privacy, security, and digital freedom, offering insights, news, and updates about Proton's products, privacy tips, industry trends, and broader discussions on the importance of protecting personal information in the digital age.",
+      'Proton was founded in Switzerland in 2014 by a team of scientists who met at CERN (the European Organization for Nuclear Research). United by a shared vision, they set out to build a better internet—one where privacy is the default and people, not profits, come first.',
+      "Proton's mission is to empower individuals to take control of their digital lives by creating a world where everyone can communicate freely, protect their data and identity, avoid surveillance and data exploitation, and defend against cybercrime. Their services—such as Proton Mail, Proton VPN, and more—are built to make digital freedom a reality for all.",
+      'The Proton.me Blog is the official source for news, insights, and updates from Proton. It covers topics related to online privacy, digital security, and internet freedom, while also sharing product announcements, privacy tips, and broader discussions about the importance of protecting personal information in the digital age.',
     ],
     blog: 'https://proton.me/blog',
     img: images.proton,
@@ -126,7 +121,9 @@ const media = [
     className: 'academind',
     id: '5',
     description: [
-      'Academind is an online education platform that offers high-quality video courses and tutorials on web development, programming, and other tech-related topics. It is known for its clear, in-depth explanations and practical approach to teaching, making complex subjects accessible to learners at all levels. The content is primarily delivered by founders and instructors Maximilian Schwarzmüller and Manuel Lorenz who are well-regarded in the developer community.',
+      'Academind is an online education platform offering high-quality video courses and tutorials on web development, programming, and other tech topics.',
+      'Known for its clear, in-depth explanations and practical teaching style, Academind makes complex concepts accessible to learners of all levels.',
+      'The content is primarily delivered by founders and instructors Maximilian Schwarzmüller and Manuel Lorenz, both highly respected in the developer community.',
     ],
     website: 'https://academind.com/',
     github: 'https://github.com/academind',
@@ -143,12 +140,8 @@ const media = [
     className: 'ztm',
     id: '6',
     description: [
-      'ZTM is an online education platform founded by Andrei Neagoie and offering a wide range of courses on topics like web development, data science, ethical hacking, and machine learning.',
-      'It features high-quality video lessons as well as hands-on projects and its content regularly updated to ensure students learn the latest industry-relevant information.',
-      'ZTM also fosters an active community where students can collaborate, ask questions, and support one another, creating a community-driven learning environment.',
-      "ZTM extends its mission through blogs and newsletters that cover a variety of topics, including tech news, emerging trends, new tools, and best practices, helping learners stay informed about the tech industry's latest developments.",
-      'ZTM also shares content on productivity, mental health, and work-life balance, supporting tech professionals in building sustainable and fulfilling careers.',
-      "These offerings reflect ZTM's broader mission to equip students not only with technical expertise but also with the skills needed to become well-rounded, successful professionals.",
+      'Zero to Mastery (ZTM) is an online education platform founded by Andrei Neagoie, offering a wide range of courses in web development, data science, ethical hacking, machine learning, and more. Known for its high-quality video lessons and hands-on projects, ZTM ensures its content is regularly updated to reflect the latest industry trends and technologies.',
+      'Beyond its courses, ZTM fosters a vibrant, community-driven learning environment where students can collaborate, ask questions, and support one another. The platform also extends its mission through blogs and newsletters that cover tech news, emerging tools, best practices, and insights into productivity and work-life balance.',
     ],
 
     website: 'https://zerotomastery.io/',
@@ -168,8 +161,8 @@ const media = [
     className: 'lama-dev',
     id: '7',
     description: [
-      'Web development tutorials for everyone. Learn JavaScript, React.js, Next.js and Node.js, find inspiration for HTML, CSS, and web design.',
-      "LamaDev is an online platform and YouTube channel that offers tutorials, courses, and resources focused on web development, particularly around modern JavaScript technologies like React, Node.js, and the MERN stack. It's known for providing practical, hands-on content that helps developers build real-world projects and enhance their coding skills.",
+      'LamaDev is an online platform and YouTube channel offering web development tutorials, courses, and resources for learners at all levels. It focuses on modern JavaScript technologies such as React.js, Next.js, Node.js, and the MERN stack, while also providing inspiration and guidance in HTML, CSS, and web design.',
+      'Known for its practical, hands-on approach, LamaDev helps developers build real-world projects and strengthen their coding skills through clear, accessible instruction.',
     ],
     website: 'https://lama.dev/',
     blog: 'https://blog.lama.dev/',
