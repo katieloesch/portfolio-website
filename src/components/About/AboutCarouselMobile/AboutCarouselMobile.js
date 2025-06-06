@@ -23,36 +23,46 @@ const AboutCarouselMobile = ({ slides, type }) => {
   };
 
   return (
-    <div className={`slider ${type}-slider`}>
-      <div className='slides-container'>
+    <div className={'about-carousel-mobile'}>
+      <div className='about-carousel-mobile__slides-container'>
         {slides.map((slide, index) => {
           return (
             <div
-              className={`slide ${
-                index === slideIndex ? 'slide-active' : 'slide-hidden'
+              className={`about-carousel-mobile__slide ${
+                index === slideIndex
+                  ? 'about-carousel-mobile__slide-active'
+                  : 'about-carousel-mobile__slide-hidden'
               }`}
-              key={`slider-slide-${index}`}
+              key={`about-carousel-mobile__-slide-${index}`}
             >
               {slide}
             </div>
           );
         })}
-        <div className='btns-slider'>
-          <button onClick={prevSlide} className='btn-slider-prev'>
+        <div className='about-carousel-mobile__btns'>
+          <button
+            onClick={prevSlide}
+            className='about-carousel-mobile__btn-prev about-carousel-mobile__btn'
+          >
             {arrowIcons.arrowLeft}
           </button>
-          <button onClick={nextSlide} className='btn-slider-next'>
+          <button
+            onClick={nextSlide}
+            className='about-carousel-mobile__btn-next about-carousel-mobile__btn'
+          >
             {arrowIcons.arrowRight}
           </button>
         </div>
       </div>
 
-      <div className='dots-slider'>
+      <div className='about-carousel-mobile__dots'>
         {slides.map((img, index) => (
           <div
-            key={`slider-${index}`}
-            className={`dot-slider ${
-              index === slideIndex ? 'active' : 'inactive'
+            key={`about-carousel-mobile__dot-${index}`}
+            className={`about-carousel-mobile__dot ${
+              index === slideIndex
+                ? 'about-carousel-mobile__dot-active'
+                : 'about-carousel-mobile__dot-inactive'
             }`}
           ></div>
         ))}

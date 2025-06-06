@@ -10,14 +10,14 @@ const abouts = [
   {
     title: 'background.',
     description:
-      'As a biomedical science graduate, I gained hands-on experience working with genetic databases and sequence comparison algorithms. This sparked my interest in software and technology that drive innovation in healthcare and advance medical research.',
+      'As a biomedical science graduate, I gained practical experience with genetic databases and sequence comparison algorithms, sparking my interest in the software and technology driving innovation in healthcare and medical research.',
     icon: icons.background.svg,
     mobileIcon: icons.background.mobileSvg,
   },
   {
     title: 'coding journey.',
     description:
-      "Driven by a passion for coding, I completed General Assembly's Software Engineering Immersive, where I built a solid foundation in programming fundamentals. I'm now excited to continue expanding my skills, explore new languages and frameworks, and contribute to meaningful, impactful projects.",
+      "My passion for coding led me to complete General Assembly's Software Engineering Immersive, gaining a strong foundation in programming. I'm now eager to grow my skills, explore new technologies, and contribute to impactful projects.",
     icon: icons.codingJourney.svg,
     mobileIcon: icons.codingJourney.mobileSvg,
   },

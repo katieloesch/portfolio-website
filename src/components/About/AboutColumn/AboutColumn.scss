@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  // margin: 1rem 1.5rem;
   width: clamp(25%, 26%, 40%);
 
   .column-img-container {
@@ -28,7 +27,7 @@
     // color: var(--primary);
     text-align: center;
     font-weight: normal;
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 1.3rem, 1.5rem);
     padding-bottom: 20px;
   }
 

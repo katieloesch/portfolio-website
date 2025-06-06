@@ -27,21 +27,23 @@ const AboutCarouselMobileSlide = ({
 
   if (content === 'about') {
     return (
-      <div className='mobile-slide mobile-slide-about'>
-        <div className={`slide-img-container`}>{img}</div>
-        <h2>{title}</h2>
-        <p>{txt}</p>
+      <div className='about-carousel__slide-mobile__abouts about-carousel__slide-mobile'>
+        <div className={'about-carousel__slide-mobile__img-container'}>
+          {img}
+        </div>
+        <h2 className='about-carousel__slide-mobile__title'>{title}</h2>
+        <p className='about-carousel__slide-mobile__p '>{txt}</p>
       </div>
     );
   } else {
     return (
-      <div className='mobile-slide mobile-slide-creators'>
-        <h2>{title}</h2>
-        <div className='creators'>
+      <div className='about-carousel__slide-mobile__blogs about-carousel__slide-mobile'>
+        <h2 className='about-carousel__slide-mobile__title'>{title}</h2>
+        <div className='about-carousel__slide-mobile__blogs-container'>
           {creators.map((blog) => (
             <div
-              className='creator'
-              key={`about-creator-${blog.className}`}
+              className='about-carousel__slide-mobile__blog-card'
+              key={`mobile-about-blog-${blog.className}`}
               onClick={() => openBlogPortal(blog)}
             >
               {blog.name}
