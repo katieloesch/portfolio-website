@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import './MobileAboutComponent.scss';
-import BlogModal from '../Media/BlogModal/BlogModal';
+
+import BlogModal from '../BlogModal/BlogModal';
+import './AboutCarouselMobileSlide.scss';
 
 // import { aboutIcons as icons } from './../../../../assets/icons/icons_about';
 
-const MobileAboutComponent = ({
+const AboutCarouselMobileSlide = ({
   content,
   title,
   txt,
@@ -60,4 +61,4 @@ const MobileAboutComponent = ({
   }
 };
 
-export default MobileAboutComponent;
+export default AboutCarouselMobileSlide;

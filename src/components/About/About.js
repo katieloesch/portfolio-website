@@ -1,8 +1,16 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 
 import { AppContainer, MotionContainer } from '../../containers';
-import { SectionHeading, Slider, SliderMobile } from '../Shared';
-import { Abouts, Media, MobileAboutComponent } from './sliderComponents';
+import { SectionHeading } from '../Shared';
+
+import AboutsSlide from './AboutCarouselSlides/AboutsSlide/AboutsSlide';
+import BlogsSlide from './AboutCarouselSlides/BlogsSlide/BlogsSlide';
+
+import AboutCarousel from './AboutCarousel/AboutCarousel';
+import AboutCarouselMobile from './AboutCarouselMobile/AboutCarouselMobile';
+
+import AboutCarouselMobileSlide from './AboutCarouselMobileSlide/AboutCarouselMobileSlide';
+
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { aboutData } from './../../api_data/api_about';
 import { aboutImages as images } from '../../assets/images/about_images';
@@ -47,7 +55,7 @@ const About = () => {
   }, [isIntersecting, active, dot, navDots]);
 
   const mobileSlides = aboutData.abouts.map((about, index) => (
-    <MobileAboutComponent
+    <AboutCarouselMobileSlide
       key={`about-slide-mobile-${index}`}
       content='about'
       title={about.title}
@@ -59,45 +67,53 @@ const About = () => {
   return (
     <div className='about-container'>
       <SectionHeading section='about'>About</SectionHeading>
-      <div className='about-intro flex'>
-        <div className='about-intro__avatar-container flex'>
-          <img src={images.avatar2Svg} alt='avatar' />
-        </div>
 
-        <div className='about-intro__text-container'>
-          <div className='about-intro__text flex'>
+      <div className='about__content'>
+        <div className='about__intro'>
+          <div className='about__intro__avatar-container'>
+            <img
+              className='about__intro__avatar-img'
+              src={images.avatar2Svg}
+              alt='avatar'
+            />
+          </div>
+
+          <div className='about__intro__text'>
             {aboutData.intros.map((intro, index) => (
-              <p className='p-text flex' key={`about-intro-${index}`}>
+              <p
+                className='p-text about__intro__text-p'
+                key={`about-intro-${index}`}
+              >
                 {intro}
               </p>
             ))}
           </div>
         </div>
-      </div>
 
-      <div className='about__slider-container' ref={ref}>
-        <Slider
-          type='about'
-          slides={[
-            <Abouts columnData={aboutData.abouts} />,
-            <Media
-              mediaData={aboutData.media}
-              mediaLinks={aboutData.mediaLinks}
-            />,
-          ]}
-        />
-        <SliderMobile
-          type='about-mobile'
-          slides={[
-            ...mobileSlides,
-            <MobileAboutComponent
-              content='creators'
-              title='Creators & Blogs I follow:'
-              creators={aboutData.media}
-              links={aboutData.mediaLinks}
-            />,
-          ]}
-        />
+        <div className='about__carousel-container' ref={ref}>
+          <AboutCarousel
+            type='about'
+            slides={[
+              <AboutsSlide columnData={aboutData.abouts} />,
+              <BlogsSlide
+                mediaData={aboutData.media}
+                mediaLinks={aboutData.mediaLinks}
+              />,
+            ]}
+          />
+          <AboutCarouselMobile
+            type='about-mobile'
+            slides={[
+              ...mobileSlides,
+              <AboutCarouselMobileSlide
+                content='creators'
+                title='Creators & Blogs I follow:'
+                creators={aboutData.media}
+                links={aboutData.mediaLinks}
+              />,
+            ]}
+          />
+        </div>
       </div>
     </div>
   );

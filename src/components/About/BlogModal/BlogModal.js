@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import { CSSTransition } from 'react-transition-group';
 import { HiX } from 'react-icons/hi';
 
-import Backdrop from '../../../../Shared/Backdrop/Backdrop';
+import Backdrop from '../../Shared/Backdrop/Backdrop';
 import ModalLinks from './ModalLinks/ModalLinks';
-import { aboutIcons } from '../../../../../assets/icons/icons_about';
+import { aboutIcons } from '../../../assets/icons/icons_about';
 
 import './BlogModal.scss';
 

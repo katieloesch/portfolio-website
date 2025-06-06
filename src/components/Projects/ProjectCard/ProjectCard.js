@@ -37,6 +37,7 @@ const ProjectCard = ({
           </button>
         </div>
       </div>
+
       <div className={`project-card__txt-container`}>
         <h4>{projectTitle}</h4>
 

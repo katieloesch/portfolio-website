@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
-import './SliderMobile.scss';
+import './AboutCarousel.scss';
 
-const SliderMobile = ({ slides, type }) => {
+const AboutCarousel = ({ slides, type }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -23,13 +23,15 @@ const SliderMobile = ({ slides, type }) => {
   };
 
   return (
-    <div className={`slider ${type}-slider`}>
-      <div className='slides-container'>
+    <div className={'about-carousel'}>
+      <div className='about-carousel__slides-container'>
         {slides.map((slide, index) => {
           return (
             <div
-              className={`slide ${
-                index === slideIndex ? 'slide-active' : 'slide-hidden'
+              className={`about-carousel__slide ${
+                index === slideIndex
+                  ? 'about-carousel__slide-active'
+                  : 'about-carousel__slide-hidden'
               }`}
               key={`slider-slide-${index}`}
             >
@@ -37,22 +39,30 @@ const SliderMobile = ({ slides, type }) => {
             </div>
           );
         })}
-        <div className='btns-slider'>
-          <button onClick={prevSlide} className='btn-slider-prev'>
+        <div className='about-carousel__btns'>
+          <button
+            onClick={prevSlide}
+            className='about-carousel__btn about-carousel__btn-prev'
+          >
             {arrowIcons.arrowLeft}
           </button>
-          <button onClick={nextSlide} className='btn-slider-next'>
+          <button
+            onClick={nextSlide}
+            className='about-carousel__btn about-carousel__btn-next'
+          >
             {arrowIcons.arrowRight}
           </button>
         </div>
       </div>
 
-      <div className='dots-slider'>
+      <div className='about-carousel__dots'>
         {slides.map((img, index) => (
           <div
-            key={`slider-${index}`}
-            className={`dot-slider ${
-              index === slideIndex ? 'active' : 'inactive'
+            key={`about-carousel__dot-${index}`}
+            className={`about-carousel__dot ${
+              index === slideIndex
+                ? 'about-carousel__dot-active'
+                : 'about-carousel__dot-inactive'
             }`}
           ></div>
         ))}
@@ -61,4 +71,4 @@ const SliderMobile = ({ slides, type }) => {
   );
 };
 
-export default SliderMobile;
+export default AboutCarousel;

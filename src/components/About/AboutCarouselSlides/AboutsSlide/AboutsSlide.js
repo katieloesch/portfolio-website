@@ -1,15 +1,14 @@
 import React from 'react';
-import { Column } from '../../../Shared';
+import AboutColumn from '../../AboutColumn/AboutColumn';
 
-import './Abouts.scss';
+import './AboutsSlide.scss';
 
-const Abouts = ({ columnData }) => {
+const AboutsSlide = ({ columnData }) => {
   return (
-    <div className='abouts-columns about-slide'>
+    <div className='about-carousel__slide__content-abouts'>
       {columnData.map((about, index) => {
         return (
-          <Column
-            type='about'
+          <AboutColumn
             key={`about-column-${index}`}
             img={about.icon}
             title={about.title}
@@ -21,4 +20,4 @@ const Abouts = ({ columnData }) => {
   );
 };
 
-export default Abouts;
+export default AboutsSlide;

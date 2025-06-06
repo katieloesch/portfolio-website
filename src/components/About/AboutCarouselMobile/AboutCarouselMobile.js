@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
-import './Slider.scss';
+import './AboutCarouselMobile.scss';
 
-const Slider = ({ slides, type }) => {
+const AboutCarouselMobile = ({ slides, type }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -61,4 +61,4 @@ const Slider = ({ slides, type }) => {
   );
 };
 
-export default Slider;
+export default AboutCarouselMobile;

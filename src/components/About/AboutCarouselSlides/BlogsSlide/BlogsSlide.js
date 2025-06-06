@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import BlogCard from './BlogCard/BlogCard';
-import BlogModal from './BlogModal/BlogModal';
-import './Media.scss';
+import BlogCard from '../../../BlogCard/BlogCard';
+import BlogModal from '../../BlogModal/BlogModal';
+import './BlogsSlide.scss';
 
-const Media = ({ mediaData, mediaLinks }) => {
+const BlogsSlide = ({ mediaData, mediaLinks }) => {
   const [showBlogPortal, setShowBlogPortal] = useState(false);
   const [modalContent, setModalContent] = useState({});
 
@@ -42,4 +42,4 @@ const Media = ({ mediaData, mediaLinks }) => {
   );
 };
 
-export default Media;
+export default BlogsSlide;
