@@ -1,0 +1,12 @@
+.blog-modal__links-container {
+  // border: 2px solid green;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  flex-wrap: wrap;
+}

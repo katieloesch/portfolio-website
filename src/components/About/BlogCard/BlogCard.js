@@ -4,13 +4,13 @@ import './BlogCard.scss';
 const BlogCard = ({ blog, onClick }) => {
   return (
     <div
-      className={`about-creator ${blog.className}`}
-      key={`about-media-item-${blog.className}`}
+      className={`about-carousel__slide__blog-card ${blog.className}`}
+      key={`about-carousel__slide__blog-card-${blog.className}`}
       onClick={onClick}
     >
-      <p>{blog.name}</p>
+      <p className='about-carousel__slide__blog-card__name'>{blog.name}</p>
 
-      <div className='img-container'>
+      <div className='about-carousel__slide__blog-card__img-container'>
         <img
           className={`${blog.className}-img`}
           src={blog.img}

@@ -1,7 +1,8 @@
 import React from 'react';
-import './ModalLink.scss';
 
-const ModalLink = ({ url, icon, className }) => {
+import './BlogModalLink.scss';
+
+const BlogModalLink = ({ url, icon, className }) => {
   if (url && url !== '') {
     return (
       <a
@@ -16,4 +17,4 @@ const ModalLink = ({ url, icon, className }) => {
   }
 };
 
-export default ModalLink;
+export default BlogModalLink;

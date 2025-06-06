@@ -4,7 +4,7 @@ import { CSSTransition } from 'react-transition-group';
 import { HiX } from 'react-icons/hi';
 
 import Backdrop from '../../Shared/Backdrop/Backdrop';
-import ModalLinks from './ModalLinks/ModalLinks';
+import BlogModalLinks from './BlogModalLinks/BlogModalLinks';
 import { aboutIcons } from '../../../assets/icons/icons_about';
 
 import './BlogModal.scss';
@@ -23,21 +23,23 @@ const Overlay = ({ show, type, data, closeModal, links }) => {
 
   const content = (
     <div className={`blog-modal ${data.className}-modal`}>
-      <div className='btn-close-modal'>
+      <div className='blog-modal__btn-close'>
         <button onClick={closeModal}>
           <HiX />
         </button>
       </div>
+
+      <div className='blog-modal__header'>
+        <h2 className='blog_modal__heading'>{data.name}</h2>
+      </div>
+
+      <BlogModalLinks data={data} icons={aboutIcons} list={links} />
 
       <div className={`blog-modal__main`}>
         <div className='blog-modal__main__img-container'>
           <img src={data.img} alt={data.alt} />
         </div>
         <div className='blog-modal__main__text-container'>
-          <div className='blog-modal__heading'>
-            <h2>{data.name}</h2>
-            <ModalLinks data={data} icons={aboutIcons} list={links} />
-          </div>
           <ul className='blog-modal-description'>
             {data.description.map((descriptionParagraph, index) => (
               <li

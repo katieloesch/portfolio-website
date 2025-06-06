@@ -1,20 +1,21 @@
-.about-media {
-  width: 75%;
-  height: 85%;
+.about-carousel__slide__content-blogs {
+  width: 85vw;
+  height: 100%;
   color: var(--grey-light);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
+  margin-top: 3rem;
 
-  h2 {
+  .about-carousel__slide__content-blogs__title {
     text-align: center;
     font-weight: 500;
     color: var(--primary);
   }
 
-  .about-creators {
+  .about-carousel__slide__content-blogs__blogs-container {
     width: 100%;
     height: 90%;
     display: flex;

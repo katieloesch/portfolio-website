@@ -1,5 +1,5 @@
 .about-column {
-  background-color: black;
+  // background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,7 +24,6 @@
   }
 
   h2 {
-    // color: var(--primary);
     text-align: center;
     font-weight: normal;
     font-size: clamp(1rem, 1.3rem, 1.5rem);
