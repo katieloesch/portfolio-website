@@ -52,8 +52,6 @@ const Overlay = ({ show, type, data, closeModal, links }) => {
           </ul>
         </div>
       </div>
-
-      <footer className={`blog-modal__footer`}></footer>
     </div>
   );
   return ReactDOM.createPortal(content, document.getElementById('modal-hook'));
