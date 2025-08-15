@@ -1,10 +1,10 @@
 import React from 'react';
 
-const AppContainer = (Component, idName, classNames) =>
+const BottomContainer = (Component, idName, classNames) =>
   function HOC() {
     console.log(idName);
     return (
-      <div id={idName} className={`app-cont ${classNames}`}>
+      <div id={idName} className={`app-cont app-cont-bottom ${classNames}`}>
         <div className='app-wrapper flex'>
           <Component />
         </div>
@@ -12,4 +12,4 @@ const AppContainer = (Component, idName, classNames) =>
     );
   };
 
-export default AppContainer;
+export default BottomContainer;

@@ -7,7 +7,7 @@ import { MdEmail } from 'react-icons/md';
 import { FaPaperPlane } from 'react-icons/fa';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
-import { AppContainer, MotionContainer } from '../../containers';
+import { BottomContainer, MotionContainer } from '../../containers';
 import { SectionHeading, BtnFill } from '../Shared';
 import { footerIcons } from '../../assets/icons/icons_footer';
 import { colors } from '../../assets/colors/colors';
@@ -115,7 +115,7 @@ const Contact = () => {
   return (
     <>
       <motion.div
-        className='footer-txt-container nav-section'
+        className='contact-txt-container nav-section'
         variants={variants}
         initial='initial'
         whileInView='animate'
@@ -124,7 +124,7 @@ const Contact = () => {
         {/* {  <motion.h1 className="h-text section-heading" variants={variants}>
           Get in touch
         </motion.h1>*/}
-        <SectionHeading section='footer' variants={variants}>
+        <SectionHeading section='contact' variants={variants}>
           Get in Touch
         </SectionHeading>
         <motion.p className='p-text' variants={variants}>
@@ -140,10 +140,10 @@ const Contact = () => {
           Leave a message and I'll be in touch!
         </motion.p>
 
-        <motion.div className='footer-socials' variants={variants}>
+        <motion.div className='contact-socials' variants={variants}>
           <a
             href='mailto:katie.loesch@pm.me'
-            className='footer-social-icon'
+            className='contact-social-icon'
             id='mail-icon'
           >
             <MdEmail />
@@ -153,7 +153,7 @@ const Contact = () => {
             href='https://github.com/katieloesch'
             target='_blank'
             rel='noopener noreferrer'
-            className='footer-social-icon'
+            className='contact-social-icon'
             id='github-icon'
           >
             <BsGithub />
@@ -163,7 +163,7 @@ const Contact = () => {
             href='https://www.linkedin.com/in/katie-loesch/'
             target='_blank'
             rel='noopener noreferrer'
-            className='footer-social-icon'
+            className='contact-social-icon'
             id='linkedin-icon'
           >
             <BsLinkedin />
@@ -171,7 +171,7 @@ const Contact = () => {
         </motion.div>
       </motion.div>
 
-      <div className='footer-form-container'>
+      <div className='contact-form-container'>
         <motion.div
           className='svg-container'
           initial={{ opacity: 1 }}
@@ -204,7 +204,7 @@ const Contact = () => {
 
         {!formSubmitted ? (
           <motion.form
-            className='footer-form'
+            className='contact-form'
             ref={form}
             onSubmit={handleFormSubmit}
             initial={{ opacity: 0 }}
@@ -258,8 +258,8 @@ const Contact = () => {
   );
 };
 
-export default AppContainer(
-  MotionContainer(Contact, 'footer'),
+export default BottomContainer(
+  MotionContainer(Contact, 'contact'),
   'contact',
   'bg-1'
 );

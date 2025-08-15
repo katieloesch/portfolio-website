@@ -1,4 +1,4 @@
-.footer {
+.contact {
   height: 100%;
   width: 80%;
   margin: auto;
@@ -7,7 +7,7 @@
   flex-direction: row;
   gap: 50px;
 
-  .footer-txt-container {
+  .contact-txt-container {
     flex: 1;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
       }
     }
 
-    .footer-socials {
+    .contact-socials {
       // mail | github | linkedin icons
       display: flex;
       justify-content: space-around;
@@ -55,7 +55,7 @@
         }
       }
 
-      .footer-social-icon {
+      .contact-social-icon {
         svg {
           width: 32px;
           height: 32px;
@@ -75,7 +75,7 @@
     }
   }
 
-  .footer-form-container {
+  .contact-form-container {
     flex: 1;
     flex-direction: row;
     position: relative;
@@ -92,7 +92,7 @@
       height: 100%;
     }
 
-    .footer-form {
+    .contact-form {
       display: flex;
       flex-direction: column;
       gap: 20px;
@@ -176,23 +176,19 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .footer {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    .footer-txt-container {
+  .contact {
+    .contact-txt-container {
       gap: 10px;
       flex: none;
       h1 {
         padding-bottom: 20px;
       }
-      .footer-socials {
+      .contact-socials {
         padding-top: 20px;
       }
     }
 
-    .footer-form-container {
+    .contact-form-container {
       flex: none;
       width: 80%;
     }
@@ -200,9 +196,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .footer {
+  .contact {
     width: 100%;
-    .footer-txt-container {
+    .contact-txt-container {
       p {
         font-size: 1.1rem;
 
@@ -213,8 +209,8 @@
         }
       }
 
-      .footer-socials {
-        .footer-social-icon {
+      .contact-socials {
+        .contact-social-icon {
           svg {
             width: 30px;
             height: 30px;
@@ -223,7 +219,7 @@
       }
     }
 
-    .footer-form-container {
+    .contact-form-container {
       width: 85%;
 
       .msg-container {
@@ -238,8 +234,8 @@
 }
 
 @media screen and (max-width: 335px) {
-  .footer {
-    .footer-txt-container {
+  .contact {
+    .contact-txt-container {
       p {
         font-size: 0.9rem;
 
@@ -250,8 +246,8 @@
         }
       }
 
-      .footer-socials {
-        .footer-social-icon {
+      .contact-socials {
+        .contact-social-icon {
           svg {
             width: 25px;
             height: 25px;
