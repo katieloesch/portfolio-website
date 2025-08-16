@@ -12,8 +12,8 @@
     border-radius: 20%;
 
     img {
-      width: 55%;
-      height: 55%;
+      width: 65%;
+      height: 65%;
     }
   }
 
@@ -22,5 +22,312 @@
     color: var(--grey);
     font-size: 1.15rem;
     color: var(--secondary);
+  }
+}
+
+#angular-icon-modal {
+  p {
+    color: #e73ba2;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/angular_color.svg');
+  }
+}
+#babel-icon-modal {
+  p {
+    color: #000;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/babel_color.svg');
+  }
+}
+
+#bootstrap-icon-modal {
+  p {
+    color: #8d58e2;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/bootstrap_color.svg');
+  }
+}
+
+#css-icon-modal {
+  p {
+    color: #0da3d4;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/css_color.svg');
+  }
+}
+
+#express-icon-modal {
+  p {
+    color: #c93d30;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/express_color.svg');
+  }
+}
+
+#firebase-icon-modal {
+  p {
+    color: #e99619;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/firebase_color.svg');
+  }
+}
+
+#firestore-icon-modal {
+  p {
+    color: #e99619;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/firestore_color.svg');
+  }
+}
+
+#git-icon-modal {
+  p {
+    color: #f34f29;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/git_color.svg');
+  }
+}
+
+#github-icon-modal {
+  p {
+    color: #8d58e2;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/github_color.svg');
+  }
+}
+
+#go-icon-modal {
+  p {
+    color: #01add8;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/go_color.svg');
+  }
+}
+
+#heroku-icon-modal {
+  p {
+    color: #8d58e2;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/heroku_color.svg');
+  }
+}
+
+#html-icon-modal {
+  p {
+    color: #e34b24;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/html_color.svg');
+  }
+}
+
+#javascript-icon-modal {
+  p {
+    color: #f2cd6f;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/javascript_color.svg');
+  }
+}
+
+#jwt-icon-modal {
+  p {
+    color: #d63aff;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/jwt_color.svg');
+  }
+}
+
+#linux-icon-modal {
+  p {
+    color: #249eff;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/linux_color.svg');
+  }
+}
+
+#mongodb-icon-modal {
+  p {
+    color: #46a438;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/mongodb_color.svg');
+    scale: 1.22;
+  }
+}
+
+#mongoose-icon-modal {
+  p {
+    color: #9e0303;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/mongoose_color.svg');
+    scale: 1.35;
+  }
+}
+
+#netlify-icon-modal {
+  p {
+    color: #32b5ba;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/netlify_color.svg');
+  }
+}
+
+#npm-icon-modal {
+  p {
+    color: #cb3837;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/npm_color.svg');
+  }
+}
+
+#nodejs-icon-modal {
+  p {
+    color: #46a438;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/nodejs_color.svg');
+  }
+}
+
+#openai-icon-modal {
+  p {
+    color: var(--grey-light);
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/openai_color.svg');
+  }
+}
+
+#passport-icon-modal {
+  p {
+    color: #000;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/passport_color.svg');
+  }
+}
+
+#postgresql-icon-modal {
+  p {
+    color: #1d649e;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/postgresql_color.svg');
+  }
+}
+
+#postman-icon-modal {
+  p {
+    color: #f37036;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/postman_color.svg');
+  }
+}
+
+#python-icon-modal {
+  p {
+    color: #ffcf46;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/python_color.svg');
+  }
+}
+
+#rails-icon-modal {
+  p {
+    color: #cd0000;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/rails_color.svg');
+  }
+}
+
+#react-icon-modal {
+  p {
+    color: #0da3d4;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/react_color.svg');
+  }
+}
+
+#redux-icon-modal {
+  p {
+    color: #8d58e2;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/redux_color.svg');
+  }
+}
+
+#ruby-icon-modal {
+  p {
+    color: #cd0000;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/ruby_color.svg');
+  }
+}
+
+#sass-icon-modal {
+  p {
+    color: #cf6b9e;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/sass_color.svg');
+  }
+}
+
+#typescript-icon-modal {
+  p {
+    color: #3178c6;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/typescript_color.svg');
+  }
+}
+
+#tailwind-icon-modal {
+  p {
+    color: #44a8b3;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/tailwind_color.svg');
+  }
+}
+
+#vite-icon-modal {
+  p {
+    color: #9467fe;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/vite_color.svg');
+  }
+}
+
+#yarn-icon-modal {
+  p {
+    color: #368fb9;
+  }
+  img {
+    content: url('./../../../../assets//icons/icons_skills/yarn_color.svg');
   }
 }

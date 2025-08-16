@@ -83,8 +83,8 @@ const Overlay = ({ show, type, data, closeModal }) => {
               name={skill.name}
               icon={skill.icon}
               className={`modal-skills-item`}
-              id={skill.id}
-              bg={colors.skillBg}
+              id={skill.id + '-modal'}
+              // bg={colors.skillBg}
               key={`modal-skill-${skill.id}`}
             />
           ))}
