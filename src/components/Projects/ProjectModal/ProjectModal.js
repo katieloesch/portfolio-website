@@ -27,10 +27,20 @@ const Overlay = ({ show, type, data, closeModal }) => {
       <div className='project-modal__links-container'>
         <div className='project-modal__links'>
           <a href={data.projectLink} target='_blank' rel='noreferrer'>
-            <div className='project-modal__link'>{workIcons.link}</div>
+            <div
+              className='project-modal__link'
+              id='project-modal__link-external'
+            >
+              {workIcons.link}
+            </div>
           </a>
           <a href={data.codeLink} target='_blank' rel='noreferrer'>
-            <div className='project-modal__link'>{workIcons.gitHub}</div>
+            <div
+              className='project-modal__link'
+              id='project-modal__link-github'
+            >
+              {workIcons.gitHub}
+            </div>
           </a>
         </div>
         <div></div>

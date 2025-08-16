@@ -6,7 +6,6 @@ const CopyrightFooter = () => {
   return (
     <div className='footer-copyright'>
       <p className='footer-copyright__txt'>
-        {footerTxt.stack}&nbsp;
         <span>{footerTxt.copyright}</span>&nbsp;{footerTxt.year}&nbsp;
         {footerTxt.author}&nbsp;
         {footerTxt.rights}
