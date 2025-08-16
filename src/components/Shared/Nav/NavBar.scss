@@ -10,72 +10,72 @@
   position: fixed;
   z-index: 2;
 
+  .nav-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.75rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      flex-direction: column;
+      position: relative;
+
+      div {
+        width: 5px;
+        height: 5px;
+        background: transparent;
+        border-radius: 50%;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+      }
+
+      a {
+        font-family: var(--font-nav);
+        color: var(--primary);
+        flex-direction: column;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        transition: 0.4s ease-in-out;
+        position: relative;
+
+        // @media screen and (min-width: 1450px) {
+        //   font-size: 1rem;
+        // }
+
+        &:hover {
+          color: var(--yellow);
+        }
+      }
+    }
+
+    li::after {
+      content: '';
+      position: absolute;
+      background-color: var(--yellow);
+      height: 1px;
+      width: 0;
+      left: 0;
+      bottom: -2px;
+      transition: all 0.6s ease;
+    }
+
+    li:hover::after {
+      width: 100%;
+    }
+
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+  }
+
   @media screen and (max-width: 1200px) {
     background: transparent;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
-  }
-}
-
-.nav-links {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.75rem;
-
-  li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    flex-direction: column;
-    position: relative;
-
-    div {
-      width: 5px;
-      height: 5px;
-      background: transparent;
-      border-radius: 50%;
-      margin-bottom: 5px;
-      transition: all 0.3s ease-in-out;
-    }
-
-    a {
-      font-family: var(--font-nav);
-      color: var(--primary);
-      flex-direction: column;
-      font-size: 0.8rem;
-      letter-spacing: 1px;
-      transition: 0.4s ease-in-out;
-      position: relative;
-
-      // @media screen and (min-width: 1450px) {
-      //   font-size: 1rem;
-      // }
-
-      &:hover {
-        color: var(--yellow);
-      }
-    }
-  }
-
-  li::after {
-    content: '';
-    position: absolute;
-    background-color: var(--yellow);
-    height: 1px;
-    width: 0;
-    left: 0;
-    bottom: -2px;
-    transition: all 0.6s ease;
-  }
-
-  li:hover::after {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 1200px) {
-    display: none;
   }
 }

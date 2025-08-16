@@ -10,7 +10,7 @@ const footerTxt = {
   linkedinName: 'in/katie-loesch',
   linkedinLink: 'https://www.linkedin.com/in/katie-loesch/',
   github: 'https://github.com/katieloesch',
-  stack: 'Designed & built with React.js by Katie Loesch',
+  stack: 'Built with React.js',
 };
 
 export { footerTxt };

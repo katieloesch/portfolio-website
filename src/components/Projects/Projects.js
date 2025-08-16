@@ -38,11 +38,11 @@ const Projects = () => {
   const active = useContext(CurrentContext);
 
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef('work');
+  const ref = useRef('projects');
 
   // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
-  const dot = document.querySelector('#work-dot');
+  const dot = document.querySelector('#projects-dot');
   // const navBarLinks = document.querySelectorAll('.nav-anchor');
   // const navBarLink = document.querySelector('#work-a');
 
@@ -54,7 +54,7 @@ const Projects = () => {
       { rootMargin: '-300px' }
     );
     if (isIntersecting) {
-      active.current = 'work';
+      active.current = 'projects';
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
@@ -139,7 +139,7 @@ const Projects = () => {
 };
 
 export default ComponentContainer(
-  MotionContainer(Projects, 'work'),
-  'work',
+  MotionContainer(Projects, 'projects'),
+  'projects',
   'bg-2'
 );

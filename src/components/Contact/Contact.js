@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useRef, useEffect, useContext } from 'react';
 import emailjs from '@emailjs/browser';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { BsGithub, BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { FaPaperPlane } from 'react-icons/fa';
@@ -9,7 +9,6 @@ import { FaPaperPlane } from 'react-icons/fa';
 import { CurrentContext } from '../../contexts/CurrentContext';
 import { ComponentContainerLast, MotionContainer } from '../../containers';
 import { SectionHeading, BtnFill } from '../Shared';
-import { contactIcons } from '../../assets/icons/icons_contact';
 import { colors } from '../../assets/colors/colors';
 import './Contact.scss';
 

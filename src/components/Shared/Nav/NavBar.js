@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { navItems } from './navItems';
 import { motion } from 'framer-motion';
+
 // import { colors } from '../../../assets/colors/colors';
 
 import './NavBar.scss';
