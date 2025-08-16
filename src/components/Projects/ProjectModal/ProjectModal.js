@@ -6,7 +6,7 @@ import { CSSTransition } from 'react-transition-group';
 import { Backdrop } from '../../Shared';
 import ProjectImgCarousel from './ProjectImgCarousel/ProjectImgCarousel';
 import { workIcons } from '../../../assets/icons/icons_work';
-import { colors } from '../../../assets/colors/colors';
+// import { colors } from '../../../assets/colors/colors';
 import ProjectSkill from './ProjectSkill/ProjectSkill';
 import './ProjectModal.scss';
 
