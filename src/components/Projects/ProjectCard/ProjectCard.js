@@ -34,6 +34,7 @@ const ProjectCard = ({
             <div className='project-card__img-overlay__btn-icon-container'>
               <BsEyeFill className='work-icon' />
             </div>
+            <span>Details</span>
           </button>
         </div>
       </div>

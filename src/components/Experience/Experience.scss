@@ -5,8 +5,6 @@
   width: 100%;
 
   h1 {
-    margin-bottom: 100px;
-
     @media screen and (max-width: 1450px) {
       margin-bottom: 45px;
     }
@@ -37,7 +35,7 @@
   p {
     font-weight: 500;
     font-size: 1rem;
-    color: var(--grey);
+    color: hotpink;
     text-align: right;
   }
 
@@ -96,13 +94,13 @@
 
     h3 {
       font-size: 1.25rem;
-      color: var(--primary);
+      color: var(--white);
     }
 
     h4 {
       font-weight: 500;
       font-size: 1.25rem;
-      color: var(--primary);
+      color: var(--white);
     }
 
     ul {
@@ -112,7 +110,7 @@
 
     li {
       //   font-weight: 400;
-      color: var(--grey-light);
+      color: var(--yellow);
       font-size: 1.1rem;
       text-align: justify;
       list-style: disc;
@@ -182,18 +180,17 @@
   }
 
   .vertical-timeline-element-title {
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 1.3rem;
     font-weight: normal;
+    margin-top: -60px;
 
     @media screen and (max-width: 1170px) {
       margin-top: -10px;
     }
-
-    margin-top: -60px;
   }
   .vertical-timeline-element-subtitle {
-    color: var(--primary);
+    color: var(--secondary);
     font-size: 1.1rem;
     font-weight: normal;
     padding-top: 3px;
@@ -209,7 +206,7 @@
     li {
       text-align: left;
       list-style: disc;
-      color: var(--grey-light);
+      color: var(--primary);
       width: 100%;
       font-size: 1rem;
       margin-left: 19px;
@@ -237,10 +234,10 @@
 }
 
 .timeline-date {
-  color: var(--secondary);
+  color: var(--white);
   opacity: 1 !important;
   font-size: 1.04rem !important;
-  font-family: var(--font-nav);
+  font-family: var(--font-main);
 }
 
 .vertical-timeline-element-content-arrow {

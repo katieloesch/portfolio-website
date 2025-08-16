@@ -6,8 +6,8 @@
   justify-content: flex-start;
 
   div {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
 
     img {
@@ -34,7 +34,7 @@
   }
 
   p {
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     margin-top: 0.5rem;
     color: var(--grey);
   }
@@ -53,7 +53,7 @@
 }
 #express-icon {
   img {
-    scale: 1.05;
+    scale: 1;
   }
 }
 #firebase-icon {
@@ -107,6 +107,11 @@
     scale: 1.06;
   }
 }
+#postgresql-icon {
+  img {
+    margin-top: 2px;
+  }
+}
 #python-icon {
   img {
     scale: 1.05;
@@ -133,9 +138,10 @@
     scale: 1.15;
   }
 }
-#typescript-icon {
+#typescript-icon,
+#javascript-icon {
   img {
-    scale: 0.9;
+    scale: 0.95;
   }
 }
 #vite-icon {
@@ -146,6 +152,14 @@
 }
 
 //skills icons changing color on hover
+#angular-icon:hover {
+  p {
+    color: #e73ba2;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/angular_color.svg');
+  }
+}
 #babel-icon:hover {
   p {
     color: #000;

@@ -1,8 +1,7 @@
 import React from 'react';
 
-const BottomContainer = (Component, idName, classNames) =>
+const ComponentContainerLast = (Component, idName, classNames) =>
   function HOC() {
-    console.log(idName);
     return (
       <div id={idName} className={`app-cont app-cont-bottom ${classNames}`}>
         <div className='app-wrapper flex'>
@@ -12,4 +11,4 @@ const BottomContainer = (Component, idName, classNames) =>
     );
   };
 
-export default BottomContainer;
+export default ComponentContainerLast;

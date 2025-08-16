@@ -1,7 +1,7 @@
 .about-carousel__slide__content-blogs {
-  width: 85vw;
+  width: 82%;
   height: 100%;
-  color: var(--grey-light);
+  color: var(--primary);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +12,7 @@
   .about-carousel__slide__content-blogs__title {
     text-align: center;
     font-weight: 500;
-    color: var(--primary);
+    color: var(--secondary);
   }
 
   .about-carousel__slide__content-blogs__blogs-container {

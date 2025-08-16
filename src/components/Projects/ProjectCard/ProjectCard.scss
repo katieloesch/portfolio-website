@@ -1,13 +1,10 @@
 .project-card {
   width: 270px;
   flex-direction: column;
+  border-radius: 0.75rem;
   margin: 2rem;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: transparent;
-  color: var(--white);
-  border: 2px solid hsla(129, 87%, 70%, 0.5);
-  cursor: pointer;
+  background-color: var(--primary);
+  // border: 2px solid var(--primary-a);
   transition: all 0.3s ease;
 
   &:hover {
@@ -19,6 +16,11 @@
     height: 230px;
     position: relative;
     overflow: hidden;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border: 1px solid var(--primary-a);
+
+    cursor: pointer;
 
     img,
     .project-card__img-overlay {
@@ -32,6 +34,7 @@
       aspect-ratio: 1/1;
       object-fit: cover;
       object-position: center;
+      border-radius: 0.75rem;
     }
 
     @media screen and (min-width: 2000px) {
@@ -39,71 +42,91 @@
     }
 
     .project-card__img-overlay {
-      background: rgba(67, 166, 227, 0.4);
       inset: 0;
       position: absolute;
       display: flex;
       justify-content: center;
+      align-items: center;
       flex-direction: column;
       align-items: center;
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+      background-color: var(--bg2);
+      gap: 2rem;
 
       .project-card__img-overlay__overview {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        padding-top: 20px;
+        // padding-top: 3rem;
         gap: 10px;
 
         p {
           text-align: center;
-          color: var(--white);
-          font-size: 1.15rem;
+          font-weight: 700;
+          color: var(--secondary);
+          font-size: 1.25rem;
         }
 
         p:last-of-type {
-          color: var(--secondary-light);
-          font-size: 1.05rem;
+          color: var(--white);
+          font-size: 1.15rem;
+          font-weight: 500;
         }
       }
 
       button {
         background-color: transparent;
         border: none;
-        width: 100%;
-        height: 100%;
+        // width: 128px;
+        // height: 45px;
+        padding: 1px 10px 1px 6px;
+        border-radius: 0.75rem;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 1px solid var(--primary);
+        gap: 0.2rem;
 
         .project-card__img-overlay__btn-icon-container {
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
+          display: flex;
+          width: 40px;
+          height: 40px;
+          border-radius: 0.5rem;
           display: flex;
           align-items: center;
           justify-content: center;
-          // background-color: rgba(0, 0, 0, 0.5);
-          background-color: var(--bg2);
+          background-color: transparent;
           color: #fff;
-          margin: 1rem;
           font-weight: 800;
-          cursor: pointer;
           transition: 300ms ease-in-out;
 
           svg {
-            width: 60%;
-            height: 60%;
-
-            color: rgba(255, 255, 255, 0.8);
-
+            width: 70%;
+            height: 70%;
+            color: var(--primary);
             transition: 220ms ease-in-out;
           }
+        }
 
-          &:hover {
-            svg {
-              color: var(--secondary-light);
-            }
+        span {
+          font-size: 1.1rem;
+          color: var(--primary);
+          font-weight: 500;
+          transition: 220ms ease-in-out;
+        }
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid var(--secondary);
+
+          span {
+            color: var(--secondary);
+          }
+
+          svg {
+            color: var(--secondary);
           }
         }
       }
@@ -111,17 +134,23 @@
   }
   .project-card__txt-container {
     padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     position: relative;
     flex-direction: column;
 
     h4 {
-      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
       text-align: center;
-      color: var(--primary);
+      color: var(--bg1);
 
-      font-size: 1.1rem;
-      font-weight: normal;
+      font-size: 1.3rem;
+      // font-weight: normal;
       @media screen and (min-width: 2000px) {
         margin-top: 3rem;
       }
@@ -134,8 +163,8 @@
   // effect: BLUR
   .project-card__img-container:hover {
     .project-card__img-overlay.blur {
-      backdrop-filter: blur(3px);
-      background-color: rgba(18, 66, 96, 0.78);
+      // backdrop-filter: blur(3px);
+      // background-color: var(--primary);
     }
   }
 

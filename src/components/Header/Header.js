@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { AppContainer } from '../../containers';
+import { ComponentContainer } from '../../containers';
 import { useState, useRef, useEffect, useContext } from 'react';
 import { CurrentContext } from '../../contexts/CurrentContext';
 import ParticleBackground from './particleBackground';
@@ -107,4 +107,4 @@ const Header = () => {
   );
 };
 
-export default AppContainer(Header, 'home');
+export default ComponentContainer(Header, 'home');

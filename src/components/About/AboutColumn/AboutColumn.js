@@ -6,7 +6,7 @@ const Column = ({ img, title, txt }) => {
     <div className={'about-column'}>
       <div className={`column-img-container ${img.className}`}>{img}</div>
 
-      <h2 className='grad1'>{title}</h2>
+      <h2 className=''>{title}</h2>
       <p>{txt}</p>
     </div>
   );

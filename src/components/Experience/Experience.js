@@ -6,7 +6,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { SectionHeading } from '../Shared';
 import { timelineData } from '../../api_data/api_timeline';
 import { CurrentContext } from '../../contexts/CurrentContext';
@@ -50,7 +50,7 @@ const Experience = () => {
   return (
     <div className='experiences flex nav-section' ref={ref}>
       <SectionHeading section='experience'>
-        Experience & Education
+        Experience + Education
       </SectionHeading>
       <div className='timeline'>
         <VerticalTimeline className='timeline-container'>
@@ -93,7 +93,7 @@ const Experience = () => {
   );
 };
 
-export default AppContainer(
+export default ComponentContainer(
   MotionContainer(Experience, 'experience'),
   'experience',
   'bg-1'

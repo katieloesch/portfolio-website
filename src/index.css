@@ -42,6 +42,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Astro';
+  src: url('./assets/fonts/astro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* --font-typewriter */
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -50,8 +57,10 @@
   /* font variables */
   --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode',
-    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  --font-nav: 'Astro', Arial, sans-serif;
+  /* --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode',
+    'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
   --font-editorial: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-typewriter: 'VT323', monospace;
@@ -59,19 +68,27 @@
   --typewriterSpeed: 4s;
 
   /* colour variables */
-  --primary: #72f586ec;
-  --primary-a: rgba(114, 245, 134, 0.85);
+  /* --primary: #72f586ec; */
+  /* --primary: #7ee787; */
+  --primary: #b6c0e6;
+  --primary-a: #b6c0e6;
   /* --secondary: #ff5fec; */
 
-  --secondary: rgb(250, 95, 198);
-  --secondary-a: rgba(255, 122, 211, 0.4);
+  /* --secondary: rgb(250, 95, 198); */
+  /* --secondary: #ffdc8b; */
+  /* --secondary: #b6c0e6; */
+  --secondary: #72f586ec;
+  --secondary-a: rgba(118, 145, 126, 0.3);
   --secondary-light: rgb(252, 118, 207);
   --secondary-dark: rgb(224, 7, 163);
 
-  --bg1: rgb(16, 58, 85);
+  --bg1: #103a55;
   --bg2: #082434;
 
+  /* --bg2: #1f2236; */
+  /* --bg2: #1f2236; */
   --yellow: rgb(254, 240, 113);
+  /* --yellow: #ffdc8b; */
   --yellow-a: rgba(254, 240, 113, 0.55);
   --red: rgb(237, 74, 90);
 
@@ -127,11 +144,28 @@ body #modal-hook {
 .bg-1 {
   /* | skills | experience | contact | */
   background-color: var(--bg2);
+  /* background-image: radial-gradient(
+    circle,
+    #103a55,
+    #0d344c,
+    #0b2f44,
+    #09293c,
+    #082434
+  ); */
 }
 
 .bg-2 {
   /* | work | about | */
   background-color: var(--bg1);
+
+  /* background-image: radial-gradient(
+    circle,
+    #082434,
+    #09293c,
+    #0b2f44,
+    #0d344c,
+    #103a55
+  ); */
 }
 
 /* type selectors */

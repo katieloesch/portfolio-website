@@ -1,25 +1,23 @@
 .skills-category {
-  // border: 2px solid pink;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-start;
   width: 100%;
-  gap: 5rem;
+  border: 1px solid var(--bg2);
+  // background-color: rgba(182, 192, 230, 0.322);
+  border-bottom: 1px solid var(--secondary-a);
 
   h2 {
-    background: linear-gradient(
-      to right,
-      rgba(128, 128, 128, 0.5),
-      rgba(159, 169, 184, 0.9)
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
+    display: flex;
+    color: var(--primary);
     font-weight: 500;
     width: 15rem;
-    text-align: right;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    // background-color: red;
   }
 
   .skills-list {
@@ -45,25 +43,23 @@
 
   @media screen and (max-width: 1030px) {
     flex-direction: column;
+    border-bottom: none;
+
     gap: 8px;
     h2 {
-      background: linear-gradient(
-        to right,
-        rgba(250, 95, 196, 0.623),
-        rgba(198, 111, 167, 0.881)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-      text-fill-color: transparent;
       width: 100%;
       text-align: center;
       margin-left: 0rem;
       padding-top: 15px;
+      color: var(--secondary);
     }
 
     .skills-list {
       justify-content: center;
     }
   }
+}
+
+.skills-category:last-of-type {
+  border-bottom: none;
 }

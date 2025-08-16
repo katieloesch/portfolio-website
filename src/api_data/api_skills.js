@@ -9,21 +9,23 @@ const skills = [
     className: 'frontend-skills',
     list: [
       tech.react,
+      tech.angular,
       tech.vite,
       tech.javascript,
-      tech.html,
-      tech.css,
+      tech.typescript,
+      // tech.html,
+      // tech.css,
       tech.sass,
       tech.tailwind,
     ],
   },
+
   {
     title: 'Backend',
     id: 1,
     className: 'backend-skills',
     list: [tech.nodejs, tech.express, tech.ruby, tech.rails],
   },
-
   {
     title: 'Databases / Data Management',
     id: 2,
@@ -46,7 +48,7 @@ const skills = [
     title: 'Currently Learning',
     id: 4,
     className: 'learning-skills',
-    list: [tech.python, tech.linux, tech.typescript, tech.go],
+    list: [tech.python, tech.linux, tech.go],
   },
 ];
 

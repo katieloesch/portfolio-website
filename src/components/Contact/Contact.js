@@ -7,9 +7,9 @@ import { MdEmail } from 'react-icons/md';
 import { FaPaperPlane } from 'react-icons/fa';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
-import { BottomContainer, MotionContainer } from '../../containers';
+import { ComponentContainerLast, MotionContainer } from '../../containers';
 import { SectionHeading, BtnFill } from '../Shared';
-import { footerIcons } from '../../assets/icons/icons_footer';
+import { contactIcons } from '../../assets/icons/icons_contact';
 import { colors } from '../../assets/colors/colors';
 import './Contact.scss';
 
@@ -17,7 +17,7 @@ const Contact = () => {
   //Navigation
   const active = useContext(CurrentContext);
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef('contact');
+  const ref = useRef(null);
 
   // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
@@ -34,7 +34,7 @@ const Contact = () => {
     );
 
     if (isIntersecting) {
-      active.current = 'about';
+      active.current = 'contact';
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
@@ -69,7 +69,7 @@ const Contact = () => {
   //end motion
 
   const iconRef = useRef();
-  const isInView = useInView(iconRef, { margin: '-100px' });
+  // const isInView = useInView(iconRef, { margin: '-100px' });
 
   //EmailJS parameters
   //emails sent to 'katie.loesch@pm.me'
@@ -121,20 +121,13 @@ const Contact = () => {
         whileInView='animate'
         ref={iconRef}
       >
-        {/* {  <motion.h1 className="h-text section-heading" variants={variants}>
-          Get in touch
-        </motion.h1>*/}
-        <SectionHeading section='contact' variants={variants}>
+        <SectionHeading section='footer' variants={variants}>
           Get in Touch
         </SectionHeading>
+
         <motion.p className='p-text' variants={variants}>
-          Want to leave some feedback?
-          <img src={footerIcons.feedback} alt='feedback' />
-        </motion.p>
-        <motion.p className='p-text' variants={variants}>
-          {' '}
-          Or just have a chat?{' '}
-          <img src={footerIcons.coffee} alt='coffee' ref={ref} />{' '}
+          Want to leave some feedback or just have a chat?
+          {/* <img src={contactIcons.coffee} alt='coffee' /> */}
         </motion.p>
         <motion.p className='p-text' variants={variants}>
           Leave a message and I'll be in touch!
@@ -172,7 +165,7 @@ const Contact = () => {
       </motion.div>
 
       <div className='contact-form-container'>
-        <motion.div
+        {/* <motion.div
           className='svg-container'
           initial={{ opacity: 1 }}
           whileInView={{ opacity: 0 }}
@@ -200,16 +193,17 @@ const Contact = () => {
             C32.666,7.326,25.339,0,16.333,0z'
             />
           </svg>
-        </motion.div>
+        </motion.div> */}
 
         {!formSubmitted ? (
           <motion.form
             className='contact-form'
             ref={form}
             onSubmit={handleFormSubmit}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 3, duration: 1 }}
+            // transition={{ delay: 3, duration: 1 }}
+            variants={variants}
+            initial='initial'
+            whileInView='animate'
           >
             <input
               className='p-text'
@@ -241,6 +235,7 @@ const Contact = () => {
               autoComplete='off'
               rows={7}
               required
+              ref={ref}
             />
 
             <BtnFill type={'submit'} id='btn-submit-contact-form' size='large'>
@@ -258,7 +253,7 @@ const Contact = () => {
   );
 };
 
-export default BottomContainer(
+export default ComponentContainerLast(
   MotionContainer(Contact, 'contact'),
   'contact',
   'bg-1'

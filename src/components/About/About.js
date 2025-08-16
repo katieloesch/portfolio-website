@@ -1,6 +1,6 @@
 import React, { useContext, useState, useRef, useEffect } from 'react';
 
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { SectionHeading } from '../Shared';
 
 import AboutsSlide from './AboutCarouselSlides/AboutsSlide/AboutsSlide';
@@ -119,4 +119,8 @@ const About = () => {
   );
 };
 
-export default AppContainer(MotionContainer(About, 'about'), 'about', 'bg-2');
+export default ComponentContainer(
+  MotionContainer(About, 'about'),
+  'about',
+  'bg-2'
+);

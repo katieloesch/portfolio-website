@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import { motion } from 'framer-motion';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { BtnFill, SectionHeading } from '../Shared';
 import { projects } from '../../api_data/api_projects';
 import { colors } from '../../assets/colors/colors';
@@ -138,4 +138,8 @@ const Projects = () => {
   );
 };
 
-export default AppContainer(MotionContainer(Projects, 'work'), 'work', 'bg-2');
+export default ComponentContainer(
+  MotionContainer(Projects, 'work'),
+  'work',
+  'bg-2'
+);

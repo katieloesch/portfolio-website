@@ -7,7 +7,7 @@ import SkillsCategory from './SkillsCategory/SkillsCategory';
 import { SectionHeading } from '../Shared';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { colors } from '../../assets/colors/colors';
 import './Skills.scss';
 
@@ -47,23 +47,31 @@ const Skills = () => {
   }, [isIntersecting, active, dot, navDots]);
 
   return (
-    <div className='skills-section flex nav-section' ref={ref}>
-      <SectionHeading section='skills'>Technologies</SectionHeading>
-      <div className='skills-container flex'>
-        <motion.div className='categories-container flex'>
+    <div className='skills-section nav-section' ref={ref}>
+      <SectionHeading section='skills'>Skills + Technologies</SectionHeading>
+      <div className='skills-container'>
+        <motion.div className='categories-container'>
           {skills.map((category, index) => (
             <SkillsCategory
               category={category}
               key={`skills-category-${index}`}
             />
           ))}
+          {/* <div className='categories-container__top-row'>
+            <SkillsCategory category={skills[0]} />
+            <SkillsCategory category={skills[1]} />
+          </div>
+          <div className='categories-container__bottom-row'>
+            <SkillsCategory category={skills[2]} />
+            <SkillsCategory category={skills[3]} />
+          </div> */}
         </motion.div>
       </div>
     </div>
   );
 };
 
-export default AppContainer(
+export default ComponentContainer(
   MotionContainer(Skills, 'skills'),
   'skills',
   'bg-1'

@@ -19,7 +19,7 @@ const BlogsSlide = ({ mediaData, mediaLinks }) => {
 
   return (
     <div className='about-carousel__slide__content-blogs'>
-      <h2 className='grad1 about-carousel__slide__content-blogs__title'>
+      <h2 className='about-carousel__slide__content-blogs__title'>
         Blogs & Creators I follow:
       </h2>
 

@@ -1,8 +1,7 @@
 import React from 'react';
 
-const AppContainer = (Component, idName, classNames) =>
+const ComponentContainer = (Component, idName, classNames) =>
   function HOC() {
-    console.log(idName);
     return (
       <div id={idName} className={`app-cont ${classNames}`}>
         <div className='app-wrapper flex'>
@@ -12,4 +11,4 @@ const AppContainer = (Component, idName, classNames) =>
     );
   };
 
-export default AppContainer;
+export default ComponentContainer;

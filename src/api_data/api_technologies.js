@@ -1,6 +1,12 @@
 import { skillIcons } from '../assets/icons/icons_skills';
 
 const technologies = {
+  angular: {
+    name: 'Angular',
+    icon: skillIcons.angular_primary,
+    id: 'angular-icon',
+    alt: 'angular icon',
+  },
   bootstrap: {
     name: 'Bootstrap',
     icon: skillIcons.bootstrap_primary,

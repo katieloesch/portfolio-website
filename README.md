@@ -144,10 +144,17 @@ npx create-react-app .
 ### UI and Design
 
 - **Fonts**
-  - main: \'**Nulshock**\', designed by **Typodermic Fonts**
-    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/nulshock#google_vignette)</sub>
-  - header: \'**VT323**\', designed by **Peter Hull**
-    - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub>
+  <!-- - main: \'**Nulshock**\', designed by **Typodermic Fonts**
+    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/nulshock#google_vignette)</sub> -->
+
+  - main: \'**Sofia Pro**\', designed by **Olivier Gourvat (Mostardesign)**
+    - <sub>[font.download](https://font.download/font/sofia-pro)</sub>
+  - navbar & section headings: \'**Astro**\' designed by **Nestype**
+    - <sub>[font.download](https://font.download/font/astro-futuristic-font)</sub>
+
+  <!-- - header: \'**VT323**\', designed by **Peter Hull**
+    - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub> -->
+
 - **Icons**
   - **Iconify**
     - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>

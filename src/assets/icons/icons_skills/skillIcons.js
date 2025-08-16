@@ -1,6 +1,7 @@
 //icons source:
 // https://icon-sets.iconify.design/
 
+import angular_primary from './angular_primary.svg';
 import babel_primary from './babel_primary.svg';
 import bootstrap_primary from './bootstrap_primary.svg';
 import css_primary from './css_primary.svg';
@@ -36,6 +37,7 @@ import vite_primary from './vite_primary.svg';
 import yarn_primary from './yarn_primary.svg';
 
 const skillIcons = {
+  angular_primary,
   babel_primary,
   bootstrap_primary,
   css_primary,

@@ -7,18 +7,20 @@
   transition: all 0.3s ease-in-out;
 
   div {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    width: 62px;
+    height: 62px;
+    border-radius: 20%;
 
     img {
-      width: 50%;
-      height: 50%;
+      width: 55%;
+      height: 55%;
     }
   }
 
   p {
     margin-top: 0.5rem;
     color: var(--grey);
+    font-size: 1.15rem;
+    color: var(--secondary);
   }
 }
