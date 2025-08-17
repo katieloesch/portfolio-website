@@ -73,7 +73,7 @@ const About = () => {
           <div className='about__intro__avatar-container'>
             <img
               className='about__intro__avatar-img'
-              src={images.avatar2Svg}
+              src={images.avatar3}
               alt='avatar'
             />
           </div>

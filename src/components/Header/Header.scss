@@ -32,7 +32,7 @@
     position: absolute;
     top: 30%;
     // opacity: 0;
-    // transform: translateX(-25rem);
+    transform: translateX(-25rem);
     animation: fadeInLtR 2.5s ease forwards;
   }
 
@@ -51,17 +51,20 @@
       width: 100%;
       width: 100%;
       letter-spacing: 5px;
+      // border: 2px solid green;
 
       .greeting {
         font-family: var(--font-typewriter);
         color: var(--yellow);
         width: 100%;
 
-        font-size: 32px;
+        font-size: 25px;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-weight: 400;
+        // background-color: red;
 
         span {
           font-size: 2.5rem;
@@ -70,31 +73,34 @@
       }
 
       .intro {
-        font-family: var(--font-editorial);
+        font-family: var(--font-nav);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
-        margin-top: 1rem;
+        // margin-top: 1rem;
+        // background-color: maroon;
 
         .header-name {
-          font-family: var(--font-editorial);
+          font-family: var(--font-nav);
           position: relative;
           text-align: center;
           color: var(--yellow);
-          margin-bottom: 1rem;
+          // margin-bottom: 0.2rem;
           font-size: 3rem;
+          height: 8rem;
           text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
             -0.025em -0.05em 0 rgba(0, 255, 0, 0.75),
             0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
           animation: header-name 500ms infinite;
+          // border: 2px solid white;
 
           span {
             position: absolute;
             top: 0;
             left: 0;
-            font-family: var(--font-editorial);
+            font-family: var(--font-nav);
           }
 
           span:first-child {
@@ -158,7 +164,7 @@
           align-items: center;
           color: var(--yellow);
           text-align: right;
-          font-size: 32px;
+          font-size: 31px;
           font-weight: 700;
           text-align: center;
           width: max-content;

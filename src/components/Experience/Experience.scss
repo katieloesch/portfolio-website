@@ -2,68 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
+  // border: 1px solid yellow;
 
   h1 {
     @media screen and (max-width: 1450px) {
       margin-bottom: 45px;
     }
-  }
-}
-
-.experiences {
-  // flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-
-  .experience-container {
-    width: 100%;
-    display: none;
-  }
-}
-
-.experience-year {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 20px;
-
-  p {
-    font-weight: 500;
-    font-size: 1rem;
-    color: hotpink;
-    text-align: right;
-  }
-
-  .experience-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 2px solid var(--bg2);
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-  }
-
-  .exp-img-1 {
-    padding-top: 2px;
-  }
-  .exp-img-2 {
-    padding: 2px;
-  }
-  .exp-img-3 {
-    padding: 10px;
   }
 }
 
@@ -81,78 +27,6 @@
   }
 }
 
-.experience-works {
-  flex: 1;
-
-  .experience-work {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-
-    h3 {
-      font-size: 1.25rem;
-      color: var(--white);
-    }
-
-    h4 {
-      font-weight: 500;
-      font-size: 1.25rem;
-      color: var(--white);
-    }
-
-    ul {
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    li {
-      //   font-weight: 400;
-      color: var(--yellow);
-      font-size: 1.1rem;
-      text-align: justify;
-      list-style: disc;
-    }
-
-    li::marker {
-      color: var(--primary);
-    }
-  }
-}
-
-.experience-item.rev {
-  flex-direction: row-reverse;
-
-  .experience-year {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .experience-works {
-    padding-right: 20px;
-
-    div {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-
-      div {
-        h3,
-        h4 {
-          text-align: right;
-        }
-
-        p {
-          align-items: center;
-          text-align: right;
-        }
-      }
-    }
-  }
-}
-
 .timeline {
   display: flex;
   align-items: center;
@@ -166,24 +40,34 @@
     border-radius: 50%;
   }
 
+  #timeline-img-0 {
+    // udemy logo
+    padding: 9px;
+  }
   #timeline-img-1 {
-    // OU logo
+    // GA logo
     padding-top: 2px;
+    scale: 1.05;
   }
   #timeline-img-2 {
-    // LIH logo
-    padding: 2px;
+    // OU logo
+    scale: 1.1;
   }
   #timeline-img-3 {
-    // Warwick logo
+    // LIH logo
     padding: 7px;
+    scale: 1.2;
+  }
+  #timeline-img-4 {
+    // Warwick logo
+    scale: 0.85;
   }
 
   .vertical-timeline-element-title {
     color: var(--secondary);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: normal;
-    margin-top: -60px;
+    margin-top: -45px;
 
     @media screen and (max-width: 1170px) {
       margin-top: -10px;
@@ -210,6 +94,12 @@
       width: 100%;
       font-size: 1rem;
       margin-left: 19px;
+    }
+
+    a:hover {
+      li {
+        color: var(--white);
+      }
     }
   }
 }

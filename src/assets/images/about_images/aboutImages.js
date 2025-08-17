@@ -2,6 +2,7 @@ import avatar1 from './avatar1.png';
 import avatar2 from './avatar2.png';
 import avatar1Svg from './avatar1.svg';
 import avatar2Svg from './avatar2.svg';
+import avatar3 from './avatar3.png';
 import profilePic from './profile_pic.jpg';
 
 import academind from './academind.png';
@@ -22,6 +23,7 @@ import ztm3 from './ztm_3.png';
 const aboutImages = {
   avatar1,
   avatar2,
+  avatar3,
   avatar1Svg,
   avatar2Svg,
   profilePic,

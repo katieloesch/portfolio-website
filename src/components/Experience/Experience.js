@@ -48,7 +48,7 @@ const Experience = () => {
   }, [isIntersecting, active, dot, navDots]);
 
   return (
-    <div className='experiences flex nav-section' ref={ref}>
+    <div className='experience flex nav-section' ref={ref}>
       <SectionHeading section='experience'>
         Experience + Education
       </SectionHeading>
@@ -77,13 +77,27 @@ const Experience = () => {
                 {timelineItem.company}
               </h4>
               <ul className='timeline-item-description' id='description'>
-                {timelineItem.description.map((descriptionItem, index) => (
-                  <li
-                    key={`timeline-description-item-${timelineItem.id}-${index}`}
-                  >
-                    {descriptionItem}
-                  </li>
-                ))}
+                {timelineItem.description.map((descriptionItem, index) => {
+                  return timelineItem.id !== 0 ? (
+                    <li
+                      key={`timeline-description-item-${timelineItem.id}-${index}`}
+                    >
+                      {descriptionItem}
+                    </li>
+                  ) : (
+                    <a
+                      href={timelineData[0].links[index]}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      <li
+                        key={`timeline-description-item-${timelineItem.id}-${index}`}
+                      >
+                        {descriptionItem}
+                      </li>
+                    </a>
+                  );
+                })}
               </ul>
             </VerticalTimelineElement>
           ))}
