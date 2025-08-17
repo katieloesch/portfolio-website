@@ -33,7 +33,7 @@ const Projects = () => {
     'MERN',
     'Rails',
     'Full-Stack',
-    'Responsive Design',
+    // 'Responsive Design',
   ];
   const active = useContext(CurrentContext);
 

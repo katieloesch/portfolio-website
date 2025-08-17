@@ -12,7 +12,8 @@ const projects = [
     projectLink: 'http://hunting-buddy.onrender.com',
     codeLink: 'https://github.com/katieloesch/hunting-buddy',
     imgArr: projectImages.huntingBuddy,
-    tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+    // tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+    tags: ['React', 'MERN', 'Full-Stack', 'All'],
     skills: [
       tech.react,
       tech.javascript,
@@ -34,7 +35,8 @@ const projects = [
     projectLink: 'https://placebook.katieloesch.co.uk/',
     codeLink: 'https://github.com/katieloesch/placebook',
     imgArr: projectImages.placebook,
-    tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
+    tags: ['React', 'MERN', 'Full-Stack', 'All'],
+    // tags: ['React', 'MERN', 'Full-Stack', 'Responsive Design', 'All'],
     skills: [
       tech.react,
       tech.javascript,
@@ -56,7 +58,8 @@ const projects = [
     projectLink: 'http://pawnee-pets.katieloesch.co.uk',
     codeLink: 'https://github.com/katieloesch/project4-react-frontend',
     imgArr: projectImages.pawneePets,
-    tags: ['React', 'Rails', 'Full-Stack', 'Responsive Design', 'All'],
+    // tags: ['React', 'Rails', 'Full-Stack', 'Responsive Design', 'All'],
+    tags: ['React', 'Rails', 'Full-Stack', 'All'],
     skills: [
       tech.react,
       tech.ruby,
@@ -78,7 +81,8 @@ const projects = [
     codeLink:
       'http://github.com/katieloesch/project-2-react-film-app-revisited',
     imgArr: projectImages.flicks4brains,
-    tags: ['React', 'Full-Stack', 'Responsive Design', 'All'],
+    tags: ['React', 'Full-Stack', 'All'],
+    // tags: ['React', 'Full-Stack', 'Responsive Design', 'All'],
     skills: [
       tech.javascript,
       tech.react,

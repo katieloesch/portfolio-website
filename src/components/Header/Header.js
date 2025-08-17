@@ -72,8 +72,8 @@ const Header = () => {
       >
         <div className='header-text flex'>
           <div className='flex header-text-container'>
-            <h3 className='p-text greeting'>Hi there! I'm</h3>
             <div className='intro flex'>
+              <h3 className='p-text greeting'>{'~$hello wold'}</h3>
               <h1 className='header-name'>
                 <span aria-hidden='true'>KATIE LOESCH</span>
                 KATIE LOESCH

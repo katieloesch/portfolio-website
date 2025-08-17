@@ -176,7 +176,7 @@ const technologies = {
     alt: 'go icon',
   },
   linux: {
-    name: 'Linux',
+    name: 'LinuxOS',
     icon: skillIcons.linux_primary,
     id: 'linux-icon',
     alt: 'linux icon',
