@@ -1,2 +1,2 @@
-export { default as Abouts } from './BlogsSlide/Abouts/Abouts';
-export { default as Blogs } from '../Blogs/Blogs';
+export { default as AboutsSlide } from './AboutsSlide/AboutsSlide';
+export { default as BlogsSlide } from './BlogsSlide/BlogsSlide';

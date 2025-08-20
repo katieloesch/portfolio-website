@@ -1,28 +1,28 @@
 .about-carousel__slide__blog-card {
-  width: 145px;
-  height: 130px;
-  margin: 15px 25px;
-  padding: 10px;
+  width: 140px;
+  height: 140px;
+  margin: 15px;
+  // padding: 25px;
+  // padding-bottom: 10px;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
-  background-color: #082434;
-  border-radius: 13px;
-  // box-shadow: 0 0 25px rgba(194, 189, 189, 0.3);
+  background-color: rgba(182, 192, 230, 0.75);
+  border-radius: 50%;
+  // box-shadow: 0 0 5px rgb(136, 172, 184);
   transition: 0.6s ease-in-out;
   cursor: pointer;
-  // border: 1px solid rgba(118, 145, 126, 0.5);
-
-  .about-carousel__slide__blog-card__name {
-    font-size: 1.15rem;
-  }
+  border: 1px solid var(--bg2);
 
   .about-carousel__slide__blog-card__img-container {
-    width: 75px;
-    height: 75px;
-    padding: 10px;
+    position: absolute;
+    top: 15%;
+    width: 70px;
+    height: 70px;
+    // padding: 10px;
     border-radius: 13px;
     display: flex;
     align-items: center;
@@ -30,20 +30,66 @@
 
     img {
       width: 100%;
-      border-radius: 5px;
+      border-radius: 6px;
     }
 
-    .proton-img {
-      padding-top: 10px;
-      scale: 0.65;
+    .techlore-img {
+      width: 95%;
     }
-
-    .nbtv-img {
-      scale: 1.5;
+    .new-oil-img {
+      width: 85%;
     }
     .sr-img {
+      width: 80%;
+    }
+    .nbtv-img {
+      scale: 1.5;
+      transform: translateY(-6%);
+    }
+    .proton-img {
+      padding-left: 15px;
+      scale: 0.85;
+    }
+    .academind-img {
       scale: 0.8;
     }
+    .ztm-img {
+      transform: translateY(10%);
+      scale: 0.82;
+      // padding-top: 10px;
+    }
+    .coding-addict-img {
+      scale: 0.8;
+      transform: translateY(-2%);
+    }
+    .lama-dev-img {
+      scale: 0.85;
+      transform: translateY(2%);
+    }
+  }
+
+  .about-carousel__slide__blog-card__name {
+    padding-top: 50%;
+    font-size: 1rem;
+    color: var(--bg2);
+    width: 60%;
+    font-weight: bold;
+  }
+
+  .new-oil-label {
+    padding-top: 60%;
+  }
+  .sr-label {
+    padding-top: 54%;
+  }
+  .nbtv-label {
+    padding-top: 45%;
+  }
+  .ztm-label {
+    padding-top: 58%;
+  }
+  .coding-addict-label {
+    padding-top: 52%;
   }
 }
 

@@ -6,64 +6,24 @@
   .about-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; // x-axis
+    justify-content: flex-start; //y-axis
     width: 100%;
     height: 100%;
+    border: 1px solid blueviolet;
 
     .about__content {
-      width: 100%;
+      width: 90%;
       height: 100%;
-      display: grid;
-      grid-template-rows: 3fr 7fr;
-
-      .about__intro {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 3fr 7fr;
-        gap: 2rem;
-
-        .about__intro__avatar-container {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: flex-end;
-          align-items: center;
-
-          .about__intro__avatar-img {
-            border-radius: 50%;
-            width: 12vw;
-          }
-        }
-
-        .about__intro__text {
-          height: 100%;
-
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          text-align: justify;
-          justify-content: center;
-
-          .about__intro__text-p {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            font-size: clamp(1rem, 1.1rem, 1.2rem);
-            text-align: left;
-            color: var(--primary);
-          }
-
-          h2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-          }
-        }
-      }
+      display: flex;
+      flex-direction: column;
+      align-items: center; // x-axis
+      justify-content: flex-start; //y-axis
+      // grid-template-rows: 3fr 7fr;
+      border: 1px solid red;
 
       .about__carousel-container {
+        border: 2px solid white;
         width: 100%;
         height: 100%;
         display: flex;

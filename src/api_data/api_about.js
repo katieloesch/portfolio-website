@@ -1,42 +1,106 @@
+// import { aIcons as icons } from './../assets/icons/icons_about';
 import { aboutIcons as icons } from './../assets/icons/icons_about';
-import { aboutImages as images } from '../assets/images/about_images';
+import {
+  aboutImages,
+  aboutImages as images,
+} from '../assets/images/about_images';
+import { author } from './api_author';
 
-const intros = [
-  "Hi there! I'm Katie, a full-stack developer with a background in biomedical science, currently based in London.",
-  "I'm always open to exciting job opportunities where I can contribute, learn, and grow.",
-];
+const location = `I'm currently based in ${
+  author?.locationCity ?? 'London'
+} but love any excuse to travel and explore new places.`;
 
-const abouts = [
+const intro = {
+  txt: [
+    `I'm a ${author?.jobTitle ?? 'full-stack developer'} with a background in ${
+      author?.background ?? 'biomedical science and research.'
+    }.`,
+    "I'm always open to opportunities where I can contribute, learn, and grow.",
+  ],
+  locationTxt: location,
+  icon: icons.location,
+  iconAlt: 'map location pin',
+  avatar: aboutImages.avatar,
+};
+
+const columnData = [
   {
+    id: 0,
+    class: 'about-column-background',
     title: 'background.',
     description:
       'As a biomedical science graduate, I gained practical experience with genetic databases and sequence comparison algorithms, sparking my interest in the software and technology driving innovation in healthcare and medical research.',
-    icon: icons.background.svg,
-    mobileIcon: icons.background.mobileSvg,
+    icon: icons.dnaG,
+    iconClass: 'dna-icon',
+    iconAlt: 'icon of a dna molecule',
+    iconName: 'file-icons:dna',
+    iconAuthor: 'iconify.design',
+    iconUrl: 'https://icon-sets.iconify.design/file-icons/dna/',
+    iconLicense: 'https://github.com/file-icons/icons/blob/master/LICENSE.md',
+    // mobileIcon: icons.background.mobileSvg,
   },
   {
+    id: 1,
     title: 'coding journey.',
+    class: 'about-column-coding-journey',
     description:
       "My passion for coding led me to complete General Assembly's Software Engineering Immersive, gaining a strong foundation in programming. I'm now eager to grow my skills, explore new technologies, and contribute to impactful projects.",
-    icon: icons.codingJourney.svg,
-    mobileIcon: icons.codingJourney.mobileSvg,
+    icon: icons.code2G,
+    iconAlt: 'laptop code icon',
+    iconClass: 'code-icon',
+    iconName: 'fa-solid fa-laptop-code',
+    iconAuthor: 'FontAwesome',
+    iconUrl: 'https://fontawesome.com/icons/laptop-code?f=classic&s=solid',
+    iconLicence: [
+      'https://fontawesome.com/license/free',
+      'https://creativecommons.org/licenses/by/4.0/',
+    ],
+
+    icon2: icons.codeG,
+    icon2Alt: 'terminal shell icon',
+    icon2Name: 'solar:programming-linear',
+    icon2Author: 'iconify.design',
+    icon2Url: 'https://icon-sets.iconify.design/solar/programming-linear/',
+    iconLicense: 'https://creativecommons.org/licenses/by/4.0/',
+
+    icon3: icons.code3G,
+    icon3Alt: 'html code icon',
+    icon3Name: 'fa-solid fa-code',
+    icon3Author: 'FontAwesome',
+    icon3Url: 'https://fontawesome.com/icons/code?f=classic&s=solid',
+    icon3License: [
+      'https://fontawesome.com/license/free',
+      'https://creativecommons.org/licenses/by/4.0/',
+    ],
+
+    // mobileIcon: icons.codingJourney.mobileSvg,
   },
   {
+    id: 2,
     title: 'interests.',
+
+    class: 'about-column-interests',
+
     description:
       "I'm fascinated by sci-fi books, movies, and TV shows like Black Mirror and Star Trek for their ability to envision technologies, such as video calls, credit cards, solar power, mobile phones, and AI long before they became mainstream.",
-    icon: icons.interests.svg,
-    mobileIcon: icons.interests.mobileSvg,
+    icon: icons.ufoG,
+    iconClass: 'ufo-icon',
+    iconAlt: 'ufo icon',
+    iconName: 'solar:ufo-2-bold',
+    iconAuthor: 'iconify.design',
+    iconUrl: 'https://icon-sets.iconify.design/solar/ufo-2-bold/',
+    iconLicense: 'https://creativecommons.org/licenses/by/4.0/',
+    // mobileIcon: icons.interests.mobileSvg,
   },
 ];
 
-const media = [
+const blogs = [
   {
     name: 'Techlore',
     className: 'techlore',
     id: 0,
     description: [
-      'Techlore is a small but dedicated team focused on educating the public about digital rights, privacy, security, digital autonomy, and related topics to help build a safer, more informed internet. They are deeply committed to digital rights education and privacy advocacy.',
+      'Techlore is a small but dedicated team focused on educating the public about digital rights, privacy, security, digital autonomy and related topics to help build a safer, more informed internet. They are deeply committed to digital rights education and privacy advocacy.',
       "Henry Fisher, the founder of Techlore, also serves as the marketing manager for Cake Wallet and co-hosts the Surveillance Report. With nearly a decade of experience, he has developed a range of resources aimed at improving people's understanding of technology and enhancing their digital safety.",
     ],
     website: 'https://www.techlore.tech/',
@@ -48,16 +112,15 @@ const media = [
     mastodon: 'https://social.lol/@techlore',
     podcast: 'https://open.spotify.com/show/1qjWVCYgRcZFL9c8FsLLo0',
     img: images.techlore,
-    alt: 'techlore logo',
-    bg: '',
+    imgAlt: 'techlore logo',
   },
   {
     name: 'The New Oil',
     className: 'new-oil',
     id: 1,
     description: [
-      'Nathan Bartram is the founder and editor of a project dedicated to making digital privacy and cybersecurity accessible to beginners and non-tech-savvy individuals. His mission is to educate readers on the importance of privacy and security, introduce the tools and techniques available to protect them, and empower people to take control of their digital lives.',
-      "The project emphasizes that privacy and security are achievable goals for everyone. It aims to improve readers' digital well-being without compromising their mental health, emotional balance, or professional and social lives.",
+      'Nathan Bartram is the founder and editor of a project dedicated to making digital privacy and cybersecurity accessible to beginners and non-tech-savvy individuals. His mission is to educate readers on the importance of privacy and security, introduce the tools and techniques available to protect them and empower people to take control of their digital lives.',
+      "The project emphasises that privacy and security are achievable goals for everyone. It aims to improve readers' digital well-being without compromising their mental health, emotional balance, or professional and social lives.",
     ],
     website: 'https://thenewoil.org/en/',
     youtube: 'https://www.youtube.com/thenewoil',
@@ -65,8 +128,7 @@ const media = [
     blog: 'https://blog.thenewoil.org/',
     podcast: 'https://open.spotify.com/show/34JkJr5rzTQ7d1UZvUjfnJ',
     img: images.newOil,
-    alt: 'the new oil logo',
-    bg: '',
+    imgAlt: 'the new oil logo',
   },
   {
     name: 'Surveillance Report',
@@ -83,23 +145,21 @@ const media = [
     mastodon: 'https://social.lol/@sr',
     youtube: 'https://www.youtube.com/@surveillancereport',
     img: images.sr,
-    alt: 'surveillance report logo',
-    bg: '',
+    imgAlt: 'surveillance report logo',
   },
   {
     name: 'Naomi Brockwell',
     className: 'nbtv',
     id: 3,
     description: [
-      'Naomi Brockwell is a tech journalist and the creator of NBTV.media, a platform dedicated to helping people reclaim control over their lives in the digital age. Through accessible and empowering content, NBTV equips individuals with the knowledge and tools to protect their data, manage their digital finances, and express themselves freely online.',
-      'NBTV is a non-profit research and media institute that promotes human freedom through technology. Its mission is to educate the public on safeguarding fundamental rights in the digital era and to champion innovations that uphold privacy, personal autonomy, and human dignity in the online world.',
+      'Naomi Brockwell is a tech journalist and the creator of NBTV.media, a platform dedicated to helping people reclaim control over their lives in the digital age. Through accessible and empowering content, NBTV equips individuals with the knowledge and tools to protect their data, manage their digital finances and express themselves freely online.',
+      'NBTV is a non-profit research and media institute that promotes human freedom through technology. Its mission is to educate the public on safeguarding fundamental rights in the digital era and to champion innovations that uphold privacy, personal autonomy and human dignity in the online world.',
     ],
     website: 'https://naomibrockwell.com/',
     youtube: 'https://youtube.com/naomibrockwelltv',
     newsletter: 'https://nbtv.substack.com/',
     img: images.nbtv,
-    alt: 'nbtv logo',
-    bg: '',
+    imgAlt: 'nbtv logo',
   },
 
   {
@@ -107,21 +167,20 @@ const media = [
     className: 'proton',
     id: 4,
     description: [
-      'Proton was founded in Switzerland in 2014 by a team of scientists who met at CERN (the European Organization for Nuclear Research). United by a shared vision, they set out to build a better internet—one where privacy is the default and people, not profits, come first.',
-      "Proton's mission is to empower individuals to take control of their digital lives by creating a world where everyone can communicate freely, protect their data and identity, avoid surveillance and data exploitation, and defend against cybercrime. Their services—such as Proton Mail, Proton VPN, and more—are built to make digital freedom a reality for all.",
-      'The Proton.me Blog is the official source for news, insights, and updates from Proton. It covers topics related to online privacy, digital security, and internet freedom, while also sharing product announcements, privacy tips, and broader discussions about the importance of protecting personal information in the digital age.',
+      'Proton was founded in Switzerland in 2014 by a team of scientists who met at CERN (the European Organization for Nuclear Research). United by a shared vision, they set out to build a better internet: one where privacy is the default and people, not profits, come first.',
+      "Proton's mission is to empower individuals to take control of their digital lives by creating a world where everyone can communicate freely, protect their data and identity, avoid surveillance and data exploitation and defend against cybercrime. Their services (including ProtonMail, ProtonCalendar, ProtonDrive and ProtonVPN) are built to make digital freedom a reality for all.",
+      'The Proton.me Blog is the official source for news, insights and updates from Proton. It covers topics related to online privacy, digital security, and internet freedom, while also sharing product announcements, privacy tips and broader discussions about the importance of protecting personal information in the digital age.',
     ],
     blog: 'https://proton.me/blog',
     img: images.proton,
-    alt: 'proton logo',
-    bg: '',
+    imgAlt: 'proton logo',
   },
   {
     name: 'Academind',
     className: 'academind',
     id: '5',
     description: [
-      'Academind is an online education platform offering high-quality video courses and tutorials on web development, programming, and other tech topics.',
+      'Academind is an online education platform offering video courses and tutorials on web development, programming and other tech topics.',
       'Known for its clear, in-depth explanations and practical teaching style, Academind makes complex concepts accessible to learners of all levels.',
       'The content is primarily delivered by founders and instructors Maximilian Schwarzmüller and Manuel Lorenz, both highly respected in the developer community.',
     ],
@@ -131,17 +190,16 @@ const media = [
     podcast: 'https://academind.com/podcast',
     udemy: 'https://www.udemy.com/user/academind',
     linkedin: 'https://www.linkedin.com/school/academind-pro',
-    img: images.academind2,
-    alt: 'academind logo',
-    bg: '',
+    img: images.academind,
+    imgAlt: 'academind logo',
   },
   {
     name: 'ZTM',
     className: 'ztm',
     id: '6',
     description: [
-      'Zero to Mastery (ZTM) is an online education platform founded by Andrei Neagoie, offering a wide range of courses in web development, data science, ethical hacking, machine learning, and more. Known for its high-quality video lessons and hands-on projects, ZTM ensures its content is regularly updated to reflect the latest industry trends and technologies.',
-      'Beyond its courses, ZTM fosters a vibrant, community-driven learning environment where students can collaborate, ask questions, and support one another. The platform also extends its mission through blogs and newsletters that cover tech news, emerging tools, best practices, and insights into productivity and work-life balance.',
+      'Zero to Mastery (ZTM) is an online education platform founded by Andrei Neagoie, offering a wide range of courses including web development, data science, ethical hacking and machine learning. Known mainly for its video lessons and hands-on projects, ZTM ensures its content is regularly updated to reflect the latest industry trends and technologies.',
+      'Beyond its courses, ZTM fosters a community-driven learning environment where students can collaborate, ask questions and support one another. The platform also extends its mission through blogs and newsletters that cover tech news, emerging tools, best practices and insights into productivity and work-life balance.',
     ],
 
     website: 'https://zerotomastery.io/',
@@ -153,16 +211,32 @@ const media = [
     udemy: 'https://www.udemy.com/user/andrei-neagoie/',
     linkedin: 'https://www.linkedin.com/groups/12121940/',
     img: images.ztm,
-    alt: 'ztm logo',
-    bg: '',
+    imgAlt: 'ztm logo',
+  },
+  {
+    name: 'Coding Addict',
+    className: 'coding-addict',
+    id: '7',
+    description: [
+      'Jānis Smilga is a web developer, educator and founder of Coding Addict. He teaches project-based courses  on a wide range of topics including CSS, JavaScript, React, TypeScript and Next.js. He also shares practical tutorials, tips and industry insights on YouTube to help aspiring developers level up and build real-world skills.',
+    ],
+
+    website: 'https://www.codingaddict.io/',
+    blog: 'https://johnsmilga.com/articles',
+    github: 'https://github.com/john-smilga',
+    youtube: 'https://www.youtube.com/c/CodingAddict',
+    udemy: 'https://www.udemy.com/user/janis-smilga-3/',
+    linkedin: 'https://www.linkedin.com/in/j%C4%81nis-smilga-659100177/',
+    img: images.codingAddict,
+    imgAlt: 'coding addict logo',
   },
   {
     name: 'Lama dev',
     className: 'lama-dev',
-    id: '7',
+    id: '8',
     description: [
-      'LamaDev is an online platform and YouTube channel offering web development tutorials, courses, and resources for learners at all levels. It focuses on modern JavaScript technologies such as React.js, Next.js, Node.js, and the MERN stack, while also providing inspiration and guidance in HTML, CSS, and web design.',
-      'Known for its practical, hands-on approach, LamaDev helps developers build real-world projects and strengthen their coding skills through clear, accessible instruction.',
+      'LamaDev is an online platform and YouTube channel offering web development tutorials, courses and resources for learners at all levels. It focuses on modern JavaScript technologies such as React.js, Next.js, Node.js and the MERN stack, while also providing inspiration and guidance in HTML, CSS and web design.',
+      'Known for its practical approach, LamaDev helps developers build real-world projects and strengthen their coding skills through clear, accessible instruction.',
     ],
     website: 'https://lama.dev/',
     blog: 'https://blog.lama.dev/',
@@ -170,12 +244,11 @@ const media = [
     github: 'https://github.com/safak',
     youtube: 'https://www.youtube.com/lamadev',
     img: images.lamadev,
-    alt: 'lamadev logo',
-    bg: '',
+    imgAlt: 'lamadev logo',
   },
 ];
 
-const mediaLinks = [
+const blogLinks = [
   'website',
   'blog',
   'podcast',
@@ -188,10 +261,11 @@ const mediaLinks = [
 ];
 
 const aboutData = {
-  intros,
-  abouts,
-  media,
-  mediaLinks,
+  location,
+  intro,
+  columnData,
+  blogs,
+  blogLinks,
 };
 
 export { aboutData };

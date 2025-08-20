@@ -8,8 +8,6 @@ const BlogCard = ({ blog, onClick }) => {
       key={`about-carousel__slide__blog-card-${blog.className}`}
       onClick={onClick}
     >
-      <p className='about-carousel__slide__blog-card__name'>{blog.name}</p>
-
       <div className='about-carousel__slide__blog-card__img-container'>
         <img
           className={`${blog.className}-img`}
@@ -17,6 +15,11 @@ const BlogCard = ({ blog, onClick }) => {
           alt={blog.alt}
         />
       </div>
+      <p
+        className={`about-carousel__slide__blog-card__name ${blog.className}-label`}
+      >
+        {blog.name}
+      </p>
     </div>
   );
 };

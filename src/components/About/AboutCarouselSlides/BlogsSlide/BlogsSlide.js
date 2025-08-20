@@ -4,7 +4,7 @@ import BlogCard from '../../BlogCard/BlogCard';
 import BlogModal from '../../BlogModal/BlogModal';
 import './BlogsSlide.scss';
 
-const BlogsSlide = ({ mediaData, mediaLinks }) => {
+const BlogsSlide = ({ blogs, blogLinks }) => {
   const [showBlogPortal, setShowBlogPortal] = useState(false);
   const [modalContent, setModalContent] = useState({});
 
@@ -24,7 +24,7 @@ const BlogsSlide = ({ mediaData, mediaLinks }) => {
       </h2>
 
       <div className='about-carousel__slide__content-blogs__blogs-container'>
-        {mediaData.map((blog) => (
+        {blogs.map((blog) => (
           <BlogCard
             key={`about-creator-${blog.className}`}
             blog={blog}
@@ -35,11 +35,11 @@ const BlogsSlide = ({ mediaData, mediaLinks }) => {
 
       <BlogModal
         type='blog-modal'
-        data={modalContent}
+        blog={modalContent}
         show={showBlogPortal}
         onCancel={closeBlogPortal}
         closeModal={closeBlogPortal}
-        links={mediaLinks}
+        blogLinks={blogLinks}
       />
     </div>
   );

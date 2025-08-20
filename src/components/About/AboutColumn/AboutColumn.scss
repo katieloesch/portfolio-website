@@ -12,24 +12,26 @@
   max-height: 25rem;
   padding-top: 1rem;
 
-  .column-img-container {
+  .column-column__img-container {
     width: 95px;
     height: 95px;
 
-    svg {
+    .about-column__img {
       width: 100%;
       height: 100%;
       padding: 20px;
     }
 
-    &.code {
-      svg {
-        scale: 0.92;
-      }
+    .dna-icon {
+    }
+    .code-icon {
+      // scale: 0.92;
+    }
+    .ufo-icon {
     }
   }
 
-  h2 {
+  .about-column__title {
     text-align: center;
     font-weight: normal;
     font-size: clamp(1rem, 1.3rem, 1.5rem);
@@ -37,7 +39,7 @@
     color: var(--secondary);
   }
 
-  p {
+  .about-column__txt {
     text-align: justify;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
     color: var(--primary);

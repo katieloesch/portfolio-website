@@ -53,7 +53,7 @@ const Experience = () => {
         Experience + Education
       </SectionHeading>
       <div className='timeline'>
-        <VerticalTimeline className='timeline-container'>
+        <VerticalTimeline>
           {timelineData.map((timelineItem, index) => (
             <VerticalTimelineElement
               key={`tl-${timelineItem.id}`}
@@ -73,9 +73,9 @@ const Experience = () => {
               <h3 className='vertical-timeline-element-title'>
                 {timelineItem.title}
               </h3>
-              <h4 className='vertical-timeline-element-subtitle'>
+              {/* <h4 className='vertical-timeline-element-subtitle'>
                 {timelineItem.company}
-              </h4>
+              </h4> */}
               <ul className='timeline-item-description' id='description'>
                 {timelineItem.description.map((descriptionItem, index) => {
                   return timelineItem.id !== 0 ? (
@@ -89,12 +89,9 @@ const Experience = () => {
                       href={timelineData[0].links[index]}
                       target='_blank'
                       rel='noopener noreferrer'
+                      key={`timeline-description-link-${timelineItem.id}-${index}`}
                     >
-                      <li
-                        key={`timeline-description-item-${timelineItem.id}-${index}`}
-                      >
-                        {descriptionItem}
-                      </li>
+                      <li>{descriptionItem}</li>
                     </a>
                   );
                 })}

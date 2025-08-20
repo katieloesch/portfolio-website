@@ -1,2 +1,0 @@
-src
-https://github.com/jandre3000/j4n-co/tree/master/assets/fonts

@@ -3,7 +3,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 100%;
+  width: 65%;
   border: 1px solid var(--bg2);
   // background-color: rgba(182, 192, 230, 0.322);
   border-bottom: 1px solid var(--secondary-a);
@@ -13,9 +13,9 @@
     color: var(--primary);
     font-weight: 500;
     width: 15rem;
-    text-align: center;
+    text-align: left;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 1.5rem;
     // background-color: red;
   }
@@ -27,6 +27,7 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    // border: 2px solid red;
   }
 
   @media screen and (min-width: 2000px) {

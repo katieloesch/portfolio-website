@@ -6,43 +6,46 @@
   margin: 1rem 1.5rem;
   width: 60%;
   color: var(--primary);
+}
 
-  .about-carousel__slide-mobile__title {
-    text-align: center;
-    font-weight: normal;
-    font-size: clamp(1rem, 1.3rem, 1.5rem);
-    padding-bottom: 20px;
-  }
-
+.about-carousel__slide-mobile.about-carousel__slide-mobile-about {
   .about-carousel__slide-mobile__img-container {
     // border: 2px solid red;
     width: clamp(1rem, 1.3rem, 1.5rem);
     height: 90px;
     width: 90px;
 
-    svg {
+    .about-carousel__slide-mobile__img {
       width: 100%;
       height: 100%;
       padding: 20px;
-      color: var(--primary);
     }
 
-    &.code {
-      svg {
-        scale: 0.92;
-      }
+    .dna-icon-mobile {
+    }
+    .code-icon-mobile {
+    }
+    .ufo-icon-mobile {
     }
   }
 
-  .about-carousel__slide-mobile__p {
+  .about-carousel__slide-mobile__title {
+    text-align: center;
+    font-weight: normal;
+    font-size: clamp(1rem, 1.3rem, 1.5rem);
+    padding-bottom: 20px;
+    color: var(--secondary);
+  }
+
+  .about-carousel__slide-mobile__column-txt-p {
     text-align: justify;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
-    color: var(--grey-light);
+    color: var(--primary);
     line-height: 1.5;
   }
 }
 
-.about-carousel__slide-mobile__blogs {
+.about-carousel__slide-mobile.about-carousel__slide-mobile-blogs {
   // background-color: rgba(255, 192, 203, 0.502);
   width: 65vw;
   height: auto;
@@ -50,6 +53,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .about-carousel__slide-mobile__title {
+  }
 
   .about-carousel__slide-mobile__blogs-container {
     margin: 1rem;
@@ -67,7 +73,9 @@
     gap: 20px;
 
     .about-carousel__slide-mobile__blog-card {
-      background-color: var(--bg2);
+      background-color: rgba(182, 192, 230, 0.75);
+      color: var(--bg2);
+      border: 1px solid var(--bg2);
       border-radius: 0.5rem;
       padding: 10px;
     }

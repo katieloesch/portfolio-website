@@ -1,11 +1,15 @@
 import React from 'react';
-import { motion } from 'framer-motion';
-import { ComponentContainer } from '../../containers';
 import { useState, useRef, useEffect, useContext } from 'react';
+import { motion } from 'framer-motion';
+
 import { CurrentContext } from '../../contexts/CurrentContext';
 import ParticleBackground from './particleBackground';
-import { arrowIcons } from './../../assets/icons/icons_arrows';
+import { ComponentContainer } from '../../containers';
+import { author } from '../../api_data/api_author';
+import { capitalise } from './../../utils/helperFunctions';
 import { colors } from '../../assets/colors/colors';
+import { arrowIcons } from './../../assets/icons/icons_arrows';
+
 // import ContactIcons from './ContactIcons'
 import './Header.scss';
 
@@ -76,12 +80,18 @@ const Header = () => {
               {/* <h3 className='p-text greeting'>{'~$hello world'}</h3> */}
               <h3 className='p-text greeting'>{'<hello world />'}</h3>
               <h1 className='header-name'>
-                <span aria-hidden='true'>KATIE LOESCH</span>
-                KATIE LOESCH
-                <span aria-hidden='true'>KATIE LOESCH</span>
+                <span aria-hidden='true'>
+                  {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+                </span>
+                {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+                <span aria-hidden='true'>
+                  {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+                </span>
               </h1>
 
-              <h2 className='p-text flex job-title'>Full-Stack Developer</h2>
+              <h2 className='p-text flex job-title'>
+                {capitalise(author?.jobTitle) || 'Full-Stack Developer'}
+              </h2>
             </div>
           </div>
         </div>

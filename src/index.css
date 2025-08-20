@@ -2,80 +2,31 @@
 
 /* --font-main */
 @font-face {
-  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  /* source: https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff')
-    format('woff');
+  src: url('./assets/fonts/sofia-pro-font/sofia-pro-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  /* source: https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff')
-    format('woff');
+  src: url('./assets/fonts/sofia-pro-font/sofia-pro-bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
-/* --font-editorial */
-/* @font-face {
-  font-family: 'Nulshock';
-  src: url('./assets/fonts/nulshock.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
-/* @font-face {
-  font-family: 'Spaced';
-  src: url('./assets/fonts/spaced.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+/* --font-editorial / nav */
 @font-face {
-  font-family: 'Technophile Demo';
-  src: url('./assets/fonts/technophile_demo.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
-/* font-nav */
-/* @font-face {
-  font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
-} */
-
-@font-face {
+  /* source: https://font.download/font/astro-futuristic-font */
   font-family: 'Astro';
-  src: url('./assets/fonts/astro.woff') format('woff');
+  src: url('./assets/fonts/astro-font/astro.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 /* --font-typewriter */
-@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-/* @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-
-@font-face {
-  font-family: 'Repetition Scrolling';
-  src: url('./assets/fonts/repetition_scrolling.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-} */
-
+/* source: https://fonts.google.com/specimen/Roboto+Mono */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root {
@@ -86,24 +37,19 @@
   --font-typewriter: 'Roboto Mono', sans-serif;
   --typewriterSpeed: 4s;
 
+  /* colour variables */
   --primary: #b6c0e6;
   --primary-a: #b6c0e6;
-
   --secondary: #72f586ec;
   --secondary-a: rgba(118, 145, 126, 0.3);
-  --secondary-light: rgb(252, 118, 207);
-  --secondary-dark: rgb(224, 7, 163);
-
   --bg1: #103a55;
   --bg2: #082434;
-
   /* --bg2: #1f2236; */
   /* --bg2: #1f2236; */
   --yellow: rgb(254, 240, 113);
   /* --yellow: #ffdc8b; */
   --yellow-a: rgba(254, 240, 113, 0.55);
   --red: rgb(237, 74, 90);
-
   --white: rgb(255, 254, 254);
   --white-a: rgba(255, 255, 255, 0.8);
   --black: rgb(0, 0, 0);

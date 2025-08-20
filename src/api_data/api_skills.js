@@ -13,9 +13,11 @@ const skills = [
       tech.vite,
       tech.javascript,
       tech.typescript,
-      // tech.html,
-      // tech.css,
+
       tech.sass,
+      tech.css,
+      tech.html,
+      tech.bootstrap,
       tech.tailwind,
     ],
   },

@@ -144,16 +144,15 @@ npx create-react-app .
 ### UI and Design
 
 - **Fonts**
-  <!-- - main: \'**Nulshock**\', designed by **Typodermic Fonts**
-    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/nulshock#google_vignette)</sub> -->
 
   - main: \'**Sofia Pro**\', designed by **Olivier Gourvat (Mostardesign)**
     - <sub>[font.download](https://font.download/font/sofia-pro)</sub>
-  - navbar & section headings: \'**Astro**\' designed by **Nestype**
+  - editorial/headings: \'**Astro**\' designed by **Nestype**
     - <sub>[font.download](https://font.download/font/astro-futuristic-font)</sub>
-
-  <!-- - header: \'**VT323**\', designed by **Peter Hull**
-    - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub> -->
+    - <sub>[cufon fonts](https://www.cufonfonts.com/font/astro)</sub>
+  - typewriter animation: \'**Roboto Mono**\' designed by **Christian Robertson**
+    - <sub>[Googe Fonts](https://fonts.google.com/specimen/Roboto+Mono)</sub>
+    - <sub>[font.download](https://font.download/font/roboto-mono)</sub>
 
 - **Icons**
   - **Iconify**

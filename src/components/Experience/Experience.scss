@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: column;
   width: 100%;
-  // border: 1px solid yellow;
 
   h1 {
     @media screen and (max-width: 1450px) {
@@ -13,114 +12,114 @@
   }
 }
 
-.experience-item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: var(--bg1);
-  border: 1px solid rgba(128, 128, 128, 0.7);
-
-  @media screen and (max-width: 950px) {
-    flex-direction: column;
-  }
-}
+// react-vertical-timeline-component works better with css, so switching from scss to css for the styling of this component
 
 .timeline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
+}
 
+.timeline .vertical-timeline {
+  min-width: 90%;
+}
+
+.vertical-timeline::before {
+  width: 3px;
+}
+
+.timeline .vertical-timeline .vertical-timeline-element {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.timeline
+  .vertical-timeline
+  .vertical-timeline-element
+  .vertical-timeline-element-icon {
+  overflow: hidden;
+}
+
+.timeline
+  .vertical-timeline
+  .vertical-timeline-element
+  .vertical-timeline-element-icon
   .timeline-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  #timeline-img-0 {
-    // udemy logo
-    padding: 9px;
-  }
-  #timeline-img-1 {
-    // GA logo
-    padding-top: 2px;
-    scale: 1.05;
-  }
-  #timeline-img-2 {
-    // OU logo
-    scale: 1.1;
-  }
-  #timeline-img-3 {
-    // LIH logo
-    padding: 7px;
-    scale: 1.2;
-  }
-  #timeline-img-4 {
-    // Warwick logo
-    scale: 0.85;
-  }
-
-  .vertical-timeline-element-title {
-    color: var(--secondary);
-    font-size: 1.2rem;
-    font-weight: normal;
-    margin-top: -45px;
-
-    @media screen and (max-width: 1170px) {
-      margin-top: -10px;
-    }
-  }
-  .vertical-timeline-element-subtitle {
-    color: var(--secondary);
-    font-size: 1.1rem;
-    font-weight: normal;
-    padding-top: 3px;
-  }
-
-  .timeline-item-description {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 5px;
-
-    li {
-      text-align: left;
-      list-style: disc;
-      color: var(--primary);
-      width: 100%;
-      font-size: 1rem;
-      margin-left: 19px;
-    }
-
-    a:hover {
-      li {
-        color: var(--white);
-      }
-    }
-  }
+  width: 100%;
+  overflow: hidden;
 }
 
-.vertical-timeline {
-  min-width: 95%;
+#timeline-img-0 {
+  // udemy logo
+  scale: 0.9;
 }
-
-.vertical-timeline-element {
-  margin: 1em 0;
-  margin-left: 7px;
+#timeline-img-1 {
+  // GA logo
+  scale: 1;
+}
+#timeline-img-2 {
+  // OU logo
+  scale: 1;
+}
+#timeline-img-3 {
+  // LIH logo
+  scale: 0.9;
+}
+#timeline-img-4 {
+  // Warwick logo
+  scale: 0.85;
 }
 
 .vertical-timeline-element-content {
   box-shadow: none;
   width: 100%;
-  // border: 1px solid var(--secondary);
 
   @media screen and (max-width: 1170px) {
     width: 85%;
   }
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid transparent;
+}
+
+.vertical-timeline-element-title {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: -45px;
+
+  @media screen and (max-width: 1170px) {
+    margin-top: -10px;
+  }
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-top: 3px;
+}
+
+.vertical-timeline-element-content .timeline-item-description {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.vertical-timeline-element-content .timeline-item-description li,
+.vertical-timeline-element-content .timeline-item-description a {
+  text-align: left;
+  list-style: disc;
+  color: var(--primary);
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 19px;
+}
+
+.vertical-timeline-element-content .timeline-item-description a li:hover {
+  color: var(--white);
 }
 
 .timeline-date {
@@ -128,12 +127,4 @@
   opacity: 1 !important;
   font-size: 1.04rem !important;
   font-family: var(--font-main);
-}
-
-.vertical-timeline-element-content-arrow {
-  border-right: 7px solid transparent;
-}
-
-.vertical-timeline::before {
-  width: 3px;
 }

@@ -1,6 +1,5 @@
 .blog-modal__link {
   // background-color: var(--primary);
-  border-radius: 50%;
   width: 32px;
   height: 32px;
   display: flex;
@@ -11,75 +10,54 @@
   align-items: center;
   justify-content: center;
 
-  .blog-modal__link-icon {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .blog-modal__link-icon-container {
+    // width: 100%;
+    // height: 100%;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
 
-    svg {
+    .blog-modal__link-icon {
       width: 100%;
       height: 100%;
-      color: var(--primary);
       transition: 0.3s ease-in-out;
     }
-  }
 
-  .blog-modal__link-icon.website-icon {
-    svg {
-      scale: 1.25;
-    }
-  }
-  .blog-modal__link-icon.blog-icon {
-    svg {
-      scale: 0.85;
-    }
-  }
-  .blog-modal__link-icon.podcast-icon {
-    svg {
-      scale: 0.88;
-    }
-  }
-  .blog-modal__link-icon.newsletter-icon {
-    svg {
-      scale: 0.9;
-    }
-  }
-  .blog-modal__link-icon.forum-icon {
-    svg {
+    .blog-modal__link-icon-website {
       scale: 0.92;
     }
-  }
-  .blog-modal__link-icon.github-icon {
-    svg {
-      scale: 0.88;
+    .blog-modal__link-icon-blog {
+      scale: 0.9;
     }
-  }
-  .blog-modal__link-icon.youtube-icon {
-    svg {
+    .blog-modal__link-icon-podcast {
+      scale: 1.08;
+    }
+    .blog-modal__link-icon-newsletter {
+      scale: 1.18;
+    }
+    .blog-modal__link-icon-forum {
+      scale: 1.12;
+    }
+    .blog-modal__link-icon-github {
       scale: 1.1;
     }
-  }
-  .blog-modal__link-icon.mastodon-icon {
-    svg {
-      scale: 0.98;
+    .blog-modal__link-icon-youtube {
+      scale: 1.68;
     }
-  }
-  .blog-modal__link-icon.linkedin-icon {
-    svg {
-      scale: 0.9;
+    .blog-modal__link-icon-mastodon {
+      scale: 1.1;
+    }
+    .blog-modal__link-icon-linkedin {
+      scale: 1;
     }
   }
 }
 
 .blog-modal__link:hover {
-  .blog-modal__link-icon {
-    svg {
-      color: var(--secondary);
-      transform: translateY(-6px);
-
+  .blog-modal__link-icon-container {
+    .blog-modal__link-icon {
       cursor: pointer;
+      transform: translateY(-5px);
     }
   }
 }

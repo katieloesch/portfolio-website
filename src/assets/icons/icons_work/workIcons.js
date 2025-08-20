@@ -1,5 +1,6 @@
 const link = (
-  // icon-source: iconify - https://icon-sets.iconify.design/?query=github
+  //icon source: iconify - https://icon-sets.iconify.design/?query=external+link
+
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
@@ -18,7 +19,7 @@ const link = (
 );
 
 const gitHub = (
-  //icon source: iconify - https://icon-sets.iconify.design/?query=external+link
+  // icon-source: iconify - https://icon-sets.iconify.design/?query=github
   <svg
     xmlns='http://www.w3.org/2000/svg'
     width='24'
