@@ -76,26 +76,11 @@
   --bubble-projects-filter-after: 190px;
   --bubble-projects-filter-transition: 0.5s;
 
-  /* modal */
+  /* modal variables*/
   --modal-header-min-height: 80px;
-}
 
-body {
-  background-color: var(--black);
-}
-
-body #modal-hook {
-  border: 2px solid orange;
-}
-
-/* section backgrounds */
-.bg-1 {
-  background-color: var(--bg2);
-}
-
-.bg-2 {
-  /* | work | about | */
-  background-color: var(--bg1);
+  /* switch to mobile layout */
+  --mobile-cutoff: 1200px;
 }
 
 /* type selectors */
@@ -122,6 +107,14 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+body {
+  background-color: var(--black);
+}
+
+body #modal-hook {
+  border: 2px solid orange;
+}
+
 ul,
 li {
   list-style: none;
@@ -146,6 +139,79 @@ textarea {
 
 button {
   cursor: pointer;
+}
+
+/* class selectors */
+.bg-1 {
+  background-color: var(--bg2);
+}
+
+.bg-2 {
+  /* | work | about | */
+  background-color: var(--bg1);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-text {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--primary);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.section-heading {
+  font-family: var(--font-nav);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary);
+  width: 100%;
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+  }
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.bold {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
 }
 
 .btn {

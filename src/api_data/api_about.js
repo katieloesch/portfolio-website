@@ -120,7 +120,7 @@ const blogs = [
     id: 1,
     description: [
       'Nathan Bartram is the founder and editor of a project dedicated to making digital privacy and cybersecurity accessible to beginners and non-tech-savvy individuals. His mission is to educate readers on the importance of privacy and security, introduce the tools and techniques available to protect them and empower people to take control of their digital lives.',
-      "The project emphasises that privacy and security are achievable goals for everyone. It aims to improve readers' digital well-being without compromising their mental health, emotional balance, or professional and social lives.",
+      "The project emphasises that privacy and security are achievable goals for everyone. It aims to improve readers' digital well-being without compromising their mental health, emotional balance or professional and social lives.",
     ],
     website: 'https://thenewoil.org/en/',
     youtube: 'https://www.youtube.com/thenewoil',
