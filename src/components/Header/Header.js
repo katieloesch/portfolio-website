@@ -6,7 +6,7 @@ import { CurrentContext } from '../../contexts/CurrentContext';
 import ParticleBackground from './particleBackground';
 import { ComponentContainer } from '../../containers';
 import { author } from '../../api_data/api_author';
-import { capitalise } from './../../utils/helperFunctions';
+import { headerData as data } from '../../api_data/api_header';
 import { colors } from '../../assets/colors/colors';
 import { arrowIcons } from './../../assets/icons/icons_arrows';
 
@@ -69,36 +69,48 @@ const Header = () => {
       <ParticleBackground />
 
       <motion.div
-        className='header-info'
+        className='header__text__container'
         initial={{ x: -1500 }}
         animate={{ x: 0 }}
         transition={{ duration: 2 }}
       >
-        <div className='header-text flex'>
-          <div className='flex header-text-container'>
-            <div className='intro flex'>
-              {/* <h3 className='p-text greeting'>{'~$hello world'}</h3> */}
-              <h3 className='p-text greeting'>{'<hello world />'}</h3>
-              <h1 className='header-name'>
-                <span aria-hidden='true'>
-                  {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
-                </span>
-                {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
-                <span aria-hidden='true'>
-                  {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
-                </span>
-              </h1>
+        <div className='header__text'>
+          <div className='header__text-greeting'>
+            <h3 className='header__text-greeting-item'>
+              <span className='flex prompt'> {data?.prompt || '~$'}</span>
+              {data?.greeting1 || 'hello world'}
+            </h3>
+            <h3 className='header__text-greeting-item'>
+              <span className='flex prompt'> {data?.prompt || '~$'}</span>
+              {data?.greeting2 || 'whoami'}
+            </h3>
+          </div>
 
-              <h2 className='p-text flex job-title'>
-                {capitalise(author?.jobTitle) || 'Full-Stack Developer'}
-              </h2>
-            </div>
+          <h1 className='header__text-name'>
+            <span aria-hidden='true'>
+              {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+            </span>
+            {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+            <span aria-hidden='true'>
+              {author?.name?.toUpperCase() ?? 'KATIE LOESCH'}
+            </span>
+          </h1>
+
+          <div className='header__text-job-title'>
+            <h2>
+              <span className='header__text-job-title__prompt'>
+                {data?.prompt || '~$'}
+              </span>
+            </h2>
+            <h2 className='header__text-job-title__title'>
+              {author?.jobTitle || '~Full-Stack Developer'}
+            </h2>
           </div>
         </div>
       </motion.div>
 
       <motion.div
-        className='arrow-container'
+        className='header__arrows-container'
         initial={{ x: -1500 }}
         animate={{ x: 0 }}
         transition={{ duration: 2 }}
@@ -112,8 +124,6 @@ const Header = () => {
           />
         </a>
       </motion.div>
-
-      {/* <ContactIcons />*/}
     </div>
   );
 };

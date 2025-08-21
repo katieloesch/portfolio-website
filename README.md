@@ -150,9 +150,13 @@ npx create-react-app .
   - editorial/headings: \'**Astro**\' designed by **Nestype**
     - <sub>[font.download](https://font.download/font/astro-futuristic-font)</sub>
     - <sub>[cufon fonts](https://www.cufonfonts.com/font/astro)</sub>
-  - typewriter animation: \'**Roboto Mono**\' designed by **Christian Robertson**
+  - typewriter animation: \'**Ubuntu Mono**\' designed by **Dalton Maag**
+    - <sub>[Googe Fonts](hhttps://fonts.google.com/specimen/Ubuntu+Mono)</sub>
+    - <sub>[font.download](https://font.download/font/ubuntu-mono-2)</sub>
+    - <sub>[Font Squirrel](https://www.fontsquirrel.com/fonts/ubuntu-mono)</sub>
+    <!-- - typewriter animation: \'**Roboto Mono**\' designed by **Christian Robertson**
     - <sub>[Googe Fonts](https://fonts.google.com/specimen/Roboto+Mono)</sub>
-    - <sub>[font.download](https://font.download/font/roboto-mono)</sub>
+    - <sub>[font.download](https://font.download/font/roboto-mono)</sub> -->
 
 - **Icons**
   - **Iconify**

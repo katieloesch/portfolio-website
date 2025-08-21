@@ -28,13 +28,15 @@
 /* --font-typewriter */
 /* source: https://fonts.google.com/specimen/Roboto+Mono */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   /* font variables */
   --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   --font-nav: 'Astro', Arial, sans-serif;
-  --font-typewriter: 'Roboto Mono', sans-serif;
+  /* --font-typewriter: 'Roboto Mono', monospace; */
+  --font-typewriter: 'Ubuntu Mono', monospace;
   --typewriterSpeed: 4s;
 
   /* colour variables */
@@ -44,6 +46,8 @@
   --secondary-a: rgba(118, 145, 126, 0.3);
   --bg1: #103a55;
   --bg2: #082434;
+  --bg-particles: #04141d;
+  --bg-light: rgba(255, 255, 255, 0.4);
   /* --bg2: #1f2236; */
   /* --bg2: #1f2236; */
   --yellow: rgb(254, 240, 113);
@@ -108,11 +112,7 @@ html {
 }
 
 body {
-  background-color: var(--black);
-}
-
-body #modal-hook {
-  border: 2px solid orange;
+  background-color: var(--bg-particles);
 }
 
 ul,
