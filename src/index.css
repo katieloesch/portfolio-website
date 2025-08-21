@@ -49,7 +49,9 @@
   --bg-particles: #04141d;
   /* --bg-medium: rgba(255, 255, 255, 0.4); */
   --bg-medium: rgba(255, 255, 255, 0.4);
-  --bg-light: #60b7b5;
+  --bg-medium: rgba(144, 161, 165, 0.688);
+  /* --bg-light: #60b7b5; */
+  --bg-light: #84b1bd;
   /* --bg2: #1f2236; */
   /* --bg2: #1f2236; */
   --yellow: rgb(254, 240, 113);
