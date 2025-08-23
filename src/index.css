@@ -38,6 +38,7 @@
   /* --font-typewriter: 'Roboto Mono', monospace; */
   --font-typewriter: 'Ubuntu Mono', monospace;
   --typewriterSpeed: 4s;
+  --typewriter-size: 33px;
 
   /* colour variables */
   --primary: #b6c0e6;

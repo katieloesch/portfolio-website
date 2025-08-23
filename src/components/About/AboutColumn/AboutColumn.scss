@@ -1,25 +1,24 @@
 .about-column {
   // background-color: black;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: clamp(25%, 26%, 30%);
-  background-color: var(--bg2);
-
+  width: 30.5%;
   height: 100%;
+  background-color: var(--bg2);
   border-radius: 0.7rem;
-  max-height: 25rem;
-  padding-top: 1rem;
+  // padding-top: 1rem;
 
   .column-column__img-container {
-    width: 95px;
-    height: 95px;
+    margin-top: 0.5rem;
+    width: 80px;
+    height: 850x;
+    padding: 15px;
 
     .about-column__img {
       width: 100%;
       height: 100%;
-      padding: 20px;
     }
 
     .dna-icon {
@@ -34,14 +33,20 @@
   .about-column__title {
     text-align: center;
     font-weight: normal;
-    font-size: clamp(1rem, 1.3rem, 1.5rem);
+    font-size: 1.2rem;
     padding-bottom: 20px;
-    color: var(--secondary);
+    // color: var(--primary);
+
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Firefox */
+    color: transparent; /* fallback */
   }
 
   .about-column__txt {
     text-align: justify;
-    font-size: clamp(1rem, 1.1rem, 1.2rem);
+    font-size: 1rem;
     color: var(--primary);
     line-height: 1.5;
     display: flex;

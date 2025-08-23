@@ -4,9 +4,9 @@
   color: var(--primary);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
-  gap: 25px;
+  gap: 2.5rem;
   margin-top: 3rem;
 
   .about-carousel__slide__content-blogs__title {
@@ -16,14 +16,15 @@
   }
 
   .about-carousel__slide__content-blogs__blogs-container {
+    z-index: 95;
     width: 100%;
-    height: 90%;
+    max-height: 400px;
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    flex: 1;
+    // flex: 1;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    gap: 1.5rem;
   }
 }

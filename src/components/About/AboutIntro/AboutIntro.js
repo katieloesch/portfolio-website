@@ -13,7 +13,7 @@ const AboutIntro = ({ intro, author }) => {
       </div>
 
       <div className='about__intro__txt'>
-        <p className='about__intro__txt-p p-text'>
+        {/* <p className='about__intro__txt-p p-text'>
           I'm a
           <span>&nbsp;{author?.jobTitle ?? 'full-stack developer'}&nbsp;</span>
           with a background in
@@ -21,9 +21,17 @@ const AboutIntro = ({ intro, author }) => {
             &nbsp;
             {author?.background ?? 'biomedical science and research'}
           </span>
-          .&nbsp;I'm always looking for opportunities where I can contribute,
-          learn, and grow.
-        </p>
+          .
+        </p> */}
+
+        {intro.txt.map((intro, index) => (
+          <p
+            className='about__intro__txt-p p-text'
+            key={`about-intro-${index}`}
+          >
+            {intro}
+          </p>
+        ))}
 
         <div className='about__intro__location'>
           <div className='about__intro__location-icon-container'>

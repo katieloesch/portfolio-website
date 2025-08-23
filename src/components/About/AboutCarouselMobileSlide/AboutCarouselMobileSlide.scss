@@ -58,6 +58,7 @@
   }
 
   .about-carousel__slide-mobile__blogs-container {
+    z-index: 95;
     margin: 1rem;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
     color: var(--grey-light);
@@ -78,6 +79,7 @@
       border: 1px solid var(--bg2);
       border-radius: 0.5rem;
       padding: 10px;
+      cursor: pointer;
     }
   }
 }

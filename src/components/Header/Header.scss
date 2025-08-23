@@ -59,13 +59,13 @@
         justify-content: flex-start;
         font-family: var(--font-typewriter);
         color: var(--bg-light);
-        font-size: 25px;
         text-align: left;
         gap: 10px;
         // margin-bottom: -20px;
 
         .header__text-greeting-item {
           font-family: var(--font-typewriter);
+          font-size: var(--typewriter-size);
           display: flex;
           flex-direction: row;
           font-weight: normal;
@@ -162,7 +162,7 @@
         margin-top: 1rem;
 
         .header__text-job-title__prompt {
-          font-size: 33px;
+          font-size: var(--typewriter-size);
           font-family: var(--font-typewriter);
           display: flex;
           flex-direction: row;
@@ -180,7 +180,7 @@
           color: var(--bg-light);
 
           text-align: right;
-          font-size: 33px;
+          font-size: var(--typewriter-size);
           font-weight: normal;
           width: max-content;
         }
@@ -262,10 +262,40 @@
     transition-delay: 0s !important;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 36px;
+  }
+  .header .header__text__container .header__text .header__text-name {
+    font-size: 4rem;
+    height: 9rem;
+  }
 
-@media screen and (max-width: 720px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 15px;
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__prompt,
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 720px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 20px;
+    font-weight: bold;
   }
   .header .header__text__container .header__text .header__text-name {
     font-size: 2rem;
@@ -283,15 +313,21 @@
     .header__text-job-title
     .header__text-job-title__title {
     font-size: 20px;
+    font-weight: bold;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 13px;
+@media screen and (min-width: 341px) and (max-width: 400px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 18px;
+    font-weight: bold;
   }
   .header .header__text__container .header__text .header__text-name {
-    font-size: 1.75rem;
+    font-size: 1.8rem;
     height: 4rem;
   }
 
@@ -305,13 +341,19 @@
     .header__text
     .header__text-job-title
     .header__text-job-title__title {
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: bold;
   }
 }
 
-@media screen and (max-width: 340px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 13px;
+@media screen and (min-width: 301px) and (max-width: 340px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 15px;
+    font-weight: bold;
   }
   .header .header__text__container .header__text .header__text-name {
     font-size: 1.5rem;
@@ -328,12 +370,18 @@
     .header__text-job-title
     .header__text-job-title__title {
     font-size: 15px;
+    font-weight: bold;
   }
 }
 
-@media screen and (max-width: 300px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 12px;
+@media screen and (min-width: 251px) and (max-width: 300px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 13px;
+    font-weight: bold;
   }
   .header .header__text__container .header__text .header__text-name {
     font-size: 1.3rem;
@@ -350,15 +398,22 @@
     .header__text-job-title
     .header__text-job-title__title {
     font-size: 13px;
+    font-weight: bold;
   }
 }
 
 @media screen and (max-width: 250px) {
-  .header .header__text__container .header__text .header__text-greeting {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
     font-size: 11px;
+    font-weight: bold;
   }
   .header .header__text__container .header__text .header__text-name {
     font-size: 1.2rem;
+    height: 2.5rem;
   }
 
   .header
@@ -372,16 +427,20 @@
     .header__text-job-title
     .header__text-job-title__title {
     font-size: 11px;
+    font-weight: bold;
   }
 }
-
-@media screen and (min-width: 3000px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 2.5rem;
+@media (min-width: 7000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 8rem;
   }
   .header .header__text__container .header__text .header__text-name {
-    font-size: 6rem;
-    height: 15rem;
+    font-size: 14rem;
+    height: 35rem;
   }
 
   .header
@@ -394,13 +453,42 @@
     .header__text
     .header__text-job-title
     .header__text-job-title__title {
-    font-size: 3.5rem;
+    font-size: 8rem;
   }
 }
+@media (min-width: 5001px) and (max-width: 6000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 7.5rem;
+  }
+  .header .header__text__container .header__text .header__text-name {
+    font-size: 10rem;
+    height: 25rem;
+  }
 
-@media screen and (min-width: 5000px) {
-  .header .header__text__container .header__text .header__text-greeting {
-    font-size: 4rem;
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__prompt,
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__title {
+    font-size: 7.5rem;
+  }
+}
+@media (min-width: 3050px) and (max-width: 5000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 5rem;
   }
   .header .header__text__container .header__text .header__text-name {
     font-size: 8rem;
@@ -418,5 +506,57 @@
     .header__text-job-title
     .header__text-job-title__title {
     font-size: 5rem;
+  }
+}
+@media (min-width: 2001px) and (max-width: 3000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 48px;
+  }
+  .header .header__text__container .header__text .header__text-name {
+    font-size: 5rem;
+    height: 13rem;
+  }
+
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__prompt,
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__title {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 2000px) {
+  .header
+    .header__text__container
+    .header__text
+    .header__text-greeting
+    .header__text-greeting-item {
+    font-size: 24px;
+  }
+  .header .header__text__container .header__text .header__text-name {
+    font-size: 2.4rem;
+    height: 5rem;
+  }
+
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__prompt,
+  .header
+    .header__text__container
+    .header__text
+    .header__text-job-title
+    .header__text-job-title__title {
+    font-size: 24px;
   }
 }

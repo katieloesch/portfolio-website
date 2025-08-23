@@ -76,14 +76,14 @@ const Header = () => {
       >
         <div className='header__text'>
           <div className='header__text-greeting'>
-            <h3 className='header__text-greeting-item'>
+            <h2 className='header__text-greeting-item'>
               <span className='flex prompt'> {data?.prompt || '~$'}</span>
               {data?.greeting1 || 'hello world'}
-            </h3>
-            <h3 className='header__text-greeting-item'>
+            </h2>
+            <h2 className='header__text-greeting-item'>
               <span className='flex prompt'> {data?.prompt || '~$'}</span>
               {data?.greeting2 || 'whoami'}
-            </h3>
+            </h2>
           </div>
 
           <h1 className='header__text-name'>

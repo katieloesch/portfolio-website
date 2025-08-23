@@ -1,12 +1,10 @@
 .about-carousel__slide__content-abouts {
-  // background-color: green;
-  width: 68vw; // needs same width as about-into
+  width: 76vw; // needs same width as about-intro
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   z-index: 1;
   gap: 2rem;
-  background-color: black;
 }

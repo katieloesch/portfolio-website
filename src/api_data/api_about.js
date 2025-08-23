@@ -12,10 +12,12 @@ const location = `I'm currently based in ${
 
 const intro = {
   txt: [
-    `I'm a ${author?.jobTitle ?? 'full-stack developer'} with a background in ${
-      author?.background ?? 'biomedical science and research.'
-    }.`,
-    "I'm always open to opportunities where I can contribute, learn, and grow.",
+    // `I'm a ${author?.jobTitle ?? 'full-stack developer'} with a background in ${
+    //   author?.background ?? 'biomedical science and research.'
+    // }.`,
+    // "I'm always open to opportunities where I can contribute, learn, and grow.",
+    "I'm a full-stack developer with a background in biomedical science and research. I'm passionate about API design and building scalable systems. I enjoy tackling real-world problems with clean, maintainable code and solutions that make technology more accessible and intuitive.",
+    " I'm always keen to explore new technologies, frameworks and languages. Guided by a philosophy of collaboration, knowledge-sharing and continuous learning, I aim to contribute to projects where I can both grow and deliver impactful solutions.",
   ],
   locationTxt: location,
   icon: icons.location,
@@ -29,7 +31,7 @@ const columnData = [
     class: 'about-column-background',
     title: 'background.',
     description:
-      'As a biomedical science graduate, I gained practical experience with genetic databases and sequence comparison algorithms, sparking my interest in the software and technology driving innovation in healthcare and medical research.',
+      'With a degree in Biomedical Science, I gained practical experience with genetic databases and sequence comparison algorithms, which sparked my fascination with the software and computational tools driving innovation in healthcare and medical research and how they can improve diagnostics and transform patient care.',
     icon: icons.dnaG,
     iconClass: 'dna-icon',
     iconAlt: 'icon of a dna molecule',
@@ -44,7 +46,7 @@ const columnData = [
     title: 'coding journey.',
     class: 'about-column-coding-journey',
     description:
-      "My passion for coding led me to complete General Assembly's Software Engineering Immersive, gaining a strong foundation in programming. I'm now eager to grow my skills, explore new technologies, and contribute to impactful projects.",
+      'My interest in iterative processes and how software can simplify and improve everyday life inspired me to complete the General Assembly’s Software Engineering Immersive. This allowed me to I built a strong foundation in both frontend and backend development, working across the full stack.',
     icon: icons.code2G,
     iconAlt: 'laptop code icon',
     iconClass: 'code-icon',
@@ -82,7 +84,7 @@ const columnData = [
     class: 'about-column-interests',
 
     description:
-      "I'm fascinated by sci-fi books, movies, and TV shows like Black Mirror and Star Trek for their ability to envision technologies, such as video calls, credit cards, solar power, mobile phones, and AI long before they became mainstream.",
+      "I'm obsessed with touch typing and continually work on improving my speed and accuracy. Beyond coding, I'm a fan of science fiction. I enjoy how shows like Black Mirror and Star Trek managed to envision technologies such as video calls, credit cards, solar power, mobile phones and AI long before they became mainstream.",
     icon: icons.ufoG,
     iconClass: 'ufo-icon',
     iconAlt: 'ufo icon',
