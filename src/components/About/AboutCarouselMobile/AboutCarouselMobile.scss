@@ -49,8 +49,8 @@
 
     .about-carousel-mobile__btns {
       position: absolute;
-      top: 50%;
-      width: 100%;
+      top: 55%;
+      width: 74vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -116,7 +116,7 @@
   }
 }
 
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1801px) {
   .about-carousel-mobile {
     display: none;
   }

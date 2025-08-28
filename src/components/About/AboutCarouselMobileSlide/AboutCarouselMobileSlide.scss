@@ -34,7 +34,11 @@
     font-weight: normal;
     font-size: clamp(1rem, 1.3rem, 1.5rem);
     padding-bottom: 20px;
-    color: var(--secondary);
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Firefox */
+    color: transparent; /* fallback */
   }
 
   .about-carousel__slide-mobile__column-txt-p {
@@ -55,6 +59,12 @@
   justify-content: center;
 
   .about-carousel__slide-mobile__title {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Firefox */
+    color: transparent; /* fallback */
+    font-weight: normal;
   }
 
   .about-carousel__slide-mobile__blogs-container {
@@ -62,7 +72,7 @@
     margin: 1rem;
     font-size: clamp(1rem, 1.1rem, 1.2rem);
     color: var(--grey-light);
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -80,6 +90,11 @@
       border-radius: 0.5rem;
       padding: 10px;
       cursor: pointer;
+    }
+    .about-carousel__slide-mobile__blog-card:hover {
+      cursor: pointer;
+      background-color: var(--primary);
+      box-shadow: 0 0 25px rgba(194, 189, 189, 0.25);
     }
   }
 }

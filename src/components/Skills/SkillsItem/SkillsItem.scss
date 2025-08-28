@@ -76,10 +76,16 @@
     scale: 0.9;
   }
 }
+#java-icon {
+  img {
+    scale: 1.1;
+    margin-bottom: 5px;
+  }
+}
 #linux-icon {
   img {
-    scale: 1.2;
-    margin-right: 5px;
+    scale: 1.1;
+    // margin-right: 5px;
   }
 }
 #mongoose-icon {
@@ -259,6 +265,15 @@
   }
 }
 
+#java-icon:hover {
+  p {
+    color: #e76f00;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/java_color.svg');
+  }
+}
+
 #javascript-icon:hover {
   p {
     color: #f2cd6f;
@@ -279,10 +294,10 @@
 
 #linux-icon:hover {
   p {
-    color: #249eff;
+    color: #dd4814;
   }
   img {
-    content: url('./../../../assets/icons/icons_skills/linux_color.svg');
+    content: url('./../../../assets/icons/icons_skills/ubuntu_color.svg');
   }
 }
 

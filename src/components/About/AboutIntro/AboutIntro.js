@@ -43,8 +43,7 @@ const AboutIntro = ({ intro, author }) => {
           </div>
 
           <p className='about__intro__txt-p p-text about__intro__location-p'>
-            I'm currently based in
-            <span>&nbsp;{author?.locationCity ?? 'London'}&nbsp;</span>but love
+            I'm currently based in {author?.locationCity ?? 'London'} but love
             any excuse to travel and explore new places.
           </p>
         </div>

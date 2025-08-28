@@ -50,7 +50,7 @@ const skills = [
     title: 'Currently Learning',
     id: 4,
     className: 'learning-skills',
-    list: [tech.python, tech.linux, tech.go],
+    list: [tech.python, tech.linux, tech.go, tech.java],
   },
 ];
 

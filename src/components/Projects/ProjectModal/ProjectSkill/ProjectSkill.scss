@@ -132,6 +132,15 @@
   }
 }
 
+#java-icon:hover {
+  p {
+    color: #e76f00;
+  }
+  img {
+    content: url('./../../../../assets/icons/icons_skills/java_color.svg');
+  }
+}
+
 #javascript-icon-modal {
   p {
     color: #f2cd6f;
@@ -152,10 +161,10 @@
 
 #linux-icon-modal {
   p {
-    color: #249eff;
+    color: #dd4814;
   }
   img {
-    content: url('./../../../../assets/icons/icons_skills/linux_color.svg');
+    content: url('./../../../../assets/icons/icons_skills/ubuntu_color.svg');
   }
 }
 

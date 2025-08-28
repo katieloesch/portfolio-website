@@ -12,7 +12,11 @@
   .about-carousel__slide__content-blogs__title {
     text-align: center;
     font-weight: 500;
-    color: var(--secondary);
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Firefox */
+    color: transparent; /* fallback */
   }
 
   .about-carousel__slide__content-blogs__blogs-container {

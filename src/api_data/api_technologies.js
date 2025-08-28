@@ -61,6 +61,12 @@ const technologies = {
     id: 'html-icon',
     alt: 'html icon',
   },
+  java: {
+    name: 'Java',
+    icon: skillIcons.java_primary,
+    id: 'java-icon',
+    alt: 'java icon',
+  },
   javascript: {
     name: 'JavaScript',
     icon: skillIcons.javascript_primary,
@@ -176,8 +182,8 @@ const technologies = {
     alt: 'go icon',
   },
   linux: {
-    name: 'LinuxOS',
-    icon: skillIcons.linux_primary,
+    name: 'Linux',
+    icon: skillIcons.ubuntu_primary,
     id: 'linux-icon',
     alt: 'linux icon',
   },
