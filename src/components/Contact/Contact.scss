@@ -118,7 +118,7 @@
         }
 
         &:focus {
-          border: 1px solid var(--primary);
+          border: 1px solid var(--white);
         }
 
         &::placeholder {
@@ -127,12 +127,8 @@
       }
 
       #btn-submit-contact-form {
-        // z-index: 1;
-        // position: relative;
-        // display: inline-flex;
-        // justify-content: center;
-        // overflow: hidden;
-
+        border: 1px solid var(--primary);
+        color: var(--primary);
         span {
           gap: 20px;
 
@@ -140,29 +136,14 @@
             margin-top: -2px;
           }
         }
-
-        // &:hover {
-        //   color: var(--bg2);
-        // }
       }
 
-      //   #btn-submit-contact-form::before {
-      //     content: "";
-      //     position: absolute;
-      //     background: var(--primary);
-      //     left: var(--x);
-      //     top: var(--y);
-      //     transform: translate(-50%, -50%);
-      //     width: 0px;
-      //     height: 0px;
-      //     border-radius: 50%;
-      //     transition: width 1.1s, height 1.1s;
-      //   }
-
-      //   #btn-submit-contact-form:hover::before {
-      //     width: 1800px;
-      //     height: 1800px;
-      //   }
+      #btn-submit-contact-form:hover {
+        color: var(--bg2) !important;
+      }
+      #btn-submit-contact-form::before {
+        background: var(--primary);
+      }
     }
 
     .msg-container {
