@@ -221,8 +221,8 @@ button {
 
 .btn {
   background-color: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
   padding: 15px 20px;
   font-size: 1rem;
   border-radius: 10px;

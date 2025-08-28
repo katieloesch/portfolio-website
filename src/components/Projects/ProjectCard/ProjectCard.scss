@@ -3,8 +3,8 @@
   flex-direction: column;
   border-radius: 0.75rem;
   margin: 2rem;
-  background-color: rgba(182, 192, 230, 0.9);
-  // border: 2px solid var(--primary-a);
+  // background-color: rgba(182, 192, 230, 0.9);
+  background-color: var(--bg2);
   transition: all 0.3s ease;
 
   &:hover {
@@ -18,8 +18,8 @@
     overflow: hidden;
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
-    border: 1px solid var(--primary-a);
-    border-bottom: 1px solid var(--bg1);
+    border: 1px solid var(--bg2);
+    border-bottom: 1px solid var(--bg2);
 
     cursor: pointer;
 
@@ -68,10 +68,11 @@
           font-weight: 700;
           color: var(--secondary);
           font-size: 1.25rem;
+          font-weight: normal;
         }
 
         p:last-of-type {
-          color: var(--white);
+          color: var(--primary);
           font-size: 1.15rem;
           font-weight: 500;
         }
@@ -148,8 +149,8 @@
       justify-content: center;
       padding: 1rem;
       text-align: center;
-      color: var(--bg1);
-
+      color: var(--white);
+      font-weight: normal;
       font-size: 1.3rem;
       // font-weight: normal;
       @media screen and (min-width: 2000px) {
