@@ -2,8 +2,26 @@ import { timelineImages } from '../assets/images/timeline_images';
 const currentYear = new Date().getFullYear();
 
 const timelineData = [
+  // {
+  //   id: 0,
+  //   date: `2025 - `,
+  //   title: 'Graduate Software Developer | Aveva',
+  //   // company: '',
+  //   img: timelineImages.aveva,
+  //   style: { background: '#ffffff' },
+  //   description: ['Graduate Software Engineer'],
+  // },
   {
-    id: 0,
+    id: 1,
+    date: `2025 - ${currentYear === 2025 ? '' : currentYear}`,
+    title: 'Graduate Software Developer | Aveva',
+    // company: '',
+    img: timelineImages.aveva,
+    style: { background: '#ffffff' },
+    description: [''],
+  },
+  {
+    id: 2,
     date: `2023 - ${currentYear}`,
     title: 'Udemy',
     // company: '',
@@ -13,13 +31,9 @@ const timelineData = [
       'The Git & Github Bootcamp by Colt Steele',
       'MERN 2025: MongoDB, Express, React & NodeJS by John Smilga',
     ],
-    links: [
-      'https://www.udemy.com/course/git-and-github-bootcamp/',
-      'https://www.udemy.com/course/mern-stack-course-mongodb-express-react-and-nodejs/',
-    ],
   },
   {
-    id: 1,
+    id: 3,
     date: 'Mar 2023 - Jun 2023',
     title: 'Software Engineering Immersive | General Assembly',
     // company: '',
@@ -33,7 +47,7 @@ const timelineData = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     date: '2018 - 2020',
     title: 'Computing & IT | Open University',
     // company: '',
@@ -43,7 +57,7 @@ const timelineData = [
   },
 
   {
-    id: 3,
+    id: 5,
     date: 'Jul 2016 - Sep 2016',
     title: 'Laboratory Internship | Luxembourg Institute of Health',
     // company: '',
@@ -56,7 +70,7 @@ const timelineData = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     date: 'Oct 2012 - Jun 2015',
     title: 'BSc in Biomedical Science | The University of Warwick',
     // company: '',
