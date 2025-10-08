@@ -45,7 +45,7 @@ const columnData = [
     title: 'coding journey.',
     class: 'about-column-coding-journey',
     description:
-      "My interest in iterative processes and how software can simplify and improve everyday life  led me to complete General Assembly’s Software Engineering Immersive. There, I built a solid foundation in both frontend and backend development, working with Ruby on Rails and the MERN stack. I'm always keen to explore new technologies, frameworks and languages. I'm currently learning Python, Go and Linux.",
+      "My interest in iterative processes and how software can simplify and improve everyday life  led me to complete General Assembly’s Software Engineering Immersive. There, I built a solid foundation in both frontend and backend development, working with Ruby on Rails and the MERN stack. I'm always keen to explore new technologies, frameworks and languages. I'm currently learning Java, C#, AWS and Linux.",
     icon: icons.code2G,
     iconAlt: 'laptop code icon',
     iconClass: 'code-icon',

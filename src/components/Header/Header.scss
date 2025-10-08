@@ -202,9 +202,9 @@
         }
         .header__text-job-title__title::after {
           width: 0.08em;
-          background-color: var(--yellow);
-          height: 70%;
-          margin-top: 0.2em;
+          background-color: var(--bg-light);
+          height: 100%;
+          margin-top: 0.02em;
 
           /* Full-Stack Developer - 20 characters */
           animation: typewriter var(--typewriterSpeed) steps(20) 1.75s forwards,
