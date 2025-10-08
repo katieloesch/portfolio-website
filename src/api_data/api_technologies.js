@@ -7,6 +7,12 @@ const technologies = {
     id: 'angular-icon',
     alt: 'angular icon',
   },
+  aws: {
+    name: 'aws',
+    icon: skillIcons.aws_primary,
+    id: 'aws-icon',
+    alt: 'aws icon',
+  },
   bootstrap: {
     name: 'Bootstrap',
     icon: skillIcons.bootstrap_primary,
@@ -18,6 +24,12 @@ const technologies = {
     icon: skillIcons.css_primary,
     id: 'css-icon',
     alt: 'css icon',
+  },
+  csharp: {
+    name: 'C#',
+    icon: skillIcons.csharp_primary,
+    id: 'csharp-icon',
+    alt: 'c sharp icon',
   },
   express: {
     name: 'express',

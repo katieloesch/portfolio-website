@@ -41,6 +41,11 @@
 }
 
 // adjusting size of icons
+#aws-icon {
+  img {
+    scale: 1.1;
+  }
+}
 #babel-icon {
   img {
     scale: 1.2;
@@ -166,6 +171,16 @@
     content: url('./../../../assets/icons/icons_skills/angular_color.svg');
   }
 }
+
+#aws-icon:hover {
+  p {
+    color: #f90;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/aws_color.svg');
+  }
+}
+
 #babel-icon:hover {
   p {
     color: #000;
@@ -190,6 +205,15 @@
   }
   img {
     content: url('./../../../assets/icons/icons_skills/css_color.svg');
+  }
+}
+
+#csharp-icon:hover {
+  p {
+    color: #9b4f96;
+  }
+  img {
+    content: url('./../../../assets/icons/icons_skills/csharp_color.svg');
   }
 }
 

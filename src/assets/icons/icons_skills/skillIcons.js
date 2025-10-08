@@ -2,9 +2,11 @@
 // https://icon-sets.iconify.design/
 
 import angular_primary from './angular_primary.svg';
+import aws_primary from './aws_primary.svg';
 import babel_primary from './babel_primary.svg';
 import bootstrap_primary from './bootstrap_primary.svg';
 import css_primary from './css_primary.svg';
+import csharp_primary from './csharp_primary.svg';
 import express_primary from './express_primary.svg';
 import firebase_primary from './firebase_primary.svg';
 import firestore_primary from './firestore_primary.svg';
@@ -39,9 +41,11 @@ import yarn_primary from './yarn_primary.svg';
 
 const skillIcons = {
   angular_primary,
+  aws_primary,
   babel_primary,
   bootstrap_primary,
   css_primary,
+  csharp_primary,
   express_primary,
   firebase_primary,
   firestore_primary,
