@@ -2,251 +2,133 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
 
   h1 {
-    margin-bottom: 100px;
-
     @media screen and (max-width: 1450px) {
       margin-bottom: 45px;
     }
   }
 }
 
-.experiences {
-  // flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-
-  .experience-container {
-    width: 100%;
-    display: none;
-  }
-}
-
-.experience-year {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-right: 20px;
-
-  p {
-    font-weight: 500;
-    font-size: 1rem;
-    color: var(--grey);
-    text-align: right;
-  }
-
-  .experience-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    border: 2px solid var(--bg2);
-
-    img {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-    }
-  }
-
-  .exp-img-1 {
-    padding-top: 2px;
-  }
-  .exp-img-2 {
-    padding: 2px;
-  }
-  .exp-img-3 {
-    padding: 10px;
-  }
-}
-
-.experience-item {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  background-color: var(--bg1);
-  border: 1px solid rgba(128, 128, 128, 0.7);
-
-  @media screen and (max-width: 950px) {
-    flex-direction: column;
-  }
-}
-
-.experience-works {
-  flex: 1;
-
-  .experience-work {
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-
-    h3 {
-      font-size: 1.25rem;
-      color: var(--primary);
-    }
-
-    h4 {
-      font-weight: 500;
-      font-size: 1.25rem;
-      color: var(--primary);
-    }
-
-    ul {
-      margin-left: 0;
-      padding-left: 0;
-    }
-
-    li {
-      //   font-weight: 400;
-      color: var(--grey-light);
-      font-size: 1.1rem;
-      text-align: justify;
-      list-style: disc;
-    }
-
-    li::marker {
-      color: var(--primary);
-    }
-  }
-}
-
-.experience-item.rev {
-  flex-direction: row-reverse;
-
-  .experience-year {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .experience-works {
-    padding-right: 20px;
-
-    div {
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-
-      div {
-        h3,
-        h4 {
-          text-align: right;
-        }
-
-        p {
-          align-items: center;
-          text-align: right;
-        }
-      }
-    }
-  }
-}
+// react-vertical-timeline-component works better with css, so switching from scss to css for the styling of this component
 
 .timeline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: 100%;
+}
 
+.timeline .vertical-timeline {
+  min-width: 90%;
+}
+
+.vertical-timeline::before {
+  width: 3px;
+}
+
+.timeline .vertical-timeline .vertical-timeline-element {
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+}
+
+.timeline
+  .vertical-timeline
+  .vertical-timeline-element
+  .vertical-timeline-element-icon {
+  overflow: hidden;
+}
+
+.timeline
+  .vertical-timeline
+  .vertical-timeline-element
+  .vertical-timeline-element-icon
   .timeline-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-  }
-
-  #timeline-img-1 {
-    // OU logo
-    padding-top: 2px;
-  }
-  #timeline-img-2 {
-    // LIH logo
-    padding: 2px;
-  }
-  #timeline-img-3 {
-    // Warwick logo
-    padding: 7px;
-  }
-
-  .vertical-timeline-element-title {
-    color: var(--primary);
-    font-size: 1.3rem;
-    font-weight: normal;
-
-    @media screen and (max-width: 1170px) {
-      margin-top: -10px;
-    }
-
-    margin-top: -60px;
-  }
-  .vertical-timeline-element-subtitle {
-    color: var(--primary);
-    font-size: 1.1rem;
-    font-weight: normal;
-    padding-top: 3px;
-  }
-
-  .timeline-item-description {
-    padding-top: 5px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    margin-top: 5px;
-
-    li {
-      text-align: left;
-      list-style: disc;
-      color: var(--grey-light);
-      width: 100%;
-      font-size: 1rem;
-      margin-left: 19px;
-    }
-  }
+  width: 100%;
+  overflow: hidden;
 }
 
-.vertical-timeline {
-  min-width: 95%;
+#timeline-img-0 {
+  // udemy logo
+  scale: 0.65;
 }
-
-.vertical-timeline-element {
-  margin: 1em 0;
-  margin-left: 7px;
+#timeline-img-1 {
+  // udemy logo
+  scale: 0.9;
+}
+#timeline-img-2 {
+  // GA logo
+  scale: 1;
+}
+#timeline-img-3 {
+  // OU logo
+  scale: 1;
+}
+#timeline-img-4 {
+  // LIH logo
+  scale: 0.9;
+}
+#timeline-img-5 {
+  // Warwick logo
+  scale: 0.85;
 }
 
 .vertical-timeline-element-content {
   box-shadow: none;
   width: 100%;
-  // border: 1px solid var(--secondary);
 
   @media screen and (max-width: 1170px) {
     width: 85%;
   }
 }
 
-.timeline-date {
-  color: var(--secondary);
-  opacity: 1 !important;
-  font-size: 1.04rem !important;
-  font-family: var(--font-nav);
-}
-
 .vertical-timeline-element-content-arrow {
   border-right: 7px solid transparent;
 }
 
-.vertical-timeline::before {
-  width: 3px;
+.vertical-timeline-element-title {
+  color: var(--secondary);
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-top: -45px;
+
+  @media screen and (max-width: 1170px) {
+    margin-top: -10px;
+  }
+}
+
+.vertical-timeline-element-subtitle {
+  color: var(--secondary);
+  font-size: 1.1rem;
+  font-weight: normal;
+  padding-top: 3px;
+}
+
+.vertical-timeline-element-content .timeline-item-description {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.vertical-timeline-element-content .timeline-item-description li,
+.vertical-timeline-element-content .timeline-item-description a {
+  text-align: left;
+  list-style: disc;
+  color: var(--primary);
+  width: 100%;
+  font-size: 1rem;
+  margin-left: 19px;
+}
+
+.vertical-timeline-element-content .timeline-item-description a li:hover {
+  color: var(--white);
+}
+
+.timeline-date {
+  color: var(--white);
+  opacity: 1 !important;
+  font-size: 1.04rem !important;
+  font-family: var(--font-main);
 }

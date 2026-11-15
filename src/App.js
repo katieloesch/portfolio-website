@@ -7,6 +7,7 @@ import {
   About,
   Contact,
 } from './components';
+import CopyrightFooter from './components/Contact/CopyrightFooter/CopyrightFooter';
 import { NavBar, NavDots, NavMobile } from './components/Shared';
 import { CurrentContext } from './contexts/CurrentContext';
 
@@ -27,6 +28,7 @@ const App = () => {
         <Experience />
         <About />
         <Contact />
+        <CopyrightFooter />
 
         <NavDots />
       </CurrentContext.Provider>

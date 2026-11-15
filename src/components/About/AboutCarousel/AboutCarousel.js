@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
 import './AboutCarousel.scss';
 
-const AboutCarousel = ({ slides, type }) => {
+const AboutCarousel = ({ slides }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -21,7 +21,6 @@ const AboutCarousel = ({ slides, type }) => {
       setSlideIndex(slideIndex - 1);
     }
   };
-
   return (
     <div className={'about-carousel'}>
       <div className='about-carousel__slides-container'>
@@ -54,7 +53,6 @@ const AboutCarousel = ({ slides, type }) => {
           </button>
         </div>
       </div>
-
       <div className='about-carousel__dots'>
         {slides.map((img, index) => (
           <div

@@ -21,7 +21,7 @@
 .btn-fill::before {
   content: '';
   position: absolute;
-  background: var(--primary);
+  background: var(--secondary);
   left: var(--x);
   top: var(--y);
   transform: translate(-50%, -50%);

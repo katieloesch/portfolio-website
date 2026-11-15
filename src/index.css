@@ -2,79 +2,63 @@
 
 /* --font-main */
 @font-face {
-  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  /* source: https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Light.woff')
-    format('woff');
+  src: url('./assets/fonts/sofia-pro-font/sofia-pro-light.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  /* https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
+  /* source: https://github.com/jandre3000/j4n-co/tree/master/assets/fonts */
   font-family: 'Sofia Pro';
-  src: url('./assets/fonts/j4n-co-fonts/sofia-pro/Sofia\ Pro\ Bold.woff')
-    format('woff');
+  src: url('./assets/fonts/sofia-pro-font/sofia-pro-bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
 }
 
-/* --font-editorial */
+/* --font-editorial / nav */
 @font-face {
-  font-family: 'Nulshock';
-  src: url('./assets/fonts/nulshock.woff') format('woff');
+  /* source: https://font.download/font/astro-futuristic-font */
+  font-family: 'Astro';
+  src: url('./assets/fonts/astro-font/astro.woff') format('woff');
   font-weight: normal;
-  font-style: normal;
-}
-
-/* font-nav */
-@font-face {
-  font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-light.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Good Times';
-  src: url('./assets/fonts/goodtimes-regular.woff') format('woff');
-  font-weight: bold;
   font-style: normal;
 }
 
 /* --font-typewriter */
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cute+Font&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* source: https://fonts.google.com/specimen/Roboto+Mono */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   /* font variables */
   --font-main: 'Sofia Pro', 'Trebuchet MS', 'Lucida Sans Unicode',
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-nav: 'Good Times', 'Trebuchet MS', 'Lucida Sans Unicode',
-    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-editorial: 'Nulshock', 'Trebuchet MS', 'Lucida Sans Unicode',
-    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  --font-typewriter: 'VT323', monospace;
-  --font-typewriter: 'Space Mono', monospace;
+  --font-nav: 'Astro', Arial, sans-serif;
+  /* --font-typewriter: 'Roboto Mono', monospace; */
+  --font-typewriter: 'Ubuntu Mono', monospace;
   --typewriterSpeed: 4s;
+  --typewriter-size: 33px;
 
   /* colour variables */
-  --primary: #72f586ec;
-  --primary-a: rgba(114, 245, 134, 0.85);
-  /* --secondary: #ff5fec; */
-
-  --secondary: rgb(250, 95, 198);
-  --secondary-a: rgba(255, 122, 211, 0.4);
-  --secondary-light: rgb(252, 118, 207);
-  --secondary-dark: rgb(224, 7, 163);
-
-  --bg1: rgb(16, 58, 85);
+  --primary: #b6c0e6;
+  --primary-a: #b6c0e6;
+  --secondary: #72f586ec;
+  --secondary-a: rgba(118, 145, 126, 0.3);
+  --bg1: #103a55;
   --bg2: #082434;
-
+  --bg-particles: #04141d;
+  /* --bg-medium: rgba(255, 255, 255, 0.4); */
+  /* --bg-medium: rgba(255, 255, 255, 0.4); */
+  --bg-medium: rgba(144, 161, 165, 0.688);
+  /* --bg-light: #60b7b5; */
+  --bg-light: #84b1bd;
+  /* --bg2: #1f2236; */
+  /* --bg2: #1f2236; */
   --yellow: rgb(254, 240, 113);
+  /* --yellow: #ffdc8b; */
   --yellow-a: rgba(254, 240, 113, 0.55);
   --red: rgb(237, 74, 90);
-
   --white: rgb(255, 254, 254);
   --white-a: rgba(255, 255, 255, 0.8);
   --black: rgb(0, 0, 0);
@@ -93,16 +77,6 @@
   --h2-font-size: '';
   --p-font-size: '';
 
-  /* light mode */
-  /* --offwhite: #edf2f8;
-  --primary-light: #f4eae9;
-  --primary-dark: #916265;
-  --primary-deep: #682a2e;
-  --primary-dark-a:rgba(104, 42, 46, 0.85);
-  --secondary: #313bac;
-  --secondary-a: rgba(48, 58, 171, 0.816);
-  --secondary-dark: #4C2777; */
-
   /* btn fill effect */
   --bubble-footer-before: 20px;
   --bubble-footer-after: 300px;
@@ -111,27 +85,11 @@
   --bubble-projects-filter-after: 190px;
   --bubble-projects-filter-transition: 0.5s;
 
-  /* modal */
+  /* modal variables*/
   --modal-header-min-height: 80px;
-}
 
-body {
-  background-color: var(--black);
-}
-
-body #modal-hook {
-  border: 2px solid orange;
-}
-
-/* section backgrounds */
-.bg-1 {
-  /* | skills | experience | contact | */
-  background-color: var(--bg2);
-}
-
-.bg-2 {
-  /* | work | about | */
-  background-color: var(--bg1);
+  /* switch to mobile layout */
+  --mobile-cutoff: 1200px;
 }
 
 /* type selectors */
@@ -156,6 +114,10 @@ body #modal-hook {
 html {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: var(--bg-particles);
 }
 
 ul,
@@ -184,10 +146,83 @@ button {
   cursor: pointer;
 }
 
+/* class selectors */
+.bg-1 {
+  background-color: var(--bg2);
+}
+
+.bg-2 {
+  /* | work | about | */
+  background-color: var(--bg1);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-text {
+  font-size: 2.75rem;
+  font-weight: 800;
+  text-align: center;
+  color: var(--primary);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.section-heading {
+  font-family: var(--font-nav);
+  font-size: 2rem;
+  text-align: center;
+  color: var(--secondary);
+  width: 100%;
+  @media screen and (max-width: 550px) {
+    font-size: 2rem;
+  }
+}
+
+.p-text {
+  font-size: 0.8rem;
+  text-align: left;
+  color: var(--gray);
+  line-height: 1.5;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 1.75rem;
+  }
+}
+
+.bold {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--black);
+  text-align: left;
+
+  @media screen and (min-width: 2000px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.9rem;
+  }
+}
+
 .btn {
   background-color: transparent;
-  border: 1px solid var(--primary);
-  color: var(--primary);
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
   padding: 15px 20px;
   font-size: 1rem;
   border-radius: 10px;

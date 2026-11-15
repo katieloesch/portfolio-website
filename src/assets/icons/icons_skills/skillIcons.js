@@ -1,9 +1,12 @@
 //icons source:
 // https://icon-sets.iconify.design/
 
+import angular_primary from './angular_primary.svg';
+import aws_primary from './aws_primary.svg';
 import babel_primary from './babel_primary.svg';
 import bootstrap_primary from './bootstrap_primary.svg';
 import css_primary from './css_primary.svg';
+import csharp_primary from './csharp_primary.svg';
 import express_primary from './express_primary.svg';
 import firebase_primary from './firebase_primary.svg';
 import firestore_primary from './firestore_primary.svg';
@@ -12,9 +15,10 @@ import github_primary from './github_primary.svg';
 import go_primary from './go_primary.svg';
 import heroku_primary from './heroku_primary.svg';
 import html_primary from './html_primary.svg';
+import java_primary from './java_primary.svg';
 import javascript_primary from './javascript_primary.svg';
 import jwt_primary from './jwt_primary.svg';
-import linux_primary from './lunux_primary.svg';
+import ubuntu_primary from './ubuntu_primary.svg';
 import mongodb_primary from './mongodb_primary.svg';
 import mongoose_primary from './mongoose_primary.svg';
 import netlify_primary from './netlify_primary.svg';
@@ -36,9 +40,12 @@ import vite_primary from './vite_primary.svg';
 import yarn_primary from './yarn_primary.svg';
 
 const skillIcons = {
+  angular_primary,
+  aws_primary,
   babel_primary,
   bootstrap_primary,
   css_primary,
+  csharp_primary,
   express_primary,
   firebase_primary,
   firestore_primary,
@@ -47,9 +54,10 @@ const skillIcons = {
   go_primary,
   heroku_primary,
   html_primary,
+  java_primary,
   javascript_primary,
   jwt_primary,
-  linux_primary,
+  ubuntu_primary,
   mongodb_primary,
   mongoose_primary,
   netlify_primary,

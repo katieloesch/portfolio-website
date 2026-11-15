@@ -1,6 +1,18 @@
 import { skillIcons } from '../assets/icons/icons_skills';
 
 const technologies = {
+  angular: {
+    name: 'Angular',
+    icon: skillIcons.angular_primary,
+    id: 'angular-icon',
+    alt: 'angular icon',
+  },
+  aws: {
+    name: 'aws',
+    icon: skillIcons.aws_primary,
+    id: 'aws-icon',
+    alt: 'aws icon',
+  },
   bootstrap: {
     name: 'Bootstrap',
     icon: skillIcons.bootstrap_primary,
@@ -12,6 +24,12 @@ const technologies = {
     icon: skillIcons.css_primary,
     id: 'css-icon',
     alt: 'css icon',
+  },
+  csharp: {
+    name: 'C#',
+    icon: skillIcons.csharp_primary,
+    id: 'csharp-icon',
+    alt: 'c sharp icon',
   },
   express: {
     name: 'express',
@@ -54,6 +72,12 @@ const technologies = {
     icon: skillIcons.html_primary,
     id: 'html-icon',
     alt: 'html icon',
+  },
+  java: {
+    name: 'Java',
+    icon: skillIcons.java_primary,
+    id: 'java-icon',
+    alt: 'java icon',
   },
   javascript: {
     name: 'JavaScript',
@@ -171,7 +195,7 @@ const technologies = {
   },
   linux: {
     name: 'Linux',
-    icon: skillIcons.linux_primary,
+    icon: skillIcons.ubuntu_primary,
     id: 'linux-icon',
     alt: 'linux icon',
   },

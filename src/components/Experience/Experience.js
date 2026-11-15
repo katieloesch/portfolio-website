@@ -6,7 +6,7 @@ import {
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { SectionHeading } from '../Shared';
 import { timelineData } from '../../api_data/api_timeline';
 import { CurrentContext } from '../../contexts/CurrentContext';
@@ -48,12 +48,12 @@ const Experience = () => {
   }, [isIntersecting, active, dot, navDots]);
 
   return (
-    <div className='experiences flex nav-section' ref={ref}>
+    <div className='experience flex nav-section' ref={ref}>
       <SectionHeading section='experience'>
-        Experience & Education
+        Experience + Education
       </SectionHeading>
       <div className='timeline'>
-        <VerticalTimeline className='timeline-container'>
+        <VerticalTimeline>
           {timelineData.map((timelineItem, index) => (
             <VerticalTimelineElement
               key={`tl-${timelineItem.id}`}
@@ -73,17 +73,28 @@ const Experience = () => {
               <h3 className='vertical-timeline-element-title'>
                 {timelineItem.title}
               </h3>
-              <h4 className='vertical-timeline-element-subtitle'>
+              {/* <h4 className='vertical-timeline-element-subtitle'>
                 {timelineItem.company}
-              </h4>
+              </h4> */}
               <ul className='timeline-item-description' id='description'>
-                {timelineItem.description.map((descriptionItem, index) => (
-                  <li
-                    key={`timeline-description-item-${timelineItem.id}-${index}`}
-                  >
-                    {descriptionItem}
-                  </li>
-                ))}
+                {timelineItem.description.map((descriptionItem, index) => {
+                  return timelineItem.id !== 0 ? (
+                    <li
+                      key={`timeline-description-item-${timelineItem.id}-${index}`}
+                    >
+                      {descriptionItem}
+                    </li>
+                  ) : (
+                    <a
+                      href={timelineData[0].links[index]}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                      key={`timeline-description-link-${timelineItem.id}-${index}`}
+                    >
+                      <li>{descriptionItem}</li>
+                    </a>
+                  );
+                })}
               </ul>
             </VerticalTimelineElement>
           ))}
@@ -93,7 +104,7 @@ const Experience = () => {
   );
 };
 
-export default AppContainer(
+export default ComponentContainer(
   MotionContainer(Experience, 'experience'),
   'experience',
   'bg-1'

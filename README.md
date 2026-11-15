@@ -3,15 +3,14 @@
 ## Overview
 
 1. [Description](#description)
-2. [Deployment Link](#deployment-link)
-3. [Installation](#installation)
-4. [Technologies Used](#technologies)
-5. [Deliverables](#deliverables)
-6. [Planning/Build Process](#planning)
-7. [Challenges](#challenges)
-8. [Wins](#wins)
-9. [Key Learnings & Takeaways](#takeaways)
-10. [Future Improvements](#future-improvements)
+2. [Installation](#installation)
+3. [Technologies Used](#technologies)
+4. [Deliverables](#deliverables)
+5. [Planning/Build Process](#planning)
+6. [Challenges](#challenges)
+7. [Wins](#wins)
+8. [Key Learnings & Takeaways](#takeaways)
+9. [Future Improvements](#future-improvements)
 
 ---
 
@@ -19,11 +18,7 @@
 
 I started the development of this portfolio project after completion of the General Assemlby Software Engineering Immersive Course in order to showcase the projects I had built and the skills I had gained during the course.
 
-## <a name="deployment-link"></a> 2. Deployment link
-
-:link: &nbsp;&nbsp;https://katieloesch.co.uk/
-
-## <a name="installation"></a> 3. Installation
+## <a name="installation"></a> 2. Installation
 
 #### Package Manager: npm (v9.5.0)
 
@@ -69,7 +64,7 @@ npm start
 - By default, your web browser should automatically open and navigate to this address.
 - If it doesn’t, you can manually access the application by entering `http://localhost:3000` in any web browser.
 
-## <a name="technologies"></a> 4. Technologies Used
+## <a name="technologies"></a> 3. Technologies Used
 
 ### Core Technologies
 
@@ -144,10 +139,20 @@ npx create-react-app .
 ### UI and Design
 
 - **Fonts**
-  - main: \'**Nulshock**\', designed by **Typodermic Fonts**
-    - <sub>[Cufon Fonts](https://www.cufonfonts.com/font/nulshock#google_vignette)</sub>
-  - header: \'**VT323**\', designed by **Peter Hull**
-    - <sub>[Google Fonts](https://fonts.google.com/specimen/VT323)</sub>
+
+  - main: \'**Sofia Pro**\', designed by **Olivier Gourvat (Mostardesign)**
+    - <sub>[font.download](https://font.download/font/sofia-pro)</sub>
+  - editorial/headings: \'**Astro**\' designed by **Nestype**
+    - <sub>[font.download](https://font.download/font/astro-futuristic-font)</sub>
+    - <sub>[cufon fonts](https://www.cufonfonts.com/font/astro)</sub>
+  - typewriter animation: \'**Ubuntu Mono**\' designed by **Dalton Maag**
+    - <sub>[Googe Fonts](hhttps://fonts.google.com/specimen/Ubuntu+Mono)</sub>
+    - <sub>[font.download](https://font.download/font/ubuntu-mono-2)</sub>
+    - <sub>[Font Squirrel](https://www.fontsquirrel.com/fonts/ubuntu-mono)</sub>
+    <!-- - typewriter animation: \'**Roboto Mono**\' designed by **Christian Robertson**
+    - <sub>[Googe Fonts](https://fonts.google.com/specimen/Roboto+Mono)</sub>
+    - <sub>[font.download](https://font.download/font/roboto-mono)</sub> -->
+
 - **Icons**
   - **Iconify**
     - <sub>A free and open-source framework providing access to a vast number of icons, designed for use across various platforms and environments, including React.</sub>
@@ -212,7 +217,7 @@ npx create-react-app .
 - button fill effect:
   - [Button Ripple Hover Effects using CSS & Javascript](https://www.youtube.com/watch?v=WOSaNbpHNqU) by [Online Tutorials | Md Irshad Ansari](https://www.youtube.com/@OnlineTutorialsYT)
 
-## <a name="deliverables"></a> 5. Deliverables
+## <a name="deliverables"></a> 4. Deliverables
 
 ### MVP
 
@@ -242,7 +247,7 @@ npx create-react-app .
 - animations
 - effects
 
-## <a name="planning"></a>6. Planning / Build Process
+## <a name="planning"></a>5. Planning / Build Process
 
 ### User Stories
 
@@ -256,20 +261,20 @@ I started the building process for this project on 13/06/2023.
 Initial deployment on gh-pages: 26/06/2023.
 Deployment to [custom domain](katieloesch.co.uk) obtained from [Hostinger](https://www.hostinger.co.uk) on 29/06/2023.
 
-## 7. <a name="challenges"></a> Challenges
+## 6. <a name="challenges"></a> Challenges
 
 - depending on how much text is provided to the modal showing details on each project, the container overflows but by default you can't scroll down on a modal
 - In order to scroll on overlay text the scroll on the body needs to be disabled first which took me a while to figure out.
 
-## 8. <a name="wins"></a> Wins
+## 7. <a name="wins"></a> Wins
 
 - fully responsive design
 - implementation of animations + effects
 - I'm glad I decided to use React.js for my portfolio as I definitely learned a lot doing this project and feel more confident using this framework.
 
-## <a name="takeaways"></a> 9. Key Learnings & Takeaways
+## <a name="takeaways"></a> 8. Key Learnings & Takeaways
 
-## <a name="future-improvements"></a> 10. Future Improvements
+## <a name="future-improvements"></a> 9. Future Improvements
 
 - include information about my industry interests
 - include blogs + podcasts I'm interested in

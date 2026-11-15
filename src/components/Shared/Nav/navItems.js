@@ -1,4 +1,4 @@
 export const navItems = {
-  navBar: ['home', 'skills', 'work', 'experience', 'about', 'contact'],
-  navDots: ['home', 'skills', 'work', 'experience', 'about', 'contact'],
+  navBar: ['home', 'skills', 'projects', 'experience', 'about', 'contact'],
+  navDots: ['home', 'skills', 'projects', 'experience', 'about', 'contact'],
 };

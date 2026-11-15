@@ -1,4 +1,5 @@
 import { arcadeImages } from './browser_arcade';
+import { contemplateImages } from './contemplate';
 import { flicks4brainsImages } from './flicks4brains';
 import { guestbookImages } from './guestbook';
 import { huntingBuddyImages } from './hunting_buddy';
@@ -7,6 +8,7 @@ import { placebookImages } from './placebook';
 
 const projectImages = {
   arcade: arcadeImages,
+  contemplate: contemplateImages,
   flicks4brains: flicks4brainsImages,
   guestbook: guestbookImages,
   huntingBuddy: huntingBuddyImages,

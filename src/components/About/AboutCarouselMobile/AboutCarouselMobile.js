@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { arrowIcons } from '../../../assets/icons/icons_arrows';
 import './AboutCarouselMobile.scss';
 
-const AboutCarouselMobile = ({ slides, type }) => {
+const AboutCarouselMobile = ({ slides }) => {
   const [slideIndex, setSlideIndex] = useState(0);
 
   const nextSlide = () => {
@@ -39,6 +39,7 @@ const AboutCarouselMobile = ({ slides, type }) => {
             </div>
           );
         })}
+
         <div className='about-carousel-mobile__btns'>
           <button
             onClick={prevSlide}

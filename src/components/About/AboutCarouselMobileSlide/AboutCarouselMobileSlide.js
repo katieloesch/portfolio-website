@@ -5,14 +5,7 @@ import './AboutCarouselMobileSlide.scss';
 
 // import { aboutIcons as icons } from './../../../../assets/icons/icons_about';
 
-const AboutCarouselMobileSlide = ({
-  content,
-  title,
-  txt,
-  img,
-  creators,
-  links,
-}) => {
+const AboutCarouselMobileSlide = (props) => {
   const [showBlogPortal, setShowBlogPortal] = useState(false);
   const [modalContent, setModalContent] = useState({});
 
@@ -25,22 +18,32 @@ const AboutCarouselMobileSlide = ({
     setShowBlogPortal(true);
   };
 
-  if (content === 'about') {
+  if (props.content === 'about') {
     return (
-      <div className='about-carousel__slide-mobile__abouts about-carousel__slide-mobile'>
+      <div
+        className={`about-carousel__slide-mobile about-carousel__slide-mobile-about ${props.data.class}-mobile`}
+      >
         <div className={'about-carousel__slide-mobile__img-container'}>
-          {img}
+          <img
+            src={props.data.icon}
+            alt={props.data.iconAlt}
+            className={`about-carousel__slide-mobile__img ${props.data.iconClass}-mobile`}
+          />
         </div>
-        <h2 className='about-carousel__slide-mobile__title'>{title}</h2>
-        <p className='about-carousel__slide-mobile__p '>{txt}</p>
+        <h2 className='about-carousel__slide-mobile__title'>
+          {props.data.title}
+        </h2>
+        <p className='about-carousel__slide-mobile__column-txt-p '>
+          {props.data.description}
+        </p>
       </div>
     );
   } else {
     return (
-      <div className='about-carousel__slide-mobile__blogs about-carousel__slide-mobile'>
-        <h2 className='about-carousel__slide-mobile__title'>{title}</h2>
+      <div className='about-carousel__slide-mobile about-carousel__slide-mobile-blogs'>
+        <h2 className='about-carousel__slide-mobile__title'>{props.title}</h2>
         <div className='about-carousel__slide-mobile__blogs-container'>
-          {creators.map((blog) => (
+          {props.blogs.map((blog) => (
             <div
               className='about-carousel__slide-mobile__blog-card'
               key={`mobile-about-blog-${blog.className}`}
@@ -52,11 +55,11 @@ const AboutCarouselMobileSlide = ({
         </div>
         <BlogModal
           type='blog-modal'
-          data={modalContent}
+          blog={modalContent}
           show={showBlogPortal}
           onCancel={closeBlogPortal}
           closeModal={closeBlogPortal}
-          links={links}
+          blogLinks={props.blogLinks}
         />
       </div>
     );

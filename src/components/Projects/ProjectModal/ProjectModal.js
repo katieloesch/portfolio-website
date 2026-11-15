@@ -6,7 +6,7 @@ import { CSSTransition } from 'react-transition-group';
 import { Backdrop } from '../../Shared';
 import ProjectImgCarousel from './ProjectImgCarousel/ProjectImgCarousel';
 import { workIcons } from '../../../assets/icons/icons_work';
-import { colors } from '../../../assets/colors/colors';
+// import { colors } from '../../../assets/colors/colors';
 import ProjectSkill from './ProjectSkill/ProjectSkill';
 import './ProjectModal.scss';
 
@@ -27,10 +27,20 @@ const Overlay = ({ show, type, data, closeModal }) => {
       <div className='project-modal__links-container'>
         <div className='project-modal__links'>
           <a href={data.projectLink} target='_blank' rel='noreferrer'>
-            <div className='project-modal__link'>{workIcons.link}</div>
+            <div
+              className='project-modal__link'
+              id='project-modal__link-external'
+            >
+              {workIcons.link}
+            </div>
           </a>
           <a href={data.codeLink} target='_blank' rel='noreferrer'>
-            <div className='project-modal__link'>{workIcons.gitHub}</div>
+            <div
+              className='project-modal__link'
+              id='project-modal__link-github'
+            >
+              {workIcons.gitHub}
+            </div>
           </a>
         </div>
         <div></div>
@@ -73,8 +83,8 @@ const Overlay = ({ show, type, data, closeModal }) => {
               name={skill.name}
               icon={skill.icon}
               className={`modal-skills-item`}
-              id={skill.id}
-              bg={colors.skillBg}
+              id={skill.id + '-modal'}
+              // bg={colors.skillBg}
               key={`modal-skill-${skill.id}`}
             />
           ))}

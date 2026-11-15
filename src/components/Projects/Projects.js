@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef, useContext } from 'react';
 import { motion } from 'framer-motion';
 
 import { CurrentContext } from '../../contexts/CurrentContext';
-import { AppContainer, MotionContainer } from '../../containers';
+import { ComponentContainer, MotionContainer } from '../../containers';
 import { BtnFill, SectionHeading } from '../Shared';
 import { projects } from '../../api_data/api_projects';
 import { colors } from '../../assets/colors/colors';
@@ -33,16 +33,16 @@ const Projects = () => {
     'MERN',
     'Rails',
     'Full-Stack',
-    'Responsive Design',
+    // 'Responsive Design',
   ];
   const active = useContext(CurrentContext);
 
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const ref = useRef('work');
+  const ref = useRef('projects');
 
   // select corresponding navlink + navDot, change color when active
   const navDots = document.querySelectorAll('.nav-dot');
-  const dot = document.querySelector('#work-dot');
+  const dot = document.querySelector('#projects-dot');
   // const navBarLinks = document.querySelectorAll('.nav-anchor');
   // const navBarLink = document.querySelector('#work-a');
 
@@ -54,7 +54,7 @@ const Projects = () => {
       { rootMargin: '-300px' }
     );
     if (isIntersecting) {
-      active.current = 'work';
+      active.current = 'projects';
       navDots.forEach(
         (dot) => (dot.style.backgroundColor = colors.navDotInactive)
       );
@@ -138,4 +138,8 @@ const Projects = () => {
   );
 };
 
-export default AppContainer(MotionContainer(Projects, 'work'), 'work', 'bg-2');
+export default ComponentContainer(
+  MotionContainer(Projects, 'projects'),
+  'projects',
+  'bg-2'
+);

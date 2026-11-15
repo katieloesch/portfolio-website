@@ -3,6 +3,7 @@ import React from 'react';
 import './BlogModalLink.scss';
 
 const BlogModalLink = ({ url, icon, className }) => {
+  console.log(icon);
   if (url && url !== '') {
     return (
       <a
@@ -11,7 +12,13 @@ const BlogModalLink = ({ url, icon, className }) => {
         rel='noreferrer'
         className={`blog-modal__link ${className}-link`}
       >
-        <div className={`blog-modal__link-icon ${className}-icon`}>{icon}</div>
+        <div className={`blog-modal__link-icon-container`}>
+          <img
+            className={`blog-modal__link-icon blog-modal__link-icon-${className}`}
+            src={icon}
+            alt={`${className} icon`}
+          />
+        </div>
       </a>
     );
   }

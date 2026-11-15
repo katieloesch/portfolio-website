@@ -5,6 +5,7 @@ export const descriptions = {
     'Features include hover previews, turn notifications, and game status updates (win, lose, or draw), with the ability to reset the game and track scores.',
     'The game includes animations and sound effects, which can be muted, and localStorage support allows users to resume their sessions after reloading the page or losing internet connection.',
   ],
+  contemplate: ['', '', ''],
   flicks4brains: [
     'A single-page movie and TV watchlist application with full CRUD functionality, built in 8 days using ReactJS and SCSS.',
     "Users can add titles to 'watched' and 'to-watch' lists, mark them as watched, and edit or remove them from their lists.",
@@ -52,15 +53,19 @@ export const descriptions = {
 export const overviews = {
   browserArcade: {
     heading: 'Classic Tic Tac Toe Game',
-    stack: '[HTML/CSS/JS]',
+    stack: '[HTML | CSS | JS]',
+  },
+  contemplate: {
+    heading: 'ConTemplate',
+    stack: '[Angular | Rails]',
   },
   flicks4brains: {
     heading: 'Film & TV watchlist SPA',
-    stack: '[React/Firestore/Firebase]',
+    stack: '[React | Firestore | Firebase]',
   },
   guestbook: { heading: 'Virtual Guestbook', stack: '[MERN-stack]' },
   huntingBuddy: { heading: 'Job Application Tracker', stack: '[MERN-stack]' },
-  pawneePets: { heading: 'Pet Care Job Board', stack: '[Rails/React]' },
+  pawneePets: { heading: 'Pet Care Job Board', stack: '[Rails | React]' },
   placebook: {
     heading: 'Location-based Blogging Platform',
     stack: '[MERN-stack]',
